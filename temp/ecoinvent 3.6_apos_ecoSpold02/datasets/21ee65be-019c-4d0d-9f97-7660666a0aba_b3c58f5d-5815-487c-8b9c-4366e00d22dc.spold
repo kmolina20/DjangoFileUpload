@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="21ee65be-019c-4d0d-9f97-7660666a0aba" activityNameId="4fb04002-615a-4080-9bfd-f8cc62c2abc6" parentActivityId="04925c95-e37d-403e-bea2-2d6c55a60dbe" inheritanceDepth="-1" type="1" specialActivityType="1">
+        <activityName xml:lang="en">market for heat, central or small-scale, natural gas</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">The shares of heat supplying activities with combined heat and power (CHP) plants and pure heat power plants have been estimated. On a small level, more heat is produced in heat plants than in CHP plants. The shares are assumed to amount to 25% heat from CHP plants and 75% heat from heat plants. The shares of the individual supplying activities do not correspond to reality and will have to be refined in future. </text>
+        </generalComment>
+      </activity>
+      <classification classificationId="be3540ee-592f-46fd-bd68-c362a3bbccc6">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3530:Steam and air conditioning supply</classificationValue>
+      </classification>
+      <classification classificationId="eee4c916-17b4-4395-bb3c-cb96f06f71e4">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">natural gas/cogeneration</classificationValue>
+      </classification>
+      <geography geographyId="f9221622-cc45-11de-98ed-0019e336be3a">
+        <shortname xml:lang="en">Europe without Switzerland</shortname>
+      </geography>
+      <technology technologyLevel="0" />
+      <timePeriod startDate="2011-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true" />
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="7d5ac231-b645-4aac-84fe-56e8c06597bd" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="1" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" productionVolumeAmount="5744355570515.29">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1.08136164714715" isDefiningValue="true" mathematicalRelation="" isCalculatedAmount="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This is a calculated weighted average.</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="68a11563-65bd-4af2-92b3-e9ca1056e5e5" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0166598322170742" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="77f232cf-e220-4903-b95e-ce76d5fe0ad5" productionVolumeAmount="95700000000">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1.65650349650349" isDefiningValue="true" mathematicalRelation="" isCalculatedAmount="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Lower heating value of the fuel input related to the heat/electricity output</comment>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" amount="0.169677503210903" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">allocation factor for electricity (=1) vs. heat, where heat is calculated as the termodynamic mean temperature Tm = (Tfeed-Treturn)/ln(Tfeed/Treturn), relative to the application temperature (Tu, typically = 293 K), i.e. (Tm-Tu)/Tm</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" amount="0.169677503210903" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.00616226387320455" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fb39c721-4126-4807-a738-f14ee1399f74" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0166598322170742" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="b470345a-96be-4a38-b453-0c0697ce96b0" productionVolumeAmount="95700000000">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1.68717948717948" isDefiningValue="true" mathematicalRelation="" isCalculatedAmount="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Lower heating value of the fuel input related to the heat/electricity output</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" amount="0.163853654709326" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" amount="0.163853654709326" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">allocation factor for electricity (=1) vs. heat, where heat is calculated as the termodynamic mean temperature Tm = (Tfeed-Treturn)/ln(Tfeed/Treturn), relative to the application temperature (Tu, typically = 293 K), i.e. (Tm-Tu)/Tm</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.00603885020635361" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8fac7503-58c1-4491-9965-6b0362162427" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0166598322170742" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="1f9452fe-6919-43cd-8eb2-08f063087cdb" productionVolumeAmount="95700000000">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1.40165680473373" isDefiningValue="true" mathematicalRelation="" isCalculatedAmount="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">Lower heating value of the fuel input related to the heat/electricity output</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" amount="0.139300218353346" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" amount="0.139300218353346" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">allocation factor for electricity (=1) vs. heat, where heat is calculated as the termodynamic mean temperature Tm = (Tfeed-Treturn)/ln(Tfeed/Treturn), relative to the application temperature (Tu, typically = 293 K), i.e. (Tm-Tu)/Tm</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.00569903542131052" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b944acbe-bc8b-44a2-b659-a11a7b610ba8" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="1.74083931212896E-13" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="e57a5f92-2632-4805-b68c-c1fddd227338" productionVolumeAmount="1">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1" isDefiningValue="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a38c295d-cfe2-471c-aafd-7396af0fb636" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.153876560401534" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="74644150-b8a1-4530-aca6-c3cd2bb93cfd" productionVolumeAmount="883921676914.286">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1.09" isDefiningValue="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fe822b73-69b9-4d45-a5ac-92671f3ab715" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.157221703018959" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="3506e4fc-788b-41c6-85ce-98285022630f" productionVolumeAmount="903137365542.857">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1.06" isDefiningValue="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="269b0beb-98d7-4296-9045-986067f634dd" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.170602273488658" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="33c2094b-60e9-4fa3-9206-477a2e5727fb" productionVolumeAmount="980000120057.143">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="0.979999999999996" isDefiningValue="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="04ea5893-0251-4f33-90fd-c5be5666df1f" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.15053141778411" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="4b8bc566-516a-4b29-add2-d92802b5c094" productionVolumeAmount="864705988285.714">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1.11" isDefiningValue="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="926fb8cc-1fb1-4dbe-979d-f1391d555c7a" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.157221703018959" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="49260c74-bd2a-4052-b470-75367682e76e" productionVolumeAmount="903137365542.857">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1.06" isDefiningValue="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e8778dcf-82d0-49e3-8120-9d7e998cb30d" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.160566845636384" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="de97481c-73e7-4577-9d2e-48edd5df8fa8" productionVolumeAmount="922353054171.429">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <property propertyId="b00066a1-40f3-466c-9bf9-4be11256842e" amount="1.04" isDefiningValue="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">Corresponding fuel use</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.01" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <extrapolations xml:lang="en">This dataset has been extrapolated from year 2011 to the year of the calculation (2019). The uncertainty has been adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2013-07-27" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="7">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2013-07-27" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="7">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Non-global market activities should have a geography comment.
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" isActiveAuthor="true" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" />
+      <dataGeneratorAndPublication personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" isCopyrightProtected="false" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.11" defaultLanguage="en" creationTimestamp="2013-07-25T14:46:26" lastEditTimestamp="2013-07-26T16:52:09" fileGenerator="EcoEditor 3.3.65.10694" fileTimestamp="2013-07-26T16:52:09" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

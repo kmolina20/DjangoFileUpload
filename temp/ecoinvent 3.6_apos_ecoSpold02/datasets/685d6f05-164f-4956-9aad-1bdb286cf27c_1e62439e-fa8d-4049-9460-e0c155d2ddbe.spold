@@ -1,0 +1,2162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="685d6f05-164f-4956-9aad-1bdb286cf27c" activityNameId="0e0d84df-4248-4788-8fc2-f681733d3015" parentActivityId="b20423b8-45c1-491a-a49e-e50eb0a8c255" inheritanceDepth="-1" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">transmission network construction, electricity, high voltage</activityName>
+        <includedActivitiesStart xml:lang="en">From reception of materials and construction operations.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the operation of the transmission network.
+It includes:
+-Land use associated to lines and substations ;
+- main materials used for substation (building, transformers, breakers, etc.), poles and cable construction;
+direct emissions to air (SF6) and to soil (leakage of treating substances from poles, pesticides used for vegetation control)
+- waste treatment of materials
+It doesn't include:
+- minor activities, materials and wastes.
+This dataset doesn't include
+- electricity losses during transformation from high to medium voltage or medium to low, as these are included in the dataset for transformation
+- SF6 emissions during production and deconstruction of the switchgear, as these are accounted for in the transmission network dataset.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="1">This dataset represents the construction of the infrastructure (poles, cables, transforming substations etc.) of the electricity high voltage transmission network in Quebec. This dataset is based on study on the production, transport and distribution of electricity in Quebec in the 2008-2013 period but has been updated in 2015 with new data. It represents the total of all the infrastrucutres that belong to Hydro-Quebec, which is the only transporter and distributor of electricity in the region. The inventory is based on all the transport lines and substations of the company. In 2014, the network, that includes the high voltage, counts 34187km of lines and 530 transforming substations divided in four classes: two transforming from very high voltage (735 kV-315kV) and two transforming to medium voltage (315 kV- 25kV). Lifetime is assumed to be between 75 and 50 years depending on the infrastructure and the material (50 years for transforming substations and 75 yearsfor poles).</text>
+          <text xml:lang="en" index="2">[This dataset was already contained in the ecoinvent database version 2. It was not individually updated during the transfer to ecoinvent version 3. Life Cycle Impact Assessment results may still have changed, as they are affected by changes in the supply chain, i.e. in other datasets. This dataset was generated following the ecoinvent quality guidelines for version 2. It may have been subject to central changes described in the ecoinvent version 3 change report (http://www.ecoinvent.org/database/ecoinvent-version-3/reports-of-changes/), and the results of the central updates were reviewed extensively. The changes added e.g. consistent water flows and other information throughout the database. The documentation of this dataset can be found in the ecoinvent reports of version 2, which are still available via the ecoinvent website. The change report linked above covers all central changes that were made during the conversion process.]</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="d5e3f426-90f3-4336-80eb-808d14161792">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">electricity/distribution</classificationValue>
+      </classification>
+      <classification classificationId="c3954a05-0098-4c4c-8604-a4ac6ea2323f">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">4220a: Construction of utility projects for electricity production, except for liquid fuels</classificationValue>
+      </classification>
+      <geography geographyId="868a66d1-7428-4ba2-9125-253b07afc119">
+        <shortname xml:lang="en">CA-QC</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Data collected for Quebec</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="1">The transmission network includes four types of substation depending on their transformation capacity and their technology level (current, modern).
+Definition of the voltage levels (according to Hydro-Quebec): 
+ - High voltage level above 35 kV (large scale industry)
+ - Medium voltage level nominal voltage between phases is 750 V- 34.5 kV (medium to small scale industry, service sector
+ - Low voltage level below 750 V (Households)</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="1983-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Operation data were collected for the 2008-2013 period. New data on total length and number of transofrming substations have been collected in 2015</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="7e0a5114-52c8-456c-8ce7-6f74bda2c6ea" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="002551-62-4" amount="0.153325646395583" isCalculatedAmount="true" mathematicalRelation="sf6/(total_length_network)" intermediateExchangeId="ab5dcfa8-e8f9-4923-84d4-51b25a898fa1" activityLinkId="d58cb949-5671-4201-befe-6f5c73f1a8db">
+        <name xml:lang="en">sulfur hexafluoride, liquid</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.153325646395583" mu="-1.875" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="SF6" amount="5250" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="5250" mu="8.566" variance="6" varianceWithPedigreeUncertainty="6.004" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of SF6 in the network in transformers</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="a611a303-a730-4721-8385-b0fa926ece41">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">342: Basic inorganic chemicals n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="51fa2b7c-195c-4853-b338-40158726074e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="waste_PVC" casNumber="9002-86-2" amount="-11.1562660805929" isCalculatedAmount="true" mathematicalRelation="(PVC)*-1" intermediateExchangeId="9219c94a-7a25-4a4c-b25d-c096fdd50d47" activityLinkId="96a291af-d207-421b-b586-cbec669238c1" productionVolumeAmount="5093.33333333335" productionVolumeMathematicalRelation="waste_PVC* apv_RP/ amount_RP">
+        <name xml:lang="en">waste polyvinylchloride</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated value. It is assumed that the same quantity that enter is produced as a waste</comment>
+        <comment>EcoSpold01Location=CH</comment>
+        <uncertainty>
+          <lognormal meanValue="-11.1562660805929" mu="2.412" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="waste_PVC_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.002" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Tab A.1, ecoinvent v2.2 report 13_I</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.998" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-water mass</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.00200400801603206" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The waste contains 1kg polyvinylchloride</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.440881763527054" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C content in 1 kg DM was calculated using data in Tab A.1, ecoinvent v2.2 report 13_I</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.440881763527054" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.44" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from the production volume of transmission network, electricity, high voltage in proportion to the respective output amounts.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="5093.33333333335" mu="6.11" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="37656c28-6848-40c4-972d-3dd381c93d72" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="waste_oil" amount="-3562.99597338306" isCalculatedAmount="true" mathematicalRelation="(oil)*-1" intermediateExchangeId="1b30b018-ac39-41f4-a9e0-92057eef8bb8" activityLinkId="efed3334-c62a-41af-852c-832fefda7638" productionVolumeAmount="1626666.66666667" productionVolumeMathematicalRelation="(apv_RP *  waste_oil / amount_RP)">
+        <name xml:lang="en">waste mineral oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated value. It is assumed that the same quantity that enter is produced as a waste</comment>
+        <uncertainty>
+          <lognormal meanValue="-3562.99597338306" mu="8.178" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="waste_oil_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.111111111111111" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.864444444444444" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.6, ecoinvent v2.2 report 13_I.  C content has been calculated after data in the tables, and then referred to 1 kg DM</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.864444444444444" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.778" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="1626666.66666667" mu="6.11" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="aad0cfc0-8fe7-43a9-8635-f9edcf34f52e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="waste_wood" amount="-22.0983630043157" isCalculatedAmount="true" mathematicalRelation="(+wood*wood_WM)*-1" intermediateExchangeId="7ef961a9-b8c2-425f-8b79-9ad184c86c00" activityLinkId="87eb2405-4665-4b5f-a8e4-f5e9f6a8ab9b" productionVolumeAmount="10088.8888888889" productionVolumeMathematicalRelation="waste_wood* apv_RP/ amount_RP">
+        <name xml:lang="en">waste wood pole, chrome preserved</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated value. It is assumed that the same quantity that enter is produced as a waste</comment>
+        <uncertainty>
+          <lognormal meanValue="-22.0983630043157" mu="3.096" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="waste_wood_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.8" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.483675937122128" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.25" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.2" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.483675937122128" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.386940749697702" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="10088.8888888889" mu="6.11" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="c386aae3-b404-4ba8-a116-a9559af1c085">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">3928: Sawdust and wood waste and scrap</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a21291b8-cf6f-449d-84b8-4f68d95eeb38" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="PVC" casNumber="9002-86-2" amount="11.1562660805929" isCalculatedAmount="true" mathematicalRelation=" PVC_amount1/(total_length_network)" intermediateExchangeId="e69cca3a-6e2a-4638-b9e7-09927dcf1c95" activityLinkId="30453a38-dfcd-4826-bef6-29b7c376f0a8">
+        <name xml:lang="en">polyvinylchloride, suspension polymerised</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment>EcoSpold01Location=RER</comment>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="11.1562660805929" mu="2.412" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.387096774193548" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Monomer is vynyl chloride, C2H3Cl (ecoinvent v2.2 report 11_II). MW=62 g/mol</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="PVC_amount1" amount="382000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="382000" mu="12.85" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of PVC in the network used in transformers construction</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.387096774193548" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.387096774193548" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="3c2df4da-8b7f-4905-9beb-a4e60d221479">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34730: Polymers of vinyl chloride or other halogenated olefins, in primary forms</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7e49487c-8eb3-48ad-b64d-a6da909fc0dc" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="scrap_copper" casNumber="7440-50-8" amount="-3037.30804288391" isCalculatedAmount="true" mathematicalRelation="(copper)*-1" intermediateExchangeId="adb8247d-8bbd-45aa-b111-289d0e5e2307" activityLinkId="b60c8821-e728-4dde-890f-39c15729b454" productionVolumeAmount="1386666.66666667" productionVolumeMathematicalRelation="scrap_copper* apv_RP/ amount_RP">
+        <name xml:lang="en">scrap copper</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated value. It is assumed that the same quantity that enter is produced as a waste</comment>
+        <uncertainty>
+          <lognormal meanValue="-3037.30804288391" mu="8.019" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en"> ecoinvent v2.2 report 13_I</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en"> ecoinvent v2.2 report 13_I</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="scrap_copper_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="1386666.66666667" mu="6.11" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="9f56efac-5ec3-4a0f-a505-78dd6324fdc9">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39361: Waste and scrap of copper</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c0eeb4f5-757e-46ee-867e-c9345b1087f1" unitId="ae252091-811b-461b-8e89-8f3075639eb1" variableName="amount_RP" amount="1" intermediateExchangeId="1e62439e-fa8d-4049-9460-e0c155d2ddbe" productionVolumeAmount="455.826666666667" productionVolumeVariableName="apv_RP" productionVolumeMathematicalRelation="total_length_network/lifetime">
+        <name xml:lang="en">transmission network, electricity, high voltage</name>
+        <unitName xml:lang="en">km</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" variableName="lifetime" amount="75" isDefiningValue="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+          <uncertainty>
+            <lognormal meanValue="75" mu="4.317" variance="0.0006" varianceWithPedigreeUncertainty="0.0106" />
+            <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">LIterature value. Based on expert estimations from Hydro-Quebec</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="4769700" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">The production volume of this product is small compared to other products supplied by the activities within the same ISIC 3 category. Calculated from Aluminium  consumption. According to activity '_80 Infrastructure, excluding buildings, EU27' in the EU &amp; DK IO database (Simapro, (0.0000404 (Al, after first processing) + 0.000615 (Al basic, virgin)) kg Al per EURO.. Ecoinvent: 3150 kg Al per km (dataset 'transmission network construction, electricity, high voltage').</comment>
+        </property>
+        <property propertyId="a0ec6973-5c70-4c84-805b-fbd057e27ee1" variableName="total_length_network" amount="34187" isDefiningValue="false" unitId="ae252091-811b-461b-8e89-8f3075639eb1">
+          <name xml:lang="en">total length of network</name>
+          <unitName xml:lang="en">km</unitName>
+          <uncertainty>
+            <lognormal meanValue="34187" mu="10.44" variance="0.0006" varianceWithPedigreeUncertainty="0.0026" />
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Collected value from Hydro-Québec, 2015</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" variableName="amount_RP_true_value" amount="4769700" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated value. Total amount of kilometres divided by lifetime</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="455.826666666667" mu="6.11" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="424ee6a0-4dc6-4d7a-9873-3f8ff2a1f128">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53252: Local cables and related works</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5610c3e3-df8e-48e7-9297-f0c85f81ff23" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="wood" amount="0.0288867490252492" isCalculatedAmount="true" mathematicalRelation="lifetime/wood_lifetime* wood_amount1/(total_length_network*wood_WM)" intermediateExchangeId="e76d8fdf-fbea-4ae3-85d6-ea1e6d5c21c5" activityLinkId="c6a3a10f-f67a-412e-accc-5effe0f48784">
+        <name xml:lang="en">sawlog and veneer log, softwood, debarked, measured as solid wood</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network. Lifetime of wood has been taken into account in the calculation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0288867490252492" mu="-3.544" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="315" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="450" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="wood_amount1" amount="454000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="454000" mu="13.03" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of wood in the network. Pylons and constrcution of substations.
+</comment>
+        </property>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" variableName="wood_lifetime" amount="45" isDefiningValue="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+          <uncertainty>
+            <lognormal meanValue="45" mu="3.807" variance="0.0006" varianceWithPedigreeUncertainty="0.0426" />
+            <pedigreeMatrix reliability="5" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimated value. Wood poles lifetime is estimated at 40 years</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.7" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" variableName="wood_WM" amount="765" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="222.3" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c90def53-ce7d-44e2-b3ae-a506def63b84">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">031: Wood in the rough</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6b21190c-87e4-4dcc-9e28-0910f0c691ef" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="steel" amount="5344.49396007459" isCalculatedAmount="true" mathematicalRelation=" steel_amount1/(total_length_network)" intermediateExchangeId="a2fd8c95-f2db-436a-9f24-f33b17f7975b" activityLinkId="606c1d91-43c3-4866-ae33-f3e7c3ed2bed">
+        <name xml:lang="en">steel, unalloyed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <lognormal meanValue="5344.49396007459" mu="8.584" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="steel_amount1" amount="183000000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="183000000" mu="19.02" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of steel in the network used in pylons and construction of transformers</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0025" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Unalloyed steels or carbon steels are those in which the level of an individual element in no case reaches or exceeds the limiting concentration given in Tab. 3.1 ecoinvent v2.2 report 10_partII. Assumed to have a C content of 0.25%</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0025" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0025" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="aea6633c-785f-4173-9885-b7d64a5cabb4">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41121: Non-alloy steel in ingots or other primary forms, and semi-finished products of non-alloy steel</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2436cb4c-7f07-46de-986f-45142b4d759a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="gravel" amount="1945045.34284682" isCalculatedAmount="true" mathematicalRelation=" gravel_amount1/(total_length_network)" intermediateExchangeId="37eceabd-b33f-4757-a4b9-5c51dee1710d" activityLinkId="c5d2dfe1-9fb0-4bf0-bf32-3731ce33f747">
+        <name xml:lang="en">gravel, crushed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="1945045.34284682" mu="14.48" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="gravel_amount1" amount="66600000000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="66600000000" mu="24.92" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of gravel in the network used in construction of substations.
+</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="21b3be95-02c7-44c6-a096-be16e4643979">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15320: Pebbles, gravel, broken or crushed stone, macadam; granules, chippings and powder of stone</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="43bcc7c8-663a-41f6-84dd-7b63892f3ed3" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="concrete" amount="39.1345459371582" isCalculatedAmount="true" mathematicalRelation=" concrete_amount1/(total_length_network)" intermediateExchangeId="eee95138-58c8-4172-9b1f-754ba074325d" activityLinkId="fa94db49-8099-424b-be33-64c115d1bdf5">
+        <name xml:lang="en">concrete, normal</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="39.1345459371582" mu="3.667" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="concrete_amount1" amount="1340000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="1340000" mu="14.11" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of concrete in the network. Pylons and substations</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="190" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Tab 6.2, ecoinvent v2.2 report 7, part III</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">cement and gravel. Tab 6.2, ecoinvent v2.2 report 7, part III</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="2190" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-water mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="2380" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Tab 6.2, ecoinvent v2.2 report 7, part III</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0867579908675799" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">cement and gravel. Tab 6.2, ecoinvent v2.2 report 7, part III</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="52d7f0ed-205b-4d90-aa01-19d0c3be97fb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">37540: Tiles, flagstones, bricks and similar articles, of cement, concrete or artificial stone</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dce5a849-5d93-43e4-a181-e3ca566c0979" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="aluminium" amount="8703.05573826353" isCalculatedAmount="true" mathematicalRelation=" aluminium_amount1/(total_length_network)" intermediateExchangeId="fef44ccb-917e-4c8d-bb35-a1898827b659" activityLinkId="92fcabfe-454d-4c18-a5b4-3987126565c9">
+        <name xml:lang="en">aluminium, wrought alloy</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <lognormal meanValue="8703.05573826353" mu="9.071" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="aluminium_amount1" amount="298000000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="298000000" mu="19.51" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of aluminium in the network. Used in transforming substations (transformers and cables)</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Aluminium</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Aluminium</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="dc99ca2f-4960-4f4c-8dfa-2df3c5392d27">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">4153: Semi-finished products of aluminium or aluminium alloys</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b5e3c26b-b465-4112-9bd2-a87b7eda5a2b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="scrap_steel" casNumber="7439-89-6" amount="-40098.3071430733" isCalculatedAmount="true" mathematicalRelation="(steel+steel_low)*-1" intermediateExchangeId="d1a4a803-c563-4740-84cf-3c21a488bd74" activityLinkId="8fc9111c-40fa-42f4-b82a-553df7b4c3d1" productionVolumeAmount="18306666.6666667" productionVolumeMathematicalRelation="scrap_steel* apv_RP/ amount_RP">
+        <name xml:lang="en">scrap steel</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated value. It is assumed that the same quantity that enter is produced as a waste</comment>
+        <uncertainty>
+          <lognormal meanValue="-40098.3071430733" mu="10.6" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.3, ecoinvent v2.2 report 13_I</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="scrap_steel_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.3, ecoinvent v2.2 report 13_I</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="18306666.6666667" mu="6.11" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="49a5cb0e-a492-40f3-84b9-6d06674709da">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39310: Slag, dross, scalings and other waste from the manufacture of iron or steel</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="aedb5d80-1924-4b8c-a45c-eadb37999b4f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.133601214241777" isCalculatedAmount="true" mathematicalRelation=" wood_preservPCP_amount1* lifetime/wood_lifetime* wood_amount1/(total_length_network*wood_WM)" intermediateExchangeId="7e7e4aea-bbc2-4345-85c4-176e76d076ce" activityLinkId="c3d005af-dcb7-4ea5-a4a7-aa44bde7afa3">
+        <name xml:lang="en">wood preservation, vacuum pressure method, organic salts, Cr-free, outdoor use, ground contact</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network. Lifetime of wood has been taken into account in the calculation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.133601214241777" mu="-2.013" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="wood_preservPCP_amount1" amount="4.625" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" sourceId="e12edb6e-1711-4a6f-abc9-04d648716019" sourceYear="2011" sourceFirstAuthor="Christopher A. Bolin">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Literature value. Quantity per m3 of wood.
+Source: C.A. Bolin, S.T. Smith / Renewable and Sustainable Energy Reviews 15 (2011) 2475-2486
+</comment>
+        </property>
+        <classification classificationId="31a9cae0-55be-4806-93f1-0487c8bab3c4">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">54730: Painting services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c358d887-8349-4199-98a2-aed495068e37" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="asphalt" amount="876.1465508319" isCalculatedAmount="true" mathematicalRelation=" asphalt_amount1/(total_length_network)" intermediateExchangeId="f2c644de-0c8d-4194-83fb-02e1e83d04ab" activityLinkId="3819cfd2-caf5-4c1a-95a3-bde990d40257">
+        <name xml:lang="en">mastic asphalt</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="876.1465508319" mu="6.776" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="asphalt_amount1" amount="30000000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="30000000" mu="17.22" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of asphalt in the network used in construction of substations
+</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0968868571428571" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0968868571428571" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0968868571428571" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="1f16a35e-c22a-4748-bc5e-9c7b88cd9091">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">37930: Articles of asphalt or of similar material</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="83e730a7-d578-4471-9985-420606e5e6e5" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="copper" amount="3037.30804288391" isCalculatedAmount="true" mathematicalRelation=" copper_amount1/(total_length_network)" intermediateExchangeId="fbb039f7-f9cc-46d2-b631-313ddb125c1a" activityLinkId="3f3fc860-2163-4795-9c04-139324ef6395">
+        <name xml:lang="en">copper</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <lognormal meanValue="3037.30804288391" mu="8.019" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Cu</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="copper_amount1" amount="104000000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="104000000" mu="18.46" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of copper in the network. Used in cables and substations (transformers and cables)</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Cu</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="bd5e293b-6d66-47a9-afb6-7fb659e2d6a0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41413: Refined copper and copper alloys, unwrought; master alloys of copper</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="becd9083-a2b6-4489-ad4a-2fbfc4cdc1cd" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="inert_waste" amount="-2040156.89191662" isCalculatedAmount="true" mathematicalRelation="(asphalt+concrete*2400+gravel+ceramics)*-1" intermediateExchangeId="240c1a3c-1aba-4528-afc3-3f27f56583be" activityLinkId="b98114c3-9b55-4bf6-a6d9-0c61feacbd62" productionVolumeAmount="931422666.666667" productionVolumeMathematicalRelation="inert_waste* apv_RP/ amount_RP">
+        <name xml:lang="en">inert waste, for final disposal</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated value. It is assumed that the same quantity that enter is produced as a waste</comment>
+        <uncertainty>
+          <lognormal meanValue="-2040156.89191662" mu="14.53" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="inert_waste_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.005" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.995" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-water mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0050251256281407" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="931422666.666667" mu="6.11" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="91f26c38-f56f-4179-9862-3c94bcfb6677">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39: Wastes or scraps</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="34ccff3f-23c6-4250-a01f-67710efc83ac" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0.119521576073685" isCalculatedAmount="true" mathematicalRelation="building/(total_length_network)" intermediateExchangeId="7aaf6060-f9b7-43bb-8aee-06aecf386798" activityLinkId="49cb8a19-9aea-4fb1-a566-ef88a38532cf">
+        <name xml:lang="en">building, hall, steel construction</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="0.119521576073685" mu="-2.124" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="building" amount="4092.52" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="4092.52" mu="8.317" variance="0.3" varianceWithPedigreeUncertainty="0.302" />
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. One operation center for the network</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="b01c4db8-8617-4fe1-ad51-e3f3bb5576d3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">531: Buildings</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b582da5f-4464-43e9-bb9c-8a750d08db41" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="scrap_alu" casNumber="7429-90-5" amount="-8703.05573826353" isCalculatedAmount="true" mathematicalRelation="(aluminium)*-1" intermediateExchangeId="618bf4eb-bee5-4d38-8e4f-78cfebf779be" activityLinkId="4cb9d50f-e988-4a06-9878-fda620a5a457" productionVolumeAmount="3973333.33333333" productionVolumeMathematicalRelation="scrap_alu* apv_RP/ amount_RP">
+        <name xml:lang="en">scrap aluminium</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated value. It is assumed that the same quantity that enter is produced as a waste</comment>
+        <uncertainty>
+          <lognormal meanValue="-8703.05573826353" mu="9.071" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="scrap_alu_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.3, ecoinvent v2.2 report 13_I</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.3, ecoinvent v2.2 report 13_I</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="3973333.33333333" mu="6.11" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="db7ba319-6226-4a56-9847-64ebae3f01e3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39363: Waste and scrap of aluminium</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f6d7b28b-5f55-4060-9a76-59516ad8d98c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="ceramics" amount="312.49226979671" isCalculatedAmount="true" mathematicalRelation=" ceramic_amount/(total_length_network)" intermediateExchangeId="1d53b5b2-8bd1-4936-8a5b-a130bf812db0" activityLinkId="72fc620a-876e-49e0-a101-581518fb2d27">
+        <name xml:lang="en">sanitary ceramics</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network.</comment>
+        <uncertainty>
+          <lognormal meanValue="312.49226979671" mu="5.745" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="ceramic_amount" amount="10700000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="10700000" mu="16.19" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of ceramics in the network. Used in transformers</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="92a2349a-8057-43b8-a613-c3bb82d93df2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">373: Refractory products and structural non-refractory clay products</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8c68a9f4-25de-4c8d-b00c-24c0b3ad54fa" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="177419.676543459" isCalculatedAmount="true" mathematicalRelation="( excavation*mult_factor/(total_length_network))" intermediateExchangeId="0c826417-e870-4c43-95c4-b38ff2ff47d2" activityLinkId="e77f6536-2aa1-451e-b201-00dfbca60782">
+        <name xml:lang="en">excavation, hydraulic digger</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment>EcoSpold01Location=RER</comment>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="177419.676543459" mu="12.09" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="0ce1f856-c01b-4276-8f07-3def6f240dd1" variableName="mult_factor" amount="1.5" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">multiplicative factor</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <uncertainty>
+            <lognormal meanValue="1.5" mu="0.4055" variance="0.0006" varianceWithPedigreeUncertainty="0.2106" />
+            <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimated value. Factor used to extrapolate operations of dismantling. It is assumed that half of the total volume needed for the construction is needed in the dismantling.</comment>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="excavation" amount="4050000000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="4050000000" mu="22.12" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured/Estimated value. Excavation is used to represent construction and dismantling operations for both the transforming substations and the lines. It is assumed that half of the total volume needed for the construction is needed in the dismantling.</comment>
+        </property>
+        <classification classificationId="f358a386-57e5-4cc7-958a-766b8e986f73">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">54330: Excavating and earthmoving services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f69c7c78-7865-45ac-bedd-fe4e2edba98d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="steel_low" amount="34753.8131829987" isCalculatedAmount="true" mathematicalRelation=" steel_low_amount1/(total_length_network)" intermediateExchangeId="8cb650d5-8a48-4719-81b1-2080b3b4387f" activityLinkId="6be90b10-266f-4c31-844c-c4f75f0f93a5">
+        <name xml:lang="en">steel, low-alloyed, hot rolled</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network</comment>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <lognormal meanValue="34753.8131829987" mu="10.46" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="steel_low_amount1" amount="1190000000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="1190000000" mu="20.9" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of reinforcing steel in the network used in construction of substations</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.005" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Low alloyed steel composition given in Tab. 3.2 ecoinvent v2.2 report 10_partII. Steel assumed to have a C content of 0.5%</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Low alloyed steel composition given in Tab. 3.2 ecoinvent v2.2 report 10_partII.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.005" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.005" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e2786b2b-9e97-4ba9-908a-8d8e11f1fc5d">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">4121: Flat-rolled products of steel, not further worked than hot-rolled</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="486f8a45-de85-4854-8a8e-3e652194d1d5" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="oil" amount="3562.99597338306" isCalculatedAmount="true" mathematicalRelation=" oil_amount/(total_length_network)" intermediateExchangeId="ea75b944-c676-4a13-85b8-2bea98f765a4" activityLinkId="892b672d-8bcb-4ca6-b1bb-b83f3a6e338d">
+        <name xml:lang="en">lubricating oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Total amount divided by the total number of kilometres in the network.</comment>
+        <uncertainty>
+          <lognormal meanValue="3562.99597338306" mu="8.178" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Lubricating oil is produced from diesel. </comment>
+        </property>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="oil_amount" amount="122000000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="122000000" mu="18.62" variance="0.0006" varianceWithPedigreeUncertainty="0.0046" />
+            <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total amount of oil in the network. Used in transformers, circuit breakers and regulators. It is also included here the amount of oil used to treat the PCP poles (30 kg/pole)</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.75" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Lubricating oil is produced from diesel. C-content/dry mass of fats and oils considered 75%, from: ecoinvent v2.2 report, n 15a, pg 40</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.75" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.75" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="10ff9f76-486c-4c81-965e-4507d9adef0e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">33380: Lubricants</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0ba4b879-1f83-4836-9d4e-b801222d3671" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" productionVolumeAmount="36764.7382052387">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_el_prod_MSWI_true_value_relation" amount="3.6" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_el_prod_MSWI_exergy" amount="3.6" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_el_prod_MSWI_price_EUR2005" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="10.3433855130573" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5edbb913-7824-4fff-bd33-96c9f35dc3d8" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="45fbbc41-7ae9-46cc-bb31-abfa11e69de0" productionVolumeAmount="257119.032829332">
+        <name xml:lang="en">heat, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">WTE</synonym>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_th_prod_MSWI_exergy" amount="0.1842" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_th_prod_MSWI_true_value_relation" amount="0.1842" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_th_prod_MSWI_price_EUR2005" amount="0.0106" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. 10.6 EUR/GJ i s the price of district heat. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="3.7012854916699" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b9211c9d-d285-4a65-b5e7-268b7e0b854d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" sourceId="cdf01d7b-b4d1-4c52-8aa7-404bf945a6b2" sourceYear="1999" sourceFirstAuthor="Rentz O." intermediateExchangeId="fbb039f7-f9cc-46d2-b631-313ddb125c1a" productionVolumeAmount="328142.493638678">
+        <name xml:lang="en">copper</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature value. Copper uses: Before end-use copper is manufactured into semi fabricated products, such as shapes and ingots (known as 'semis'). These manufacturing processes are subdivided into hot working, cold working and, if necessary, process annealing. Few of the semis are ready for use as such. They more typically travel to first-stage manufacturers, who make metal rods, wire, and casting, and then to component manufacturers who produce such things as motors, valves, and insulated cables The components in turn are incorporated by final-stage manufacturers into a variety of finished products - automobiles, commercial buildings, residential housing, and so forth. These uses account for about 79% of the world-wide consumption of copper.</comment>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Cu</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="5.52" isDefiningValue="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Literature value (http://www.economist.com/news/business/21576714-mining-industry-has-enriched-chile-its-future-precarious-copper-solution). Average price between 20015 and 2013.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Cu</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="3973.76173300997" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="bd5e293b-6d66-47a9-afb6-7fb659e2d6a0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41413: Refined copper and copper alloys, unwrought; master alloys of copper</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="38eb76ab-bc3e-489c-bff5-95d88ed07b5c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" isCalculatedAmount="true" intermediateExchangeId="b7e3b1ef-098a-48f1-b686-8baa82cff1d3" productionVolumeAmount="0.00026045565714096">
+        <name xml:lang="en">zinc concentrate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value from the knowledge of the properties of both products.</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="ByP_price_EUR2005" amount="0.38" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Zinc content in concentrate 53%. Concentrate price per kg Zn 86.5% of refined Zn price (13.5% treatment charges according to CHR Metals Limited 2005: Dynamic cost curves. http://www.minecost.com/dynamic.pdf). 2004 zinc price from USGS (2007) Mineral commodity summaries 2007. &lt;http://minerals.usgs.gov/minerals/pubs/mcs/2007/mcs2007.pdf&gt; [Accessed 25 May 2010]</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="33f96fe7-39da-47ca-837f-f2c311681d1b" variableName="zinc_C_zinc_concentrate" amount="0.53" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">zinc content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Zinc content on a dry matter basis. Value taken from teh "zinc mine operation" /GLO dataset. </comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="DM_zinc_concentrate" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="2.17128915333821E-07" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="ffd93ac8-701d-4a0a-a6b5-9ef48fc7b621">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">14290: Other non-ferrous metal ores and concentrates (other than uranium or thorium ores and concentrates)</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="464a317e-69ab-468a-8796-5ec3d9dd57b5" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" sourceId="97a5dfe8-7bf3-47c9-b404-6dcd17732603" sourceYear="2008" sourceFirstAuthor="European Aluminium Association" intermediateExchangeId="d7432632-40dc-4af8-8125-cb70dd9742c5" productionVolumeAmount="1393.17114308064">
+        <name xml:lang="en">iron scrap, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="ironScrapAmount_price_EUR2005" amount="0.149" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: estimated at 85% of sorted scrap</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.455397885860888" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="49a5cb0e-a492-40f3-84b9-6d06674709da">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39310: Slag, dross, scalings and other waste from the manufacture of iron or steel</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c43b726b-102c-4781-924a-6b80ba1d3ba4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="1344-28-1" amount="0" sourceId="97a5dfe8-7bf3-47c9-b404-6dcd17732603" sourceYear="2008" sourceFirstAuthor="European Aluminium Association" intermediateExchangeId="96f36f31-8f6a-48f8-921f-1d781b7a545f" productionVolumeAmount="87667.000014064">
+        <name xml:lang="en">aluminium oxide, non-metallurgical</name>
+        <unitName xml:lang="en">kg</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" variableName="C_content_non_fossil" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="Al2O3Amount_price_EUR2005" amount="0.28" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">From UN trade database. http://data.un.org/ Import data from the largest economies of the world are used (Brazil, India, USA, China, Japan and EU-27).</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="DM" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" variableName="water_content" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" variableName="WM" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" variableName="WWM" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" variableName="C_content_fossil" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="53.8510837539224" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="0b7946e8-7395-49e5-b9b2-730edabae135">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41432: Alumina (aluminium oxide), except artificial corundum</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c20eaf08-4837-4090-94f0-36447d58d183" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" sourceId="97a5dfe8-7bf3-47c9-b404-6dcd17732603" sourceYear="2008" sourceFirstAuthor="European Aluminium Association" intermediateExchangeId="a430f433-cdc8-45be-ace2-32a634634d3b" productionVolumeAmount="819492.114417181">
+        <name xml:lang="en">aluminium, cast alloy</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Aluminium</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="castAlloyAmount_price_EUR2005" amount="1.3" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Source: London Metal Exchange, Aluminium alloy price for 2005</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Aluminium</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="2337.15977288663" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f77d787c-7bec-48ba-a54a-b9c169d656c3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41431: Unwrought aluminium</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d094d229-01b0-4965-b075-f57be9c1c376" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" sourceId="97a5dfe8-7bf3-47c9-b404-6dcd17732603" sourceYear="2008" sourceFirstAuthor="European Aluminium Association" intermediateExchangeId="fef44ccb-917e-4c8d-bb35-a1898827b659" productionVolumeAmount="358757.962544576">
+        <name xml:lang="en">aluminium, wrought alloy</name>
+        <unitName xml:lang="en">kg</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="secondaryAluminiumOutput_price_EUR2005" amount="1.44" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated based on literature values and expert judgement. Aluminium ccast alloys are about 90% of the price of aluminium wrought alloys.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="1133.35068753661" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="dc99ca2f-4960-4f4c-8dfa-2df3c5392d27">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">4153: Semi-finished products of aluminium or aluminium alloys</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="bd0d6caf-6d8c-49dd-b7aa-0ed62880111c" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="297.889827282846" isCalculatedAmount="true" mathematicalRelation="transf_industrial/(total_length_network)" elementaryExchangeId="4624deff-2016-41d4-b2bf-3db8dab88779" formula="CORINE 121a">
+        <name xml:lang="en">Transformation, to industrial area</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Calculated value. Total transformation for transforming substations divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="297.889827282846" mu="5.697" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="transf_industrial" amount="10200000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="10200000" mu="16.14" variance="0.12" varianceWithPedigreeUncertainty="0.1226" />
+            <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Measured value. Total transformation for transforming substations </comment>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c66f892c-8a72-48b2-ba85-5cfc779ef2dd" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="5616154.1499919" isCalculatedAmount="true" mathematicalRelation=" transf_grassland*lifetime/(total_length_network)" elementaryExchangeId="2b8a0f87-bd2a-4b10-8dd9-714487f59fc9">
+        <name xml:lang="en">Occupation, grassland, natural (non-use)</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Calculated value.  Total occupation for high voltage lines divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="5616154.1499919" mu="15.54" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="dc544765-b8cc-475f-b345-253a6ef79246" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="75179.9451605082" isCalculatedAmount="true" mathematicalRelation="( transf_industrial+ transf_grassland)/(total_length_network)" elementaryExchangeId="9d136389-8670-45ae-ad1d-a06848a1fd1d">
+        <name xml:lang="en">Transformation, from forest, primary (non-use)</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Calculated value. Total transformation for transforming substations and high voltage lines divided by the total number of kilometres in the network. It is assumed a width of 75m for high voltage lines.</comment>
+        <uncertainty>
+          <lognormal meanValue="75179.9451605082" mu="11.23" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="transf_forest" amount="2574225000" isDefiningValue="false" mathematicalRelation="transf_industrial+ transf_grassland" isCalculatedAmount="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="2574225000" mu="21.67" variance="0" varianceWithPedigreeUncertainty="0.002" />
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Calculated value. Total transformation for transforming substations and high voltage lines.</comment>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9adaa4b6-c90d-4356-b8b7-4e92cdd59b84" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="74882.0553332254" isCalculatedAmount="true" mathematicalRelation=" transf_grassland/(total_length_network)" elementaryExchangeId="fe17e7c1-9574-4880-b7e6-ec09c2e3ae5d">
+        <name xml:lang="en">Transformation, to grassland, natural (non-use)</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Calculated value. Total transformation for high voltage lines divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="74882.0553332254" mu="11.22" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <property propertyId="cc822f1f-6251-4250-b2be-21fa2f03eef6" variableName="transf_grassland" amount="2564025000" isDefiningValue="false" mathematicalRelation="total_length_network*1000*75" isCalculatedAmount="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">amount 1 of flow in kg</name>
+          <unitName xml:lang="en">kg</unitName>
+          <uncertainty>
+            <lognormal meanValue="2564025000" mu="21.66" variance="0" varianceWithPedigreeUncertainty="0.002" />
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en"></comment>
+          </uncertainty>
+          <comment xml:lang="en">Estimated/calculated value. Total transformation for high voltage lines. It is assumed a width of 75m.</comment>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0d024cf9-6876-44bb-b42f-9aa04a7b56c5" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="22341.7370462134" isCalculatedAmount="true" mathematicalRelation=" transf_industrial*lifetime/(total_length_network)" elementaryExchangeId="fe9c3a98-a6d2-452d-a9a4-a13e64f1b95b">
+        <name xml:lang="en">Occupation, industrial area</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Calculated value. Total occupation for transforming substations divided by the total number of kilometres in the network</comment>
+        <uncertainty>
+          <lognormal meanValue="22341.7370462134" mu="10.01" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <synonym />
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness percent="100" systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Data collection from the company including all its activities</samplingProcedure>
+        <extrapolations xml:lang="en">Some data are extrapolated from GLO dataset. Uncertainty has been adjusted accordingly</extrapolations>
+      </representativeness>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2016-04-06" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2016-04-06" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="9">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='2953,22715307069', Output='2781,29347412759'
+ - Input &gt; output by 171,933678943098 kg (6,18% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='6,43163867471696', Output='8,564225210497'
+ - Input &lt; output by 2,13258653578004 kg (24,9% of output)
+
+Property 'water in wet mass':
+ - Input='7456,38893811833', Output='10578,1612113766'
+ - Input &lt; output by 3121,77227325832 kg (29,51% of output)
+
+Property 'dry mass':
+ - Input='2090652,36341414', Output='2088314,36128743'
+ - Input &gt; output by 2338,00212671002 kg (0,11% of output)
+
+Property 'price':
+ - Input='0', Output='4769697,89441563'
+ - Input &lt; output by 4769697,89441563 EUR2005 (100% of output)
+
+
+- Amount of property 'total length of network=34187' of exchange 'transmission network, electricity, high voltage' deviates from the default amount in the master file.
+Amount of property 'lifetime=75' of exchange 'transmission network, electricity, high voltage' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+
+- Specified amount (5625000) did not match amount calculated by uncertainty (5579588,00128704) at exchange 'Occupation, grassland, natural (non-use)'
+- Due to the use of the reference product property(s) 'lifetime', 'total length of network' by other exchanges this dataset will be subdivided by linking rule 3 (see Data Quality Guidelines for details) prior to the calculation of the database. If this is not intended, do not use the properties in question in mathematical relations of other exchanges.
+
+- The total water in wet mass of all input exchanges (7456,38893811833) and output exchanges (10578,1612113766) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, water content=0, dry mass=1, carbon content, fossil=0,864444444444444, water in wet mass=0,1, dry mass=0,9, water content=0,111111111111111, wet mass=1, carbon content, non-fossil=0, carbon content, non-fossil=0, water in wet mass=0,005, water content=0,0050251256281407, wet mass=1, carbon content, fossil=0, dry mass=0,995, water in wet mass=0,2, water content=0,25, dry mass=0,8, carbon content, non-fossil=0,483675937122128, wet mass=1, carbon content, fossil=0, water content=0,00200400801603206, carbon content, non-fossil=0, carbon content, fossil=0,440881763527054, dry mass=0,998, wet mass=1, water in wet mass=0,002, water content=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, fossil=0, dry mass=1, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, wet mass=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=0, dry mass=0, carbon content, fossil=0, wet mass=0, water in wet mass=0, carbon content, non-fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, water content=0, dry mass=1, carbon content, fossil=0,864444444444444, water in wet mass=0,1, dry mass=0,9, water content=0,111111111111111, wet mass=1, carbon content, non-fossil=0, carbon content, non-fossil=0, water in wet mass=0,005, water content=0,0050251256281407, wet mass=1, carbon content, fossil=0, dry mass=0,995, water in wet mass=0,2, water content=0,25, dry mass=0,8, carbon content, non-fossil=0,483675937122128, wet mass=1, carbon content, fossil=0, water content=0,00200400801603206, carbon content, non-fossil=0, carbon content, fossil=0,440881763527054, dry mass=0,998, wet mass=1, water in wet mass=0,002, water content=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, carbon content, fossil=0, dry mass=1, water content=0, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, wet mass=0, carbon content, non-fossil=0, water in wet mass=0, dry mass=0, dry mass=0, carbon content, fossil=0, wet mass=0, water in wet mass=0, carbon content, non-fossil=0
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="1bd1c9a0-1fba-4bb3-ac28-b30bbc2b2388" isActiveAuthor="true" personName="Pablo Tirado " personEmail="pablo.tirado-seco@polymtl.ca" />
+      <dataGeneratorAndPublication personId="1bd1c9a0-1fba-4bb3-ac28-b30bbc2b2388" personName="Pablo Tirado " personEmail="pablo.tirado-seco@polymtl.ca" dataPublishedIn="0" publishedSourceIdOverwrittenByChild="true" isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2016-03-29T10:16:39" lastEditTimestamp="2016-04-05T11:19:51" fileGenerator="EcoEditor 3.7.200.14330" fileTimestamp="2016-04-05T11:19:51" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

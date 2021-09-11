@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="4d0c6cc9-caf9-46e4-83db-30837430ea26" activityNameId="bbf6b9fe-a7b0-41da-9c71-14bb4bb4f821" parentActivityId="02a57bb4-b9da-4e6f-9fb9-4b6b64d87843" inheritanceDepth="-1" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">yarn production, cotton, ring spinning, for knitting</activityName>
+        <includedActivitiesStart xml:lang="en">The activity starts from opening of bales.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with spinning and winding after which yarn for knitted fabric is conditioned for packaging.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="3">Because there were
+not enough mills to maintain confidentiality for
+rotor or air-jet spinning, data for all spinning
+methods were rolled together into a production
+weighted average for a global average
+spinning process for woven fabrics.</text>
+          <text xml:lang="en" index="1">The activity begins with the opening of cotton bales and ends with the yarn for knitted fabric. It includes electricity use, heat use and the cotton fibres. No lubricating oil needed as the dataset is specific for cotton, which contains natural materials providing lubrication in spinning.</text>
+          <text xml:lang="en" index="2">Data collected from mostly vertically integrated mills on a global level. </text>
+        </generalComment>
+      </activity>
+      <classification classificationId="f3c8ba14-4559-46fb-ab73-45f0eee3ce28">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">131:Spinning, weaving and finishing of textiles</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+        <comment>
+          <text xml:lang="en" index="1">The data are based on primary data collected by cotton Inc.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="2">Once the yarn is received in packaged form, it is placed in creel to feed the knitting zone into the feeder. Upon setting the specific yarn as per the fabric requirement, machine is set as per specific design requirement and the machine processes yarn into loops culminating into production of fabric.</text>
+          <text xml:lang="en" index="1">Data set represents average technology.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2016-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true" />
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="f5a10ca2-6603-4fa3-9d6c-05e66a0af296" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="6.04998846836959" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="d949704e-3fcb-4452-9e55-5c3f528e72a0">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Value from industrial partner [Cotton Inc.]</comment>
+        <uncertainty>
+          <lognormal meanValue="6.04998846836959" mu="1.8" variance="0.0006" varianceWithPedigreeUncertainty="0.0021" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="2" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f3135eec-553b-401c-8634-f06cba753716" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="WY" amount="-0.269949485460557" intermediateExchangeId="8f102ac5-ccae-4018-9a67-abfa113aa2b9" activityLinkId="e214e3be-a060-40d5-9502-974810f44173" productionVolumeAmount="2024625000" productionVolumeMathematicalRelation="PVol*WY">
+        <name xml:lang="en">waste yarn and waste textile</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Short fibres which is partly sold.</comment>
+        <uncertainty>
+          <lognormal meanValue="-0.269949485460557" mu="-1.31" variance="0.0006" varianceWithPedigreeUncertainty="0.0021" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="2" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.44455" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.02083" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="WY_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.021273119070233" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.97917" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.44455" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.4352900235" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated based on production volume and waste fibre share.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="04733a43-68da-4887-9057-c8d9da785b20">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39214: Cotton waste, except garnetted stock</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c5ed51ee-ffa4-4f28-95dd-be92a39f6956" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.26999757931064" intermediateExchangeId="0818abb1-d7ce-4ac6-b6e1-2e7b51a1ea9e" activityLinkId="0c804a07-e16d-480e-b0cd-08abd7902c61">
+        <name xml:lang="en">fibre, cotton</name>
+        <unitName xml:lang="en">kg</unitName>
+        <uncertainty>
+          <lognormal meanValue="1.26999757931064" mu="0.239" variance="0.0006" varianceWithPedigreeUncertainty="0.0015" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="2" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.06" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0638297872340425" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.94" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.46" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.46" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.4324" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="71184766-841d-459e-80fb-6ffebbf3a926">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01921: Cotton, whether or not ginned</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f6c58be2-60e6-4755-a33f-e7beda8d3271" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="9.99998093945387E-06" intermediateExchangeId="d72638dc-71b8-4c4f-b5c7-72cbe6bdd145" activityLinkId="2d76192d-5875-45bf-9266-f374761dc154">
+        <name xml:lang="en">building, hall</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Proxy based on data for weaving in Bangladesh.</comment>
+        <uncertainty>
+          <lognormal meanValue="9.99998093945387E-06" mu="-11.51" variance="0.3" varianceWithPedigreeUncertainty="0.3494" />
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="2" geographicalCorrelation="4" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="b01c4db8-8617-4fe1-ad51-e3f3bb5576d3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">531: Buildings</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="459f5b0a-02fd-4220-9a24-649b7f1b4d4c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1" intermediateExchangeId="6c8d3210-303e-4897-b8c0-2258cb6552f2" productionVolumeAmount="7500000000" productionVolumeVariableName="PVol" productionVolumeMathematicalRelation="15E+9 *0.5">
+        <name xml:lang="en">yarn, cotton</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="2.265" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated value. Various souces report a value around 3 USD per kg of cotton yarn (YarnsandFibers.com, 2018. Pakistan textile exports hit by rise in prices, retrieved from: http://www.yarnsandfibers.com/news/news-tags/cotton-yarn-prices, accessed 1Feb2018; Alibaba.com, 2018. Retrieved from: https://www.alibaba.com/showroom/100%2525-cotton-yarn-price.html, accessed 1Feb2018). The price was checked also against the values reported from the Indian Ministry of Textile, Price Data for textile, Prices (Month End) for 2018 (retrieved from: http://texmin.nic.in/sites/default/files/monthend_jan2018_1.pdf, accessed 6March 2018).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.063829787" isDefiningValue="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.94" isDefiningValue="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.06" isDefiningValue="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.46" isDefiningValue="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.46" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.4324" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="2.265" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">The overall global yarn production (all technologies) is about 15 E+9 kg (The Fibre Year report 2017). It is assumed that about 50% is used for knitting.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="ea175061-076f-4328-bb0b-8425579771a3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">26360: Cotton yarn (other than sewing thread), containing 85% or more by weight of cotton</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0a2678a3-51e2-41c5-be9f-4e4aa63d3e80" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.2299938434436" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="2297d031-48e5-4a9f-9013-3f953d4f75e8">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">sum of electricity used for spinning machines. Electricity consumption for utilities are not included in this dataset</comment>
+        <uncertainty>
+          <lognormal meanValue="3.2299938434436" mu="1.172" variance="0.0006" varianceWithPedigreeUncertainty="0.0015" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="2" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c4880f4a-8f5f-4779-832d-924079091582" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="waste" amount="0" intermediateExchangeId="11b71553-cc51-438e-8cb5-0337836737ae" productionVolumeAmount="0" productionVolumeMathematicalRelation="">
+        <name xml:lang="en">waste textile, soiled</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">waste fibres</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="waste_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.333333333333333" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.570519480519481" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.25" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.75" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.570519480519481" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.427889610389611" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated based on production volume and waste fibre share.
+</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3954a226-4e68-47b1-8049-e2c3e669262c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-7.37333809293098E-07" intermediateExchangeId="11b71553-cc51-438e-8cb5-0337836737ae" activityLinkId="5a245a66-0dc5-4096-a6dc-393b49ee752c" productionVolumeAmount="375000" productionVolumeMathematicalRelation="">
+        <name xml:lang="en">waste textile, soiled</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">waste fibres</comment>
+        <uncertainty>
+          <lognormal meanValue="-7.37333809293098E-07" mu="-14.12" variance="0.0006" varianceWithPedigreeUncertainty="0.0021" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="2" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.333333333333333" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.570519480519481" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.25" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.75" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.570519480519481" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.427889610389611" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5304863c-8641-4ff3-a8a1-869b10468f7f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-4.92625708879762E-05" intermediateExchangeId="11b71553-cc51-438e-8cb5-0337836737ae" activityLinkId="9b51331c-8f6a-467c-99a1-a7a171cc1d03" productionVolumeAmount="375000" productionVolumeMathematicalRelation="">
+        <name xml:lang="en">waste textile, soiled</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">waste fibres</comment>
+        <uncertainty>
+          <lognormal meanValue="-4.92625708879762E-05" mu="-9.918" variance="0.0006" varianceWithPedigreeUncertainty="0.0021" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="2" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.333333333333333" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.570519480519481" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.25" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.75" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.570519480519481" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.427889610389611" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5d01916a-d3ad-449d-9752-74bd0a5b0963" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" productionVolumeAmount="368680.121267186">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_el_prod_MSWI_true_value_relation" amount="3.6" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_el_prod_MSWI_exergy" amount="3.6" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_el_prod_MSWI_price_EUR2005" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="3.14870828403424E-06" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b550401b-f173-4cff-9b08-1dd53eb89183" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="45fbbc41-7ae9-46cc-bb31-abfa11e69de0" productionVolumeAmount="2669000.68687712">
+        <name xml:lang="en">heat, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Net useful heat generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">WTE</synonym>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_th_prod_MSWI_exergy" amount="0.1842" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_th_prod_MSWI_true_value_relation" amount="0.1842" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_th_prod_MSWI_price_EUR2005" amount="0.0106" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. 10.6 EUR/GJ i s the price of district heat. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="1.16834794074782E-06" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5eb004c2-b5f0-402d-af7e-55f2cdadb650" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" isCalculatedAmount="true" intermediateExchangeId="b7e3b1ef-098a-48f1-b686-8baa82cff1d3" productionVolumeAmount="221.776344339623">
+        <name xml:lang="en">zinc concentrate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value from the knowledge of the properties of both products.</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="ByP_price_EUR2005" amount="0.38" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Zinc content in concentrate 53%. Concentrate price per kg Zn 86.5% of refined Zn price (13.5% treatment charges according to CHR Metals Limited 2005: Dynamic cost curves. http://www.minecost.com/dynamic.pdf). 2004 zinc price from USGS (2007) Mineral commodity summaries 2007. &lt;http://minerals.usgs.gov/minerals/pubs/mcs/2007/mcs2007.pdf&gt; [Accessed 25 May 2010]</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="33f96fe7-39da-47ca-837f-f2c311681d1b" variableName="zinc_C_zinc_concentrate" amount="0.53" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">zinc content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Zinc content on a dry matter basis. Value taken from teh "zinc mine operation" /GLO dataset. </comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="DM_zinc_concentrate" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="1.65703821914006E-10" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="ffd93ac8-701d-4a0a-a6b5-9ef48fc7b621">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">14290: Other non-ferrous metal ores and concentrates (other than uranium or thorium ores and concentrates)</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">The data are based on primary data collected by cotton Inc.</samplingProcedure>
+        <extrapolations xml:lang="en">Extrapolated from data from mostly vertically integrated mills.</extrapolations>
+      </representativeness>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-04-23" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, non-fossil':
+ - Input='0,549148', Output='0,432421394480519'
+ - Input &gt; output by 0,116726605519481 kg (26,99% of output)
+
+Property 'wet mass':
+ - Input='1,27', Output='1,00005'
+ - Input &gt; output by 0,26995 kg (26,99% of output)
+
+Property 'water in wet mass':
+ - Input='0,0762', Output='0,0600125'
+ - Input &gt; output by 0,0161875 kg (26,97% of output)
+
+Property 'dry mass':
+ - Input='1,1938', Output='0,9400375'
+ - Input &gt; output by 0,2537625 kg (26,99% of output)
+
+
+- Property 'hydrogen content=0,06215' of master data exchange was removed from exchange 'waste yarn and waste textile'.
+Property 'water in wet mass=0,02083' of master data exchange was removed from exchange 'waste yarn and waste textile'.
+Property 'oxygen content=0,4933' of master data exchange was removed from exchange 'waste yarn and waste textile'.
+Property 'wet mass=1' of master data exchange was removed from exchange 'waste yarn and waste textile'.
+Property 'carbon content, non-fossil=0,44455' of master data exchange was removed from exchange 'waste yarn and waste textile'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'waste yarn and waste textile'.
+Property 'dry mass=0,97917' of master data exchange was removed from exchange 'waste yarn and waste textile'.
+Property 'water content=0,021273119070233' of master data exchange was removed from exchange 'waste yarn and waste textile'.
+
+- The total water in wet mass of all input exchanges (0,0762) and output exchanges (0,0600125) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0,25, wet mass=1, carbon content, non-fossil=0,570519480519481, water content=0,333333333333333, dry mass=0,75, carbon content, fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0,25, wet mass=1, carbon content, non-fossil=0,570519480519481, water content=0,333333333333333, dry mass=0,75, carbon content, fossil=0
+
+</otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-12-21" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-12-21" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="ebf45305-b87c-4d3d-b74f-fbc6677bca1b" reviewerName="Lucia Valsasina" reviewerEmail="valsasina@ecoinvent.org" reviewDate="2018-12-21" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="725942b9-cd77-4359-a564-8500b92d9dc4" isActiveAuthor="true" personName="Mireille Faist Emmenegger" personEmail="Mireille.Faist@quantis-intl.com" />
+      <dataGeneratorAndPublication personId="725942b9-cd77-4359-a564-8500b92d9dc4" personName="Mireille Faist Emmenegger" personEmail="Mireille.Faist@quantis-intl.com" dataPublishedIn="0" publishedSourceId="2a11cf6d-3724-45b8-9735-783303d36457" publishedSourceYear="2017" publishedSourceFirstAuthor="Cotton Inc" isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2018-12-20T22:51:19" lastEditTimestamp="2019-04-23T11:04:14" fileGenerator="EcoEditor 3.8.600.15190" fileTimestamp="2019-04-23T11:04:14" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Page-->
+    <title>Registro archivos</title>
+
+    <!-- Icons font CSS-->
+    <link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" media="all">
+</head>
+
+<body>
+
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+
+                <div class="card-body">
+                    <h2 class="title">Show especific queries of the files</h2>
+                    <form "{% url 'Core:query_files' %}" method="POST" enctype="multipart/form-data">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Choose a version of the files to filter by:</label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="version">
+                                            <option disabled="disabled" selected="selected">opcion</option>
+                                            <option>ecoinvent 3.6 cut off</option>
+                                            <option>ecoinvent 3.6 apos</option>
+                                            <option>ecoinvent 3.6 consequential</option>
+                                            <option>ecoinvent 3.7 cut off</option>
+                                            <option>ecoinvent 3.7 apos</option>
+                                            <option>ecoinvent 3.7 consequential</option>
+                                            <option>ecoinvent 3.7.1 cut off</option>
+                                            <option>ecoinvent 3.7.1 apos</option>
+                                            <option>ecoinvent 3.7.1 consequential</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Write the Id you want to filter by:</label>
+                                    <input class="input--style-4" type="text" name="int_exch_id"
+                                        value="write_intermediate_exchange_id">
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">or Write the Name you want to filter by:</label>
+                                    <input class="input--style-4" type="text" name="int_exch_name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            {% csrf_token %}
+                            <div class="p-t-15">
+                                <input class="btn btn--pill btn--green" type="submit" value="query">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row row-space">
+                            <div style="overflow-x:auto;">
+                                <table id="tbl-prueba" class="tabla-informacion">
+                                    <thead>
+                                        <tr>
+                                            <th>activity_name</th>
+                                            <th>version</th>
+                                            <th>count</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for file in al.respuesta1 %}
+                                        <tr>
+                                            <td>{{ file.activity_name }}</td>
+                                            <td>{{ file.version }}</td>
+                                            <td>{{ file.count }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </form>
+                    <ul>
+                        {% for a in al.respuesta1 %}
+                        <li>{{ a.activity_name }} - {{ a.version }} - {{ a.count }}</li>
+                        {% endfor %}
+                    </ul>
+                    <ul>
+                        {% for todo in todos %}
+                        <li>{{ todo.id }} - {{ todo.title }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <!-- Vendor JS-->
+    <script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+    <script src="{% static 'vendor/datepicker/moment.min.js' %}"></script>
+    <script src="{% static 'vendor/datepicker/daterangepicker.js' %}"></script>
+
+    <!-- Main JS-->
+    <script src="{% static 'js/global.js' %}"></script>
+
+    <!-- TABLA -->
+
+
+
+</body>
+
+</html>
+<!-- end document-->

@@ -1,0 +1,1588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="328f2960-c1c1-4c0e-a9a1-fb73565d2156" activityNameId="0f0b0231-c73e-4654-b7fc-229164c7b804" parentActivityId="df436dd9-42e2-4cce-bf26-41169f02e328" inheritanceDepth="-1" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">soybean, feed production</activityName>
+        <includedActivitiesStart xml:lang="en">The dataset starts with the reception of feedstuff at the processing centre.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The inventory includes the processing of feedstuff (crushing or milling, heat treatment, dosing, mixing squeezing and pelleting) and the storage of the feed mixes. It also includes water use and wastewater treatment, the transformation and use of land related to the storage buildings. No process emissions were included except heat waste from the use of electricity. Packaging is not included.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="1">The inventory refers to 1 kg processed feedstuff (fresh weight), non expanded. This dataset has been created as a proxy for roasted soybeans.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="e9c496d6-620f-4b89-8371-5d90984a78c6">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">agricultural means of production/feed</classificationValue>
+      </classification>
+      <classification classificationId="e2e1f67d-3393-4182-86f6-1ada2f77c3e5">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">0111:Growing of cereals (except rice), leguminous crops and oil seeds</classificationValue>
+      </classification>
+      <geography geographyId="7846b897-7c04-4f9f-b607-2b83fcd9a74c">
+        <shortname xml:lang="en">RoW</shortname>
+        <comment>
+          <text xml:lang="en" index="1">This dataset is extrapolated from an original dataset covering the geography of Switzerland.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="1">This dataset is extrapolated from an original dataset which technology refers to non expanded feedstuff from protein peas and broad beans.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="1996-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Years of the publications of the main sources</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="1fdb379e-1587-4919-9beb-acb952c71469" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="735e41dd-5046-4419-809d-fa315c8052ab" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="8.49999787066401E-06" sourceId="c469e33f-3409-412b-bcc5-5f5cadc0dd26" sourceYear="2002" sourceFirstAuthor="UFA" intermediateExchangeId="006863b7-d736-4eb6-bbf8-648d292184ad" activityLinkId="470c8cb5-3d83-4ca5-bca8-a3f37240375b">
+        <name xml:lang="en">building, multi-storey</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment>EcoSpold01Location=RER</comment>
+        <comment xml:lang="en">Estimation. The typical storage capacity of the cereal silo found in some feed processing centres in Switzerland is 10,000 tonnes, with an effective storage volume of about 80% of the building volume. With an average grain specific weight of 750 kg/m3, this gives a building volume of about 16,650 m3. Assuming that these feed processing centres process 25,000 tonnes of grain per year, the cereals will be stored for about three months before being processed. 
+The largest feed processing centre in Switzerland (UFA-Biblis) has a feedstuff storage compound of 29,440 m3 (80 m length * 23 m * 16 m height) with an effective storage capacity of 4,140 tonnes (5520 palettes of 750 kg), or about 150 kg/m3 (UFA 2002). This centre processes 275,000 tonnes of concentrate feeds yearly. After processing, the feedstuff must therefore be stored for approx. one week in the processing centre before being sent to the regional storehouse.
+The average length of storage of the raw materials is set at 3 months in the calculations. The storage volume required was estimated as 1.7 m3/tonne of raw material (grain specific weight 750 kg/m3 and 80% of the building volume used for storage). The lifetime of the storage silo was assumed to be 50 years, the length of the construction phase 2 years. Land use was estimated from the height of Biblis’s storage silo (UFA 2002). Taking the height of 16 m, the area used is 0.1 m2/tonne of feedstuff for 3 months.</comment>
+        <uncertainty>
+          <lognormal meanValue="8.49999787066401E-06" mu="-11.68" variance="0.3" varianceWithPedigreeUncertainty="0.3446" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="b01c4db8-8617-4fe1-ad51-e3f3bb5576d3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">531: Buildings</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d03dfb87-f546-4d21-92ef-447bdad2c2dc" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" productionVolumeAmount="0">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Literature Value. See ecoinvent dataset "protein pea, feed production, Swiss integrated production" for details.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.
+Salzgeber Ch. &amp; Lörcher M. (1996) Produktökobilanz Brot unter verschiedenen Landbaubedingungen. In: Umweltverträgliche Pflanzenproduktion: Indikatoren, Bilanzierungsansätze und ihre Einbindung in Ökobilanzen. 11-12 July 1996, Wittenberg, 249-269.
+Higler J., Kühl R., Fries R., Pfeffer E. &amp; Schulze Lammers P. (1997) Oekonomische und energetische Bewertung einer umweltgerechten Verwertung von Koppelprodukten der Ernährungsbranche und sonstigen organischen Reststoffen in der Landwirtschaft sowie Ansätze zur Entwicklung eines Recyclingkonzeptes. Forschungsberichte / Lehr- und Forschungsschwerpunkt "Umweltverträgliche und Standortgerechte Landwirtschaft" an der Landwirtschaftlichen Fakultät der Rheinischen Friedrich-Wilhelms-Universität 1364765. Bonn Institut für Landwirtschaftliche Betriebslehre.</comment>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="138e1f04-d9ae-4b88-8a8e-286f77355fc8" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="WW" amount="0" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="e8a51ec1-60cb-4ead-a948-ad1142c61918" productionVolumeAmount="0" productionVolumeMathematicalRelation="">
+        <name xml:lang="en">wastewater, average</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <comment>EcoSpold01Location=CH</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="WW_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Density of water was assumed that of tap water 1kg/L, that is 1000kg/m3.</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.653163225399" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.194039401033427" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">0.0673 kg TOC/m3 (Tab A.17, ecoinvent v2.2 report 13_I). TOC was considered as Total Carbon.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.346836774601289" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The addition of compounds in water, listed in Tab A.17-20 from ecoinvent v2.2 report 13_I, has been used as an estimate of dry mass is wastewater. In this case, elementary composition has been expressed as molecular composition, whenever possible. This approach has been used when the addition of compunds in wastewater was bigger than the minimal mineral content estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2882.20060970917" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.194039401033427" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0672999999999998" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from the production volume of soybean, feed, in proportion to the respective output amounts.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="0" mu="10.67" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="34f49fca-a18e-48df-a635-ee7e24ef6dbb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39920: Sewage sludge</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fca0ca5d-ce1f-463c-b9d4-56524fd8ce69" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" productionVolumeAmount="0">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5ac8c162-af5e-4956-aaab-6ac46308e2b5" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="REF_PRODUCT" amount="1" intermediateExchangeId="4f3726cc-4fdd-4511-8122-9c6c264ae12c" productionVolumeAmount="1129555729.69" productionVolumeVariableName="REF_PRODUCT_PV" productionVolumeMathematicalRelation="">
+        <name xml:lang="en">soybean, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Processed soybeans used for animal feed (e.g. swine diet). This is not protein meal as no oil extraction is involved.</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="REF_PRODUCT_price_EUR2005" amount="0.244" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated value. The price of soybean is 0.238 EUR/kg. The price for soybean, feed is calculated as the price of soybean plus the value of water and energy added to produce the soybean, feed.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.11" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.123595505617978" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.89" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.524507692307692" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.524507692307692" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.466811846153846" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" variableName="REF_PRODUCT_true_value" amount="0.244" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">1996-1999 annual average of World feed beans, expressed as crop primary equivalent. This is 6.8% of World beans production. (FAOSTAT 2013, website section of Commodity balances/Crops primary equivalent (http://faostat3.fao.org/faostat-gateway/go/to/download/B/BC/E).</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="1129555729.69" mu="20.85" variance="0.04" varianceWithPedigreeUncertainty="0.042" />
+          <pedigreeMatrix reliability="3" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="087f60cd-95d2-4bfa-887e-67139d031d9c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" intermediateExchangeId="deb4f70c-bf2a-4cd3-bc3b-c71af8820da3" productionVolumeAmount="0">
+        <name xml:lang="en">soybean</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Grain input for feed production. Due to lack of representative data, no loss is considered.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.123595505617978" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.11" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.524507692307692" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.89" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.524507692307692" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.466811846153846" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="103c0fd5-1d94-4f3e-86e6-533b534ecba4">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01412: Soya beans, other</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="19c20d86-b5c7-4c9a-9114-9eeb5b2bab40" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000268703345083505" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="83b55174-0ea9-4a4e-8599-770fc043441d">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000268703345083505" mu="-8.222" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="80606fe8-787a-43ca-abac-da9ae1402cd9" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.71271577860362E-05" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="85066306-6c2f-416a-950e-bf8cdc9adc9c">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <lognormal meanValue="4.71271577860362E-05" mu="-9.963" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="893ee8ff-5bc0-4fed-a52c-1d894fc0001c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00106884693315328" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="d03bcea4-4a51-4375-ae73-c188816506cd">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00106884693315328" mu="-6.841" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="66b1a386-8d79-4230-af30-1260eb2dd665" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000375883620793353" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="853a183c-bf35-4ecf-a5e1-cfb9b85c48e3">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000375883620793353" mu="-7.886" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3f870525-46fb-49ba-bb87-5c0625cde878" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000774959551298311" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="809416ed-0532-4379-9245-8c6621f37d73">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000774959551298311" mu="-7.163" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="23ba22a3-ddc8-429a-94c5-d229223c4779" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0117196448465171" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="d9fc1395-e673-454d-a31c-d5728ad18785">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0117196448465171" mu="-4.446" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1f54cbd9-d859-436f-96e5-c80d1338102f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00389495399504175" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="d38e2a33-631f-4d92-88d6-d17931e1bbd3">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00389495399504175" mu="-5.548" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9c89455f-d3b0-4637-85c5-48faebaf3c2e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00193177369704079" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="a6f7a235-2a4e-4906-8bbe-46d1f8c37e2e">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00193177369704079" mu="-6.249" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d814bc65-7f31-46f9-b648-62416a9a79ab" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00491810059053293" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="12998146-ca32-4edd-805c-d187bf94af1a">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Literature Value. According to Cederberg (1998) for protein mixes from legumes such as “protein peas” and “broad beans” the energy usage is 70% of the expanded feedstuff value of InfoMil (1996) since this is not expanded. This resulted into 25 kWh electricity electricity per tonne of feedstuff.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00491810059053293" mu="-5.315" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="17881c1d-16ce-42f4-9688-7001281c5f52" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0273054534985611" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="b6704b11-d69d-4eab-9bfa-edcf1fe098f2">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Literature Value. See ecoinvent dataset "protein pea, feed production, Swiss integrated production" for details.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.
+Salzgeber Ch. &amp; Lörcher M. (1996) Produktökobilanz Brot unter verschiedenen Landbaubedingungen. In: Umweltverträgliche Pflanzenproduktion: Indikatoren, Bilanzierungsansätze und ihre Einbindung in Ökobilanzen. 11-12 July 1996, Wittenberg, 249-269.
+Higler J., Kühl R., Fries R., Pfeffer E. &amp; Schulze Lammers P. (1997) Oekonomische und energetische Bewertung einer umweltgerechten Verwertung von Koppelprodukten der Ernährungsbranche und sonstigen organischen Reststoffen in der Landwirtschaft sowie Ansätze zur Entwicklung eines Recyclingkonzeptes. Forschungsberichte / Lehr- und Forschungsschwerpunkt "Umweltverträgliche und Standortgerechte Landwirtschaft" an der Landwirtschaftlichen Fakultät der Rheinischen Friedrich-Wilhelms-Universität 1364765. Bonn Institut für Landwirtschaftliche Betriebslehre.</comment>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0273054534985611" mu="-3.601" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="42be303f-7be1-4a87-b5e4-22ccb81307d2" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0676945227029778" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="f0aef38d-d26d-4b3a-8ca0-8f22685af800">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Literature Value. See ecoinvent dataset "protein pea, feed production, Swiss integrated production" for details.
+Cederberg C. (1998) Life cycle assessment of milk production. A comparison of conventional and organic farming. The Swedish Institute for Food and Biotechnology. SIK-Rapport 1998 No. 643, 86 p.
+Salzgeber Ch. &amp; Lörcher M. (1996) Produktökobilanz Brot unter verschiedenen Landbaubedingungen. In: Umweltverträgliche Pflanzenproduktion: Indikatoren, Bilanzierungsansätze und ihre Einbindung in Ökobilanzen. 11-12 July 1996, Wittenberg, 249-269.
+Higler J., Kühl R., Fries R., Pfeffer E. &amp; Schulze Lammers P. (1997) Oekonomische und energetische Bewertung einer umweltgerechten Verwertung von Koppelprodukten der Ernährungsbranche und sonstigen organischen Reststoffen in der Landwirtschaft sowie Ansätze zur Entwicklung eines Recyclingkonzeptes. Forschungsberichte / Lehr- und Forschungsschwerpunkt "Umweltverträgliche und Standortgerechte Landwirtschaft" an der Landwirtschaftlichen Fakultät der Rheinischen Friedrich-Wilhelms-Universität 1364765. Bonn Institut für Landwirtschaftliche Betriebslehre.</comment>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0676945227029778" mu="-2.693" variance="0.01" varianceWithPedigreeUncertainty="0.0612" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="36064c58-94fd-45f8-ab14-580449d44a5d" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="-3.70957964361505E-06" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="e8a51ec1-60cb-4ead-a948-ad1142c61918" activityLinkId="f51141a5-2170-4008-9bd8-cc0806da3e2f" productionVolumeAmount="42923.11772822" productionVolumeMathematicalRelation="">
+        <name xml:lang="en">wastewater, average</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <comment>EcoSpold01Location=CH</comment>
+        <uncertainty>
+          <lognormal meanValue="-3.70957964361505E-06" mu="-12.5" variance="0.04" varianceWithPedigreeUncertainty="0.1246" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Density of water was assumed that of tap water 1kg/L, that is 1000kg/m3.</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.653163225399" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.194039401033427" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">0.0673 kg TOC/m3 (Tab A.17, ecoinvent v2.2 report 13_I). TOC was considered as Total Carbon.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.346836774601289" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The addition of compounds in water, listed in Tab A.17-20 from ecoinvent v2.2 report 13_I, has been used as an estimate of dry mass is wastewater. In this case, elementary composition has been expressed as molecular composition, whenever possible. This approach has been used when the addition of compunds in wastewater was bigger than the minimal mineral content estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2882.20060970917" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.194039401033427" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0672999999999998" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="34f49fca-a18e-48df-a635-ee7e24ef6dbb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39920: Sewage sludge</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e5ede89f-c1b1-41ce-83c1-2d2c4b2539b6" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="-3.42904108370005E-05" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="e8a51ec1-60cb-4ead-a948-ad1142c61918" activityLinkId="f76bb2ba-f028-435e-a05d-7b65319857ae" productionVolumeAmount="42923.11772822" productionVolumeMathematicalRelation="">
+        <name xml:lang="en">wastewater, average</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <comment>EcoSpold01Location=CH</comment>
+        <uncertainty>
+          <lognormal meanValue="-3.42904108370005E-05" mu="-10.28" variance="0.04" varianceWithPedigreeUncertainty="0.1246" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Density of water was assumed that of tap water 1kg/L, that is 1000kg/m3.</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.653163225399" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.194039401033427" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">0.0673 kg TOC/m3 (Tab A.17, ecoinvent v2.2 report 13_I). TOC was considered as Total Carbon.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.346836774601289" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The addition of compounds in water, listed in Tab A.17-20 from ecoinvent v2.2 report 13_I, has been used as an estimate of dry mass is wastewater. In this case, elementary composition has been expressed as molecular composition, whenever possible. This approach has been used when the addition of compunds in wastewater was bigger than the minimal mineral content estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2882.20060970917" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.194039401033427" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0672999999999998" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="34f49fca-a18e-48df-a635-ee7e24ef6dbb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39920: Sewage sludge</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="44cc86be-6804-48c3-8bfd-6808187e5f79" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.0224369588741145" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="c5440996-cd23-44e2-838a-ac7ebec41859">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0224369588741145" mu="-3.797" variance="0.04" varianceWithPedigreeUncertainty="0.1246" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f10c9055-b07d-42bd-be5c-042a2a98b29b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.000523423504352241" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="b4ca816c-eb55-46a1-8558-7adfa03e9a6d">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000523423504352241" mu="-7.555" variance="0.04" varianceWithPedigreeUncertainty="0.1246" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f82d8902-1eaa-4ab1-b890-f3dbdf52af35" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.000104127985844807" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="296934a6-a7f4-4b40-84dd-aa9d35f62d28">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000104127985844807" mu="-9.17" variance="0.04" varianceWithPedigreeUncertainty="0.1246" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ac5ea706-90dd-44aa-b280-bbcf9d5bb058" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.00262569619842044" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="90274164-ee0b-41db-83fe-6cf44acb8466">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00262569619842044" mu="-5.942" variance="0.04" varianceWithPedigreeUncertainty="0.1246" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="01cdb624-9b6c-427f-9662-f773fe21dccb" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="6.83068263966272E-05" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="0337825e-9f01-4ffa-94fb-80568c1edb8b">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <uncertainty>
+          <lognormal meanValue="6.83068263966272E-05" mu="-9.592" variance="0.04" varianceWithPedigreeUncertainty="0.1246" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="26adee86-fcdb-48fd-8edc-3b6d6be6de18" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.0001942976086795" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="71d32d3b-4ff9-408a-944f-d97edf7117e3">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0001942976086795" mu="-8.546" variance="0.04" varianceWithPedigreeUncertainty="0.1246" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="72a5c4a1-dd2d-4e10-90bd-8e91a27a5216" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.0300471749736253" sourceId="f7ccf8b9-5b23-4381-8958-07c02d604d29" sourceYear="1996" sourceFirstAuthor="Salzgeber Ch." intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="3ae7f907-9abf-46ac-9398-e15572ac87b4">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value. Salzgeber &amp; Lörcher (1996) give the total energy and water consumption of a mill processing about 30,000 tonnes of cereals per year. The mill consumes 1800 m3 water and produces 1200 m3 wastewater per year. Water consumption and wastewater output was completed from Salzgeber and Lörcher (1996), namely 56 litres tap water and 38 litres wastewater per tonne of feedstuff produced.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0300471749736253" mu="-3.505" variance="0.04" varianceWithPedigreeUncertainty="0.1246" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" isCalculatedAmount="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e96eda5b-c774-4a0f-8067-40f667104b4d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.265444771243338" intermediateExchangeId="deb4f70c-bf2a-4cd3-bc3b-c71af8820da3" activityLinkId="ee27d9a4-e3ce-4cee-9998-b178c7b3e2a5">
+        <name xml:lang="en">soybean</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Grain input for feed production. Due to lack of representative data, no loss is considered.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.265444771243338" mu="-1.326" variance="0.01" varianceWithPedigreeUncertainty="0.06" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.123595505617978" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.11" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.524507692307692" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.89" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.524507692307692" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.466811846153846" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="103c0fd5-1d94-4f3e-86e6-533b534ecba4">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01412: Soya beans, other</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="86c16c54-78d8-4029-9df8-c2607b0d2e53" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.734554978246545" intermediateExchangeId="deb4f70c-bf2a-4cd3-bc3b-c71af8820da3" activityLinkId="49e35bbb-5460-43a4-b30d-8b5c7853dd3c">
+        <name xml:lang="en">soybean</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Grain input for feed production. Due to lack of representative data, no loss is considered.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.734554978246545" mu="-0.3085" variance="0.01" varianceWithPedigreeUncertainty="0.06" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="3" />
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.123595505617978" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.11" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.524507692307692" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.89" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.524507692307692" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.466811846153846" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="103c0fd5-1d94-4f3e-86e6-533b534ecba4">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01412: Soya beans, other</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b59936d1-dfa8-4f36-a8ad-3860cd858f09" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" productionVolumeAmount="1363.65596611819">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_el_prod_MSWI_exergy" amount="3.6" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_el_prod_MSWI_true_value_relation" amount="3.6" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_el_prod_MSWI_price_EUR2005" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="4.46782952117442E-08" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="43b6c016-57e6-4ab3-b198-eb8bb022c4a8" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="45fbbc41-7ae9-46cc-bb31-abfa11e69de0" productionVolumeAmount="9698.32792054239">
+        <name xml:lang="en">heat, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Net useful heat generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">WTE</synonym>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_th_prod_MSWI_true_value_relation" amount="0.1842" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_th_prod_MSWI_exergy" amount="0.1842" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_th_prod_MSWI_price_EUR2005" amount="0.0106" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. 10.6 EUR/GJ i s the price of district heat. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="1.64401298549276E-08" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="acf33ee5-818a-4e22-b431-524f184dec9f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" isCalculatedAmount="true" intermediateExchangeId="b7e3b1ef-098a-48f1-b686-8baa82cff1d3" productionVolumeAmount="0.18448608272599">
+        <name xml:lang="en">zinc concentrate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value from the knowledge of the properties of both products.</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="ByP_price_EUR2005" amount="0.38" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Zinc content in concentrate 53%. Concentrate price per kg Zn 86.5% of refined Zn price (13.5% treatment charges according to CHR Metals Limited 2005: Dynamic cost curves. http://www.minecost.com/dynamic.pdf). 2004 zinc price from USGS (2007) Mineral commodity summaries 2007. &lt;http://minerals.usgs.gov/minerals/pubs/mcs/2007/mcs2007.pdf&gt; [Accessed 25 May 2010]</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="33f96fe7-39da-47ca-837f-f2c311681d1b" variableName="zinc_C_zinc_concentrate" amount="0.53" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">zinc content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Zinc content on a dry matter basis. Value taken from teh "zinc mine operation" /GLO dataset. </comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="DM_zinc_concentrate" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="6.05871822401394E-12" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="ffd93ac8-701d-4a0a-a6b5-9ef48fc7b621">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">14290: Other non-ferrous metal ores and concentrates (other than uranium or thorium ores and concentrates)</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="f7fa53bc-9066-4ca2-8084-b086b84538ac" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="1.99999949897977E-06" sourceId="c469e33f-3409-412b-bcc5-5f5cadc0dd26" sourceYear="2002" sourceFirstAuthor="UFA" elementaryExchangeId="4b6b9b76-3199-4bd0-b11d-f8f2efbeac4e">
+        <name xml:lang="en">Occupation, construction site</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Estimation. Corresponds to land use Transformation*2 years (the length of the construction phase is 2 years).</comment>
+        <uncertainty>
+          <lognormal meanValue="1.99999949897977E-06" mu="-13.12" variance="0.04" varianceWithPedigreeUncertainty="0.0846" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <synonym />
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="90be89c6-53cb-4149-9be8-1b95b2fba262" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="4.99999874744942E-05" sourceId="c469e33f-3409-412b-bcc5-5f5cadc0dd26" sourceYear="2002" sourceFirstAuthor="UFA" elementaryExchangeId="fe9c3a98-a6d2-452d-a9a4-a13e64f1b95b">
+        <name xml:lang="en">Occupation, industrial area</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Estimation. Corresponds to  0.2m2/tonne (because the total area occupied as “industrial area” was estimated as twice as high, namely 0.2 m2/tonne) multiplied by 3 months (because the average length of storage of the raw materials is set at 3 months in the calculations).</comment>
+        <uncertainty>
+          <lognormal meanValue="4.99999874744942E-05" mu="-9.903" variance="0.04" varianceWithPedigreeUncertainty="0.0846" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <synonym />
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="6b23aab2-e3b5-4835-b17a-9b5e92888324" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" casNumber="007732-18-5" amount="1.79999954908179E-05" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Emission calculated from tap water input and wastewater generation for water balance.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.79999954908179E-05" mu="-10.93" variance="0.04" varianceWithPedigreeUncertainty="0.0827" />
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="52098dc7-5e72-4337-b667-8af3bc407c60" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="9.99999749489883E-07" sourceId="c469e33f-3409-412b-bcc5-5f5cadc0dd26" sourceYear="2002" sourceFirstAuthor="UFA" elementaryExchangeId="29630a65-f38c-48a5-9744-c0121f586640" formula="CORINE x">
+        <name xml:lang="en">Transformation, from unspecified</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Estimation. Corresponds to occupation industrial area/50 years (the lifetime of the storage silo was assumed to be 50 years).</comment>
+        <uncertainty>
+          <lognormal meanValue="9.99999749489883E-07" mu="-13.82" variance="0.12" varianceWithPedigreeUncertainty="0.1646" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1036313d-4b6b-4716-8e95-965dd62f54ca" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="9.99999749489883E-07" sourceId="c469e33f-3409-412b-bcc5-5f5cadc0dd26" sourceYear="2002" sourceFirstAuthor="UFA" elementaryExchangeId="4624deff-2016-41d4-b2bf-3db8dab88779" formula="CORINE 121a">
+        <name xml:lang="en">Transformation, to industrial area</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Estimation. Corresponds to occupation industrial area/50 years (the lifetime of the storage silo was assumed to be 50 years).</comment>
+        <uncertainty>
+          <lognormal meanValue="9.99999749489883E-07" mu="-13.82" variance="0.12" varianceWithPedigreeUncertainty="0.1646" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <parameter parameterId="daadf2d4-7bbb-4f69-8ab5-58df4c1685eb" amount="0.9">
+        <name xml:lang="en">fraction, process water, to air</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.9" mu="-0.1054" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+      </parameter>
+      <parameter parameterId="148c8010-cc60-48cd-9b40-fc7278e377f7" amount="0.9">
+        <name xml:lang="en">fraction, tap water, to air</name>
+        <uncertainty>
+          <lognormal meanValue="0.9" mu="-0.1054" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Data based on literature, trade statistics and information from feedstuff processing enterprises.</samplingProcedure>
+        <extrapolations xml:lang="en">This dataset has been extrapolated from an dataset for "protein peas, feed production" covering the geography GLO and the technology of Swiss Integrated Production (SIP), which was already extrapolated from the geography CH and the technology SIP with uncertainty adjustments. Production volume has been adjusted. The technology of grain processing can be assumed the same for conventional grain as for SIP grain, hence no change is made to the technology-related uncertainty index. Furthermore, the geography-related uncertainty index still remains to "5" since data originate from a CH geography. Note that exchange properties of the reference product (carbon and water contents) are the same as the input grain, as it is also the case for the original dataset. No loss of soybean is considered, due to lack of comprehensive data.</extrapolations>
+      </representativeness>
+      <review reviewerId="cb2a55cb-5170-46a5-819d-75173b1914e9" reviewerName="Thomas Nemecek" reviewerEmail="thomas.nemecek@agroscope.admin.ch" reviewDate="2014-04-10" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="23">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2014-04-10" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="18">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-06-07" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="23">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='3,38268779477531E-08', Output='0'
+ - Input &gt; output by 3,38268779477531E-08 kg
+
+
+- Amount of property 'water content=0,123595505617978' of exchange 'soybean, feed' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0,524507692307692' of exchange 'soybean, feed' deviates from the default amount in the master file.
+Property 'energy content=0' of master data exchange was removed from exchange 'soybean, feed'.
+Amount of property 'wet mass=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, water content=2882,20060970917, dry mass=0,346836774601289, wet mass=1000, carbon content, non-fossil=0,194039401033427, water in wet mass=999,653163225399, carbon content, non-fossil=0, water in wet mass=1000, wet mass=1000, dry mass=0, carbon content, fossil=0, wet mass=1000, carbon content, fossil=0, dry mass=0, carbon content, non-fossil=0, water in wet mass=1000, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, carbon content, fossil=0, wet mass=0, wet mass=0, carbon content, non-fossil=0, dry mass=0, carbon content, fossil=0, water in wet mass=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, water content=2882,20060970917, dry mass=0,346836774601289, wet mass=1000, carbon content, non-fossil=0,194039401033427, water in wet mass=999,653163225399, carbon content, non-fossil=0, water in wet mass=1000, wet mass=1000, dry mass=0, carbon content, fossil=0, wet mass=1000, carbon content, fossil=0, dry mass=0, carbon content, non-fossil=0, water in wet mass=1000, carbon content, non-fossil=0, dry mass=0, water in wet mass=0, carbon content, fossil=0, wet mass=0, wet mass=0, carbon content, non-fossil=0, dry mass=0, carbon content, fossil=0, water in wet mass=0
+
+</otherDetails>
+      </review>
+      <review reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2014-04-10" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="23">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="f0d8b853-e040-4d03-a6fd-ad279d931721" isActiveAuthor="true" personName="Dominique Maxime" personEmail="dominique.maxime@polymtl.ca" />
+      <dataGeneratorAndPublication personId="f0d8b853-e040-4d03-a6fd-ad279d931721" personName="Dominique Maxime" personEmail="dominique.maxime@polymtl.ca" dataPublishedIn="2" publishedSourceId="15229d9c-1cd2-4bdb-86a6-9c3514d62ac5" publishedSourceYear="2007" publishedSourceFirstAuthor="Nemecek, T." isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2014-04-08T15:06:27" lastEditTimestamp="2015-06-06T15:07:52" fileGenerator="EcoEditor 3.6.120.14104" fileTimestamp="2015-06-06T15:07:52" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

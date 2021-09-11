@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="6869148a-2dd7-4ced-8110-ae3453ce6a5c" activityNameId="dbf7693e-efab-4af8-a041-927cae270429" parentActivityId="dedf617c-d8bd-4e24-91a8-ff6210614d41" inheritanceDepth="-1" type="1" specialActivityType="0">
+        <activityName xml:lang="en">bark chips production, softwood, at sawmill</activityName>
+        <includedActivitiesStart xml:lang="en">Bark chips production starts with the bark taken off the stem as part of the over-all sawing process (see respective dataset) and includes all the handling of the bark in the sawmill.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the bark chips stored in a silo at the saw mill. The dataset does not include dust emissions due to a high water content in the wood.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="1">This dataset represents the service of the handling of bark from softwood at sawmill with an output of one kg of bark, measured in oven-dry mass of bark. The exchanges of this child dataset are identical to the GLO dataset. This dataset was created to enable linking to regional markets (e.g. for electricity). Data quality indicators were adjusted accordingly.</text>
+          <imageUrl index="5">https://db3.ecoinvent.org/images/17207f1c-5ed1-44f5-ae1e-ec865f03d889</imageUrl>
+          <text xml:lang="en" index="6">The data was provided by and approved by the Swiss forest industry (Holzindustrie Schweiz HIS).</text>
+          <text xml:lang="en" index="4"></text>
+          <text xml:lang="en" index="3">The following figure illustrates the general structure of the sawmilling processes before eventual drying and planing:</text>
+          <text xml:lang="en" index="2">The process chain in a sawmill is a net of interlinked processes; the process structure depends on the individual design and technologies in place for each sawmill. The structuring of the sawmilling processes is based on the identification of the core processes in a sawmill that are attributable to several co-products (such as upstream processes like forestry and transport of logs to the sawmill) sorting, storing and the sawing of the (debarked) log. Other processes are attributable directly to one of the co-products such as the chipping of residual wood (either after sawing or as part of the profile chipping), the chipping of the bark (the "debarking") or the suction of saw dust as collection and internal transport.</text>
+        </generalComment>
+        <tag>recontextualization</tag>
+      </activity>
+      <classification classificationId="45e0d63f-f176-49f2-a053-8033c5f89e77">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">1610:Sawmilling and planing of wood</classificationValue>
+      </classification>
+      <geography geographyId="868a66d1-7428-4ba2-9125-253b07afc119">
+        <shortname xml:lang="en">CA-QC</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Extrapolated from average Swiss conditions. Child dataset exchanges identical to GLO dataset. Dataset created to enable linking to regional markets (e.g. for electricity). Data quality indicators adjusted accordingly.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3" />
+      <timePeriod startDate="2011-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true" />
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="87b78d18-2c0a-4a98-992c-e18294725026" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" intermediateExchangeId="2c9486c9-1fc4-4535-a296-cd8f3bc0e1cd" productionVolumeAmount="0" productionVolumeMathematicalRelation="p_barkchips">
+        <name xml:lang="en">bark</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">the bark is produced in the over-all sawing process and treated in this DS as the handling of bark within the sawmill.</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.034" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Data on Import/Export (USD/kg) from UN data has been used. (http://data.un.org/Data.aspx?d=ComTrade&amp;f=_l1Code%3a45, [accessed 10th June 2010]) Commodity: 'Sawdust, wood waste or scrap'. A density of 250 kg/m3 was used to convert from M3 to kg (data on density: http://wiki.answers.com/Q/What_is_the_density_of_sawdust, [Accessed 13 June 2010]).</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="2.4" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1.4" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="1.4" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.494" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">see comment on the by-product</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="7c39364d-1d7f-4931-bfb7-fe79d7f6ede0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">31230: Wood in chips or particles</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="81cb6fca-db36-44f9-9631-254b13bdd1b4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="barkchip_wet" amount="0" intermediateExchangeId="6d2c81d0-5546-4bc3-a4f4-3e88606d539d" productionVolumeAmount="0" productionVolumeVariableName="p_barkchips" productionVolumeMathematicalRelation="1078320*1.64/(1-0.12)*0.12*380/1079420*1.1134E+07">
+        <name xml:lang="en">bark chips, wet, measured as dry mass</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">bark chips stored in the silo resulting from the treatment of the reference product</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="1.4" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="barkchip_wet_price_EUR2005" amount="0.034" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Expert judgement (Urs Luginbühl, Swiss Sawmilling industry, personal communication in June 2014). Cross-reference; FAOSTAT database; http://faostat.fao.org/site/626/DesktopDefault.aspx?PageID=626#ancor; Average import/export prices of EU for 'chips and particles'. Price: 48.76 Euro/m3. The density of the wood chips is 650 kg/m3. The price is calculated to be 0.075 EUR/kg.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="2.4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1.4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.494" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.494" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.494" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of sawnwood x conversion efficiency of sawmilling process (to estimate log input under bark),  extrapolated to log over bark via (1-bark ratio) and estimation of bark via bark ratio (of log over bark, multiplied with average basic bark density for Swiss conditions); extrapolated to CA-QC values via the ratio of sawnwood (C) production according to FAOStat and Statistics Canada.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="0" mu="20.67" variance="0.0006" varianceWithPedigreeUncertainty="0.0012" />
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="7c39364d-1d7f-4931-bfb7-fe79d7f6ede0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">31230: Wood in chips or particles</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9bc603f4-3568-4234-8d65-b6e295edad98" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" variableName="elec_midvol" amount="0.00474012406961994" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="adadd6de-f057-4f0d-b2bf-baa28feed8fc" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">data from Swiss industry</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00474012406961994" mu="-5.352" variance="0.0006" varianceWithPedigreeUncertainty="0.0052" />
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ccf8bebc-c824-46e9-8985-d7c73fc90637" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1" intermediateExchangeId="6d2c81d0-5546-4bc3-a4f4-3e88606d539d" productionVolumeAmount="945223336.254992">
+        <name xml:lang="en">bark chips, wet, measured as dry mass</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">bark chips stored in the silo resulting from the treatment of the reference product</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="7c39364d-1d7f-4931-bfb7-fe79d7f6ede0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">31230: Wood in chips or particles</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="625c505a-ed92-4150-8b16-0331510af590" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="7.46852599755675E-05" isCalculatedAmount="true" intermediateExchangeId="71e2f1db-a2c5-44d0-8337-dfff15be974d" activityLinkId="af853a65-338d-49ad-87a9-2f6613711ff0">
+        <name xml:lang="en">heat, district or industrial, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Light fuel oil burned for heating. Calculated based on reported fuel input volume, fuel density, net heating value per kg and efficiency.</comment>
+        <uncertainty>
+          <lognormal meanValue="7.46852599755675E-05" mu="-9.502" variance="0.0006" varianceWithPedigreeUncertainty="0.0032" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0d155ffd-4d88-45a3-8202-cc072c8caf22" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-2.54633468695812E-05" isCalculatedAmount="false" intermediateExchangeId="1b30b018-ac39-41f4-a9e0-92057eef8bb8" activityLinkId="efed3334-c62a-41af-852c-832fefda7638" productionVolumeAmount="1912858.134">
+        <name xml:lang="en">waste mineral oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">waste motor oil and hydraulic fluids; greases are used in a dissipative way</comment>
+        <uncertainty>
+          <lognormal meanValue="-2.54633468695812E-05" mu="-10.58" variance="0.1" varianceWithPedigreeUncertainty="0.1026" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0e68e505-9ad9-46a5-bd20-2956d030ee75" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.96531714313705E-05" isCalculatedAmount="false" intermediateExchangeId="ea75b944-c676-4a13-85b8-2bea98f765a4" activityLinkId="892b672d-8bcb-4ca6-b1bb-b83f3a6e338d">
+        <name xml:lang="en">lubricating oil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Hydraulic fluids, motor oils and greases.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.96531714313705E-05" mu="-10.84" variance="0.1" varianceWithPedigreeUncertainty="0.1026" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="10ff9f76-486c-4c81-965e-4507d9adef0e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">33380: Lubricants</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dfe23a3f-529b-4875-8542-cebe4856bec7" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-0.00826538779460781" isCalculatedAmount="true" intermediateExchangeId="a514c9f2-0d4d-4ce2-809b-de4c29e74709" activityLinkId="6d9efc48-ef93-4cbe-a31a-f9d7c5e44413" productionVolumeAmount="620912653.570583">
+        <name xml:lang="en">saw dust, loose, wet, measured as dry mass</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">calculated by the share and basic density as the moisture content is over 30%</comment>
+        <uncertainty>
+          <lognormal meanValue="-0.00826538779460781" mu="-4.796" variance="0.25" varianceWithPedigreeUncertainty="0.2526" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="c386aae3-b404-4ba8-a116-a9559af1c085">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">3928: Sawdust and wood waste and scrap</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5eaa8606-5d02-4c6f-906f-62a0a2813128" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.000274887929476517" isCalculatedAmount="true" intermediateExchangeId="705f483c-0d06-4f1c-9be9-7d54b88c4015" activityLinkId="feaaafe4-7878-49c7-8ed5-8d8b0ba5c448">
+        <name xml:lang="en">propane, burned in building machine</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Propane for internal transport. Calculated based on reported fuel input volume, fuel density, net heating value per kg and efficiency.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000274887929476517" mu="-8.199" variance="0.0006" varianceWithPedigreeUncertainty="0.0032" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="a5ec235d-096a-4443-a41b-f5b9aaaa9362">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">543: Site preparation services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="88404f7c-0ebe-4b7d-bf0f-9ba1074b223d" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="0.000351001968274291" intermediateExchangeId="42a1bdfc-883d-41f0-b83a-1c5527e34de7" activityLinkId="cdfbde97-11aa-4af5-80d8-e1233b5777af">
+        <name xml:lang="en">sawlog and veneer log, softwood, measured as solid wood under bark</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">input of the log, from which 1 m3 of sawnwood is produced</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000351001968274291" mu="-7.955" variance="0.25" varianceWithPedigreeUncertainty="0.2526" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="c90def53-ce7d-44e2-b3ae-a506def63b84">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">031: Wood in the rough</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1b752fa3-fd37-47e6-b55b-40692a486c39" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="4.02247153595341E-11" intermediateExchangeId="ec8fb345-3751-4db5-a67a-fddc6c72a183" activityLinkId="d43c2d01-a0a0-4aa2-87bc-2390b0405fdd">
+        <name xml:lang="en">sawmill</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">value taken from econvent 2.2</comment>
+        <uncertainty>
+          <lognormal meanValue="4.02247153595341E-11" mu="-23.94" variance="0.25" varianceWithPedigreeUncertainty="0.2532" />
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="3" geographicalCorrelation="4" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="f986e611-0d52-4a9c-a8c2-1329b9fee31f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53269: Other constructions for manufacturing</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e8ac6b54-b741-4309-9c4a-a19b2788e296" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-0.0163503616400814" isCalculatedAmount="true" intermediateExchangeId="2c9486c9-1fc4-4535-a296-cd8f3bc0e1cd" activityLinkId="6869148a-2dd7-4ced-8110-ae3453ce6a5c" productionVolumeAmount="1228272246.27073">
+        <name xml:lang="en">bark</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">calculated by the share and basic density as the moisture content is over 30%</comment>
+        <uncertainty>
+          <lognormal meanValue="-0.0163503616400814" mu="-4.114" variance="0.006" varianceWithPedigreeUncertainty="0.0086" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="7c39364d-1d7f-4931-bfb7-fe79d7f6ede0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">31230: Wood in chips or particles</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1c5a96b1-02ca-4185-866b-4458d05ec026" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.000317695195891401" isCalculatedAmount="true" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="f04f4a4a-6352-4f84-a299-753de5e5cdeb">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Calculated based on reported natural gas input, the net heating value per m³ of natural gas and efficiency.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000317695195891401" mu="-8.054" variance="0.0006" varianceWithPedigreeUncertainty="0.0032" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="561d18d6-9483-44af-ac1f-f750fbaeb6f6" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0332113896643488" isCalculatedAmount="true" intermediateExchangeId="b0f4c2fb-5081-474a-8ffa-1457da8345db" activityLinkId="54556c84-e160-4a61-bdd2-3be56c2f0035">
+        <name xml:lang="en">diesel, burned in building machine</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Diesel for internal transport. Calculated based on reported fuel input volume, fuel density and net heating value per kg.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0332113896643488" mu="-3.405" variance="0.1" varianceWithPedigreeUncertainty="0.1027" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="a5ec235d-096a-4443-a41b-f5b9aaaa9362">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">543: Site preparation services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4026fc40-30d0-492e-843c-962402bd14fc" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.00081136779267313" isCalculatedAmount="true" intermediateExchangeId="71e2f1db-a2c5-44d0-8337-dfff15be974d" activityLinkId="88ec6407-09e0-4f71-b298-73aaa2f387d8">
+        <name xml:lang="en">heat, district or industrial, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Heavy fuel oil burned for heating. Calculated based on reported fuel input volume, net heating value per liter and efficiency.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00081136779267313" mu="-7.117" variance="0.0006" varianceWithPedigreeUncertainty="0.0032" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="d0567e84-4a06-47ea-bad4-f7b86914373e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="3.87553193646653E-06" elementaryExchangeId="66f50b33-fd62-4fdd-a373-c5b0de7de00d">
+        <name xml:lang="en">Particulates, &lt; 2.5 um</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">data from industry; process emissions</comment>
+        <uncertainty>
+          <lognormal meanValue="3.87553193646653E-06" mu="-12.46" variance="0.3" varianceWithPedigreeUncertainty="0.3032" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="23df5c01-e7c1-4a5a-a57d-c396d58ab59c" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" casNumber="007732-18-5" amount="2.10472608815023E-05" elementaryExchangeId="8c75e7ab-8ab8-41e4-b394-c166ff5b050d">
+        <name xml:lang="en">Water, river</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">data from industry</comment>
+        <uncertainty>
+          <lognormal meanValue="2.10472608815023E-05" mu="-10.77" variance="0.0006" varianceWithPedigreeUncertainty="0.0032" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <compartment subcompartmentId="30347aef-a90b-46ba-8746-b53741aa779d">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in water</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="437c3838-e3e9-480b-8ef2-d26e4e5f391d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="7.16330547498552E-06" elementaryExchangeId="7678cec7-b8e1-439d-8242-99cd452834b1">
+        <name xml:lang="en">Particulates, &gt; 10 um</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">data from industry; process emissions</comment>
+        <uncertainty>
+          <lognormal meanValue="7.16330547498552E-06" mu="-11.85" variance="0.04" varianceWithPedigreeUncertainty="0.0432" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9e295cde-4133-49fc-995a-0eea09d021f6" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" casNumber="007732-18-5" amount="6.94559609089577E-06" isCalculatedAmount="true" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">33% of water intake is assumed dissipated.</comment>
+        <uncertainty>
+          <lognormal meanValue="6.94559609089577E-06" mu="-11.88" variance="0.0006" varianceWithPedigreeUncertainty="0.0038" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="80def8f6-4b73-4741-9a8b-45e11d8f7528" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.4326610949971E-06" elementaryExchangeId="295c9740-6fdb-4676-9eb8-15e3786f713d">
+        <name xml:lang="en">Particulates, &gt; 2.5 um, and &lt; 10um</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">data from industry; process emissions</comment>
+        <uncertainty>
+          <lognormal meanValue="1.4326610949971E-06" mu="-13.46" variance="0.12" varianceWithPedigreeUncertainty="0.1232" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="777298bd-6a5d-4f6c-bb5f-4cea9776213b" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" casNumber="007732-18-5" amount="1.41016647906066E-05" isCalculatedAmount="true" elementaryExchangeId="db4566b1-bd88-427d-92da-2d25879063b9">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">67% of water intake is assumed discharged.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.41016647906066E-05" mu="-11.17" variance="0.0006" varianceWithPedigreeUncertainty="0.0038" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <compartment subcompartmentId="963f8022-3e2e-4be9-ad4d-b3b7a2282099">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">surface water</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="5f78e6fd-0024-4510-807b-ad8e5efcdc18" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.65307049422743E-07" elementaryExchangeId="3844f446-ded5-4727-8421-17a00ef4eba7">
+        <name xml:lang="en">Suspended solids, unspecified</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">data from industry</comment>
+        <uncertainty>
+          <lognormal meanValue="1.65307049422743E-07" mu="-15.62" variance="0.04" varianceWithPedigreeUncertainty="0.0426" />
+          <pedigreeMatrix reliability="1" completeness="3" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <synonym />
+        <compartment subcompartmentId="963f8022-3e2e-4be9-ad4d-b3b7a2282099">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">surface water</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">complementary literature and sampling from sawmills</samplingProcedure>
+        <extrapolations xml:lang="en">Child dataset exchanges identical to GLO dataset. Dataset created to enable linking to regional markets (e.g. for electricity). Data quality indicators adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewerId="00c7a068-1730-48bf-a7b3-275340049de5" reviewerName="Frank Werner" reviewerEmail="frank@frankwerner.ch" reviewDate="2015-04-20" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="21">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2015-04-20" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="21">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-04-28" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="21">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Amount of property 'water content=1,4' of exchange 'bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=1,4' of exchange 'bark' deviates from the default amount in the master file.
+Amount of property 'wet mass=2,4' of exchange 'bark' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, wet mass=2,4, water in wet mass=1,4, carbon content, non-fossil=0,494, dry mass=1, water content=1,4
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, wet mass=2,4, water in wet mass=1,4, carbon content, non-fossil=0,494, dry mass=1, water content=1,4
+
+- The following negative reference products could not be identified as materials for treatment. No activities exist that produce these materials for treatment.
+ - bark
+
+</otherDetails>
+      </review>
+      <review reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2015-02-03" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="10">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2015-02-03" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2015-02-03" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-02-17" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Amount of property 'wet mass=2,4' of exchange 'bark' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=1,4' of exchange 'bark' deviates from the default amount in the master file.
+Amount of property 'water content=1,4' of exchange 'bark' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0,494, dry mass=1, water content=1,4, water in wet mass=1,4, carbon content, fossil=0, wet mass=2,4
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0,494, dry mass=1, water content=1,4, water in wet mass=1,4, carbon content, fossil=0, wet mass=2,4
+
+- The following negative reference products could not be identified as materials for treatment. A market is missing for the negative reference product.
+ - bark
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="a84d170e-e428-4103-b895-7574b28536b4" isActiveAuthor="true" personName="Hugues Imbeault-Tétreault" personEmail="hugues.imbeault@polymtl.ca" />
+      <dataGeneratorAndPublication personId="a84d170e-e428-4103-b895-7574b28536b4" personName="Hugues Imbeault-Tétreault" personEmail="hugues.imbeault@polymtl.ca" dataPublishedIn="0" isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2015-04-16T16:47:04" lastEditTimestamp="2015-04-28T09:44:24" fileGenerator="EcoEditor 3.3.65.10868" fileTimestamp="2015-04-28T09:44:24" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

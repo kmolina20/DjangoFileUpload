@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="41497767-f4c9-4131-8322-ea9e78377173" activityNameId="70a575e5-170b-4ce0-b423-9ad9bb42d455" parentActivityId="6c470c8d-51d2-4931-9e4b-8c293d138897" inheritanceDepth="-1" type="1" specialActivityType="0" energyValues="1">
+        <activityName xml:lang="en">ethane extraction, from natural gas liquids</activityName>
+        <synonym xml:lang="en">NGL</synonym>
+        <includedActivitiesStart xml:lang="en">The activity starts with NGL entering the Fractionator.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends when separated ethane leaves the deethaniser. Energy use, cooling water and electricity are included. No emissions are included. Waste heat is considered to be recovered in a Waste heat recovery unit (WHRU).</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="2">NGL is defined as ethane, propane and pentane plus  (http://www.igu.org/html/wgc2006/pdf/paper/add17999.pdf)</text>
+          <text xml:lang="en" index="1">In the present inventory, ethane is extracted from natural gas liquids. </text>
+          <text xml:lang="en" index="3">The NGL mix consists roughly of 33% ethane, 33% propane, 19% butane and 15% pentane plus (w/w). The composition is based on reporting from the Badak LNG plant (Indonesia). (http://www.igu.org/html/wgc2006/pdf/paper/add17999.pdf)</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="28f738cc-bb73-48f8-b633-f83fb9bc5ddc">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">2011:Manufacture of basic chemicals</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="2">Natural Gas Liquids contains a mixture of ethane, propane, butane and pentane plus. The general process for ethane extraction is as follows:
+The Deethaniser boils-off the ethane. The NGL steam is heated in the deethaniser by a reboiler. Ethane vaporises and travels up and out the top of the column. The liquid ethane product flows to the reflux drum where some product can be sent back to the column as reflux and some can be sent out of the system as product. </text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2008-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Reference year of production volume</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="b144fa47-df0a-47e8-b15d-a277e9c2333c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="NGL" amount="1" isCalculatedAmount="true" mathematicalRelation="ethane +(1- technology_efficiency)*ethane" sourceId="6bc81919-af08-4592-b6df-bdb56ab52f80" sourceYear="2000" sourceFirstAuthor="Naini, Abbas" pageNumbers="50" intermediateExchangeId="895b9704-1eef-4395-a880-cb5ca0001bba" activityLinkId="1b5868be-a65c-4652-982b-7b5aae1a024f">
+        <name xml:lang="en">natural gas liquids</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Mass balanced. In order to keep mass balance in this dataset, the input of NGL is equal to the output of butane. NGL contains 33% ethane.</comment>
+        <uncertainty>
+          <lognormal meanValue="1" mu="0" variance="0.0006" varianceWithPedigreeUncertainty="0.0186" />
+          <pedigreeMatrix reliability="3" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" variableName="WWM" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" variableName="WM" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" variableName="C_content_fossil" amount="0.812658840125392" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" variableName="water_content" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" variableName="C_content_non_fossil" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="DM" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.812658840125392" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.812658840125392" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="8c8fb31c-3c73-4800-842e-4b7d4980b2c1">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17200: Coal gas, water gas, producer gas and similar gases, other than petroleum gases and other gaseous hydrocarbons</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fc2a4d5f-75dd-4d83-9bb0-86d28b27d49c" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="1.18906355128754" isCalculatedAmount="true" mathematicalRelation="ethane*(30*3600*8640) /((261285+257900+150444+115123)*1000)" sourceId="736cd22a-d722-4597-a13b-fe94f9fc0380" sourceYear="2006" sourceFirstAuthor="Safruddin, Rahmat" intermediateExchangeId="71e2f1db-a2c5-44d0-8337-dfff15be974d" activityLinkId="12e45efc-edf2-4451-981a-7d23d45693b8">
+        <name xml:lang="en">heat, district or industrial, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Industrial value. Total energy consumption for heat from hot oil in an NGL processing plant in Indonesia. Hot oil is used as a heating medium for the reboilers, distillation columns of fractionation and defrost heater. The energy consumption for the hot oil is 30 MW. It is assumed a constant energy use in time. 
+
+The total energy use is recalculated in MJ and divided by the yearly reported production of co-products ethane, propane, butane and pentane (given in tonnage/year) (pg 8). It is assumed the heat consumption is equal for the extraction of all fractions.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.18906355128754" mu="0.1732" variance="0.0006" varianceWithPedigreeUncertainty="0.0172" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dffdb994-c9f9-4008-b720-eef2f13a4192" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.198176500946155" isCalculatedAmount="true" mathematicalRelation="ethane*(18*8640*1000)/((261288+257900+150444+115123)*1000)" sourceId="736cd22a-d722-4597-a13b-fe94f9fc0380" sourceYear="2006" sourceFirstAuthor="Safruddin, Rahmat" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="6edde93d-0e5a-4e90-941c-3ae17acb34a7">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industrial value. Reported electricity required by a NGL fractionation plant in Indonesia.  The electric power required for the whole plant is 18 MW.
+
+The total electricity use is recalculated in kWh and is divided by the yearly reported production of co-products ethane, propane, butane and pentane (given in tonnage/year) (pg 8). It is assumed the heat consumption is equal for the extraction of all fractions.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.198176500946155" mu="-1.619" variance="0.0006" varianceWithPedigreeUncertainty="0.0172" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bf343e9d-8210-4107-aebf-f9a12bf31e66" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="ethane" casNumber="74-84-0" amount="1" isCalculatedAmount="false" sourceId="6bc81919-af08-4592-b6df-bdb56ab52f80" sourceYear="2000" sourceFirstAuthor="Naini, Abbas" intermediateExchangeId="88b55703-3dd1-44c5-8a55-3d89d5019e5d" productionVolumeAmount="103613096448.564" productionVolumeMathematicalRelation="UnitConversion(10405000, 'barrel oil', 'l')*365*(1-0.35)*0.8 *0.33* technology_efficiency" productionVolumeSourceId="1969bad2-44bc-4619-8fa5-a0e6e84bbb40">
+        <name xml:lang="en">ethane</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Proces efficiency is 100%</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="ethane_price_EUR2005" amount="0.3" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated price based on freely available market reports (http://www.platts.com/news-feature/2013/petrochemicals/global-margins/ethane_rejection) (http://www.growthstockwire.com/3255/a-big-trend-change-is-coming-in-this-beaten-down-commodity) [Accessed 20140424].</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.79887481" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water content on a dry matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.79887481" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.79887481" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated value from global natural gas liquids production. Assumed that all NGL produced is fractioned into its components. T
+
+he world supply of NGL and condensate in 2008 were 10405 thousand barrels per day. This has been recalculated for 365 days in one year (pg 25).
+
+In the NGL and condensate mix, the estimate of concentrate is 35% (pg 9)
+
+Gas condensates have a specific gravity of  0.8 kg/l or less.(Favennec, P.,Petroleum Refining: Refinery operation and management, Band 5, Technip Ed. 1998; pg 26)
+
+
+NGL contains 33% of ethane.</productionVolumeComment>
+        <classification classificationId="bce08813-09df-42b9-9f2b-0926ce543889">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34: Basic chemicals</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="40a3e22c-50c3-46da-a5ea-e13cabff886e" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_water_unspecified" casNumber="007732-18-5" amount="2.75625E-05" isCalculatedAmount="true" mathematicalRelation="water_cooling_UNO_input*(1-fraction_CW_to_air)" elementaryExchangeId="2404b41a-2eed-4e9d-8ab6-783946fdf5d6">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.</comment>
+        <uncertainty>
+          <lognormal meanValue="2.75625E-05" mu="-10.5" variance="0.04" varianceWithPedigreeUncertainty="0.0487" />
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="abb50421-fbc5-434f-b24f-28bc2f4d2bf3" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_cooling_UNO_input" casNumber="007732-18-5" amount="4.5E-05" isCalculatedAmount="true" mathematicalRelation="ethane *0.000045" sourceId="7b443bad-124d-42a6-9a84-44fcf0225b6d" sourceYear="2008" sourceFirstAuthor="Hydrocarbon Processing" elementaryExchangeId="fc1c42ce-a759-49fa-b987-f1ec5e503db1">
+        <name xml:lang="en">Water, cooling, unspecified natural origin</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Estimation.  Due to lack of process specific data, the amount of cooling water of 4.5+E-5 m3/kg is estimated based on literature value for liquid petroleum gas extraction processes (Refining Processes Handbook 2008, www.hydrocarbonprocessing.com)</comment>
+        <uncertainty>
+          <lognormal meanValue="4.5E-05" mu="-10.01" variance="0.0006" varianceWithPedigreeUncertainty="0.0172" />
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.8899" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.1101" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">TDS in an average river used as approximation. That is, 110.1 mg/L (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0104328554239022" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab 4.8, calculated from bicarbonate content in river (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="9081.65213442325" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0104328554239022" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.00114865738217163" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="30347aef-a90b-46ba-8746-b53741aa779d">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in water</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="468711d9-0dc0-403e-a919-2a9629cdf4f6" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_air_unspecified" casNumber="007732-18-5" amount="1.74375E-05" isCalculatedAmount="true" mathematicalRelation="water_cooling_UNO_input*fraction_CW_to_air" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.74375E-05" mu="-10.96" variance="0.04" varianceWithPedigreeUncertainty="0.0487" />
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <parameter parameterId="540ed7db-fb44-4ccc-81fa-b405cecb2fb0" variableName="density_natural_gas_liquids" amount="0.8">
+        <name xml:lang="en">density_natural_gas_liquids</name>
+        <unitName xml:lang="en">kg/l</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.8" mu="-0.2231" variance="0.0006" varianceWithPedigreeUncertainty="0.0012" />
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Literature value. The specific gravity of natural gas liquids is 0.8 (Favennec, 1998). Using density of water as a reference substance the density of natural gas liquids can be calculated.
+
+specific gravity = density of sample / density of reference substance (water)
+
+density of the sample = 0.8 * 1 kg/l = 0.8 kg/l 
+
+Source: Favennec, P.,Petroleum Refining: Refinery operation and management, Band 5, Technip Ed. 1998; pg 26</comment>
+      </parameter>
+      <parameter parameterId="7a358736-a2b1-4262-8f9c-d4e7f0dd0908" variableName="technology_efficiency" amount="1">
+        <name xml:lang="en">technology efficiency</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="1" mu="0" variance="0.0006" varianceWithPedigreeUncertainty="0.0188" />
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Literature value.  http://www.igu.org/html/wgc2006/pdf/paper/add17999.pdf</comment>
+      </parameter>
+      <parameter parameterId="10e6c58f-94ca-4785-8f11-49f39cabf8ac" variableName="fraction_CW_to_air" mathematicalRelation="(0.5*fraction_CW_OT_to_air)+(0.5*fraction_CW_R_to_air)" isCalculatedAmount="true" amount="0.3875">
+        <name xml:lang="en">fraction of cooling water which evaporates to air</name>
+        <uncertainty>
+          <lognormal meanValue="0.3875" mu="-0.948" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">fraction of cooling water which evaporates to air, i.e. is consumed</comment>
+      </parameter>
+      <parameter parameterId="d3446223-e5cc-446e-9f2d-29047f8f9832" variableName="fraction_CW_R_to_air" amount="0.771">
+        <name xml:lang="en">fraction of cooling water which evaporates to air, recirculating cooling system</name>
+        <uncertainty>
+          <lognormal meanValue="0.771" mu="-0.2601" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Calculated based on literature value (Scown, C.D., 2011, Water Footprint of U.S. Transportation Fuels and supplying information of the article) (Vionnet, S., Quantis Water Database - Technical Report, 2012). </comment>
+      </parameter>
+      <parameter parameterId="c20777c4-a93b-44b0-8402-1f1d086f873f" variableName="fraction_CW_OT_to_air" amount="0.004">
+        <name xml:lang="en">fraction of cooling water which evaporates to air, once-through cooling system</name>
+        <uncertainty>
+          <lognormal meanValue="0.004" mu="-5.521" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Calculated based on literature value (Scown, C.D., 2011, Water Footprint of U.S. Transportation Fuels and supplying information of the article) (Vionnet, S., Quantis Water Database - Technical Report, 2012). </comment>
+      </parameter>
+      <parameter parameterId="84ef864f-6a23-4b18-bdad-89b96f489086" variableName="fraction_of_butane_in_NGL" amount="0.3">
+        <name xml:lang="en">fraction of butane in NGL</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.3" mu="-1.204" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Literature value.
+
+(http://digitalcommons.mcmaster.ca/cgi/viewcontent.cgi?article=1200&amp;context=esr)</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <extrapolations xml:lang="en">This dataset has been extrapolated from year 2008 to the year of the calculation (2019). The uncertainty has been adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-09-13" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="12">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset:
+
+Property 'water in wet mass':
+ - Input='0', Output='1,485E-05'
+ - Input &lt; output by 1,485E-05 kg (100% of output)
+
+Property 'wet mass':
+ - Input='0,33', Output='0,33001485'
+ - Input &lt; output by 1,48500000000107E-05 kg (0% of output)
+
+Property 'carbon content, fossil':
+ - Input='0,268177417241379', Output='0,2636286873'
+ - Input &gt; output by 0,00454872994137934 kg (1,73% of output)
+
+
+- Property 'wet mass=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'water content=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Amount of property 'water in wet mass=1' of exchange 'Water' deviates from the default amount in the master file.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Water'.
+Amount of property 'water in wet mass=1' of exchange 'Water' deviates from the default amount in the master file.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Water'.
+
+- The total water in wet mass of all input exchanges (0) and output exchanges (1,485E-05) is unbalanced.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=1, wet mass=1, water in wet mass=1, wet mass=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=1, wet mass=1, water in wet mass=1, wet mass=1
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="1b11366d-47b7-40d4-b85d-7d7063b22209" isActiveAuthor="false" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org" />
+      <dataGeneratorAndPublication personId="1b11366d-47b7-40d4-b85d-7d7063b22209" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org" isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2012-08-07T11:45:42" lastEditTimestamp="2012-08-15T11:16:04" fileGenerator="EcoEditor 3.0.61.8724" fileTimestamp="2012-08-15T11:16:04" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

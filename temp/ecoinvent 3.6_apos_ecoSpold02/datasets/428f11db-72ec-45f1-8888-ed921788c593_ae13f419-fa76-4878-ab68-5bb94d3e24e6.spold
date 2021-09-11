@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="428f11db-72ec-45f1-8888-ed921788c593" activityNameId="df0a92ed-7afb-4c3d-966b-96296d96ca33" parentActivityId="e94fddba-42b2-4cf7-9d34-44f38b62ecf9" inheritanceDepth="-1" type="1" specialActivityType="1" energyValues="0">
+        <activityName xml:lang="en">market for electricity, low voltage, label-certified</activityName>
+        <includedActivitiesStart xml:lang="en">This activity starts from 1kWh of  label-certified electricity fed into the low voltage transmission (distribution) network.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the transport of 1 kWh of label-certified low voltage electricity in the transmission network over cables and aerial lines.
+
+This dataset includes: 
+  - electricity inputs produced in this country and from imports and transformed to low voltage
+ - the transmission network
+ - direct emissions to air (SF6 from the insulation gas in the medium voltage level switchgear are allocated to the electricity demand on low voltage). 
+ - electricity losses during transmission  
+
+This dataset doesn't include
+ - electricity losses during transformation from medium to low, as these are included in the dataset for transformation
+  - leakage of insulation oil from cables and electro technical equipment (transformers, switchgear, circuit breakers) because this only happens in case of accidental release
+ - SF6 emissions during production and deconstruction of the switchgear, as these are accounted for in the transmission network dataset.
+</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="10000">The shares of electricity technologies on this market are valid for the year 2017. They have been calculated by the data provider and don't necessarily correspond with the production volumes entered in the undefined datasets of the different electricity producers. The shares have been calculated based on statistics from 2017: Swiss Federal Office of Energy SFOE, Swiss Electricity Statistics 2018; updated on 2019-03-28 (https://www.bfe.admin.ch/bfe/en/home.html). Further information can be found in a report available on ecoQuery, section 'Files'.</text>
+          <text xml:lang="en" index="1">This dataset describes the label-certified electricity available on the low voltage level in this country.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="46d5b7de-b2ef-4944-96cc-30e97826480c">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">electricity/supply mix</classificationValue>
+      </classification>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <classification classificationId="5bd3c258-eb6a-497e-9643-32b30aa010bf">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">natural gas/power plants</classificationValue>
+      </classification>
+      <geography geographyId="131278d6-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1"></text>
+        </comment>
+      </geography>
+      <technology technologyLevel="0">
+        <comment>
+          <text xml:lang="en" index="6"> - Low voltage level below 1 kV (Households)</text>
+          <text xml:lang="en" index="5">and public buildings)</text>
+          <text xml:lang="en" index="3"> - High voltage level above 24 kV (large scale industry)</text>
+          <text xml:lang="en" index="2">Definition of the voltage levels: </text>
+          <text xml:lang="en" index="4"> - Medium voltage level between 1 kV and 24 kV (medium to small scale industry, service sector</text>
+          <text xml:lang="en" index="1">Average technology used to transmit and distribute electricity. Includes underground and overhead lines, as well as air-, vacuum- and SF6-insulated high-to-medium voltage switching stations. Electricity production according to related technology datasets.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2011-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">The annual production volumes of this market are taken from Stolz&amp;Frischknecht 2015 and are valid for the year 2011. Stolz, P., Frischnkecht, R. 2015. Umweltbilanz Strommix Schweiz 2011. Issued by treeze Ltd. for the Federal Office for the Environment, Switzerland. </text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="3e6477a3-433b-41b6-b823-f48b141e2e88" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="002551-62-4" amount="2.99E-09" isCalculatedAmount="true" mathematicalRelation="sf6_emissions" sourceId="307f02b5-e4cb-47be-af56-a57efdeebbe1" sourceYear="2012" sourceFirstAuthor="Itten R." intermediateExchangeId="ab5dcfa8-e8f9-4923-84d4-51b25a898fa1" activityLinkId="557a266e-0767-4d12-9eb5-e43444d234fb">
+        <name xml:lang="en">sulfur hexafluoride, liquid</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment>EcoSpold01Location=RER</comment>
+        <comment xml:lang="en">Calculated value</comment>
+        <uncertainty>
+          <lognormal meanValue="2.99E-09" mu="-19.63" variance="0" varianceWithPedigreeUncertainty="0.002" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">based on emission data</comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">SF6</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">SF6</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="a611a303-a730-4721-8385-b0fa926ece41">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">342: Basic inorganic chemicals n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8ea136bf-bd0a-4b47-8264-d632659c54ab" unitId="ae252091-811b-461b-8e89-8f3075639eb1" amount="8.74048809653223E-08" isCalculatedAmount="true" mathematicalRelation="128646/ (36796000000*40)" sourceId="307f02b5-e4cb-47be-af56-a57efdeebbe1" sourceYear="2012" sourceFirstAuthor="Itten R." intermediateExchangeId="448b6d35-c6d6-42d9-9e63-c19b9a0a6496" activityLinkId="5194edec-29a0-4b03-84d7-1fcd1191dec7">
+        <name xml:lang="en">distribution network, electricity, low voltage</name>
+        <unitName xml:lang="en">km</unitName>
+        <comment xml:lang="en">Estimation. Data overtaken from Switzerland. 
+
+Swiss data are calculated values based on the electricity transported in this voltage level (36796 GWh) and the total low voltage power line length in Switzerland (cables and aerial lines - 128646 km). Lifetime is assumed to be 40 years. 
+
+See Itten&amp;Frischknecht 2012, Tab. 4.1 and Tab. 4.3.</comment>
+        <comment>EcoSpold01Location=CH</comment>
+        <uncertainty>
+          <lognormal meanValue="8.74048809653223E-08" mu="-16.25" variance="0.1" varianceWithPedigreeUncertainty="0.1181" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="3" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="e18627be-7029-4bd2-b8a8-58d6d00ffced">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">532: Civil engineering works</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="127f29ad-2119-433b-b546-c0b41ad61226" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" isCalculatedAmount="false" mathematicalRelation="" sourceId="f6ee6599-f8a7-4864-9f53-2b5d274f8be4" sourceYear="2014" sourceFirstAuthor="IEA" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkIdOverwrittenByChild="true" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Estimation. Compensation for the losses during transmission.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="145f3129-066c-49d5-80b6-722b79977950" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" productionVolumeAmount="7229411617">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0669" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Price for industrial users from IEA Key world energy statistics 2004 (www.iea.org). In addition, regarding label-certified electricity, the Swiss government has a market instrument for renewable energy which is calculated as the difference between the market price and the production price. This was started in 2009 and is 0.45 Rp/kWh (http://www.bfe.admin.ch/themen/00612/02073/index.html?lang=de). Therefore, the production price of label certified energy is assumed to be the supplyer price plus the 0.45Rp/kWh.The unit conversion from CH to EUR is based on the ecoinvent unit conversion file (1 CHF2005 = 0.644 EUR2005).</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="56309346-43a8-41ac-a825-9cf550ac8311" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" mathematicalRelation="" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkIdOverwrittenByChild="true" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0669" isDefiningValue="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Price for industrial users from IEA Key world energy statistics 2004 (www.iea.org). In addition, regarding label-certified electricity, the Swiss government has a market instrument for renewable energy which is calculated as the difference between the market price and the production price. This was started in 2009 and is 0.45 Rp/kWh (http://www.bfe.admin.ch/themen/00612/02073/index.html?lang=de). Therefore, the production price of label certified energy is assumed to be the supplyer price plus the 0.45Rp/kWh.The unit conversion from CH to EUR is based on the ecoinvent unit conversion file (1 CHF2005 = 0.644 EUR2005).</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7d718eab-0351-4f51-9f88-4d56df0b71b4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" mathematicalRelation="" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkIdOverwrittenByChild="true" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0669" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Price for industrial users from IEA Key world energy statistics 2004 (www.iea.org). In addition, regarding label-certified electricity, the Swiss government has a market instrument for renewable energy which is calculated as the difference between the market price and the production price. This was started in 2009 and is 0.45 Rp/kWh (http://www.bfe.admin.ch/themen/00612/02073/index.html?lang=de). Therefore, the production price of label certified energy is assumed to be the supplyer price plus the 0.45Rp/kWh.The unit conversion from CH to EUR is based on the ecoinvent unit conversion file (1 CHF2005 = 0.644 EUR2005).</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="724cb9cd-66ab-4696-9107-829158955531" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" mathematicalRelation="" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkIdOverwrittenByChild="true" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0669" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Price for industrial users from IEA Key world energy statistics 2004 (www.iea.org). In addition, regarding label-certified electricity, the Swiss government has a market instrument for renewable energy which is calculated as the difference between the market price and the production price. This was started in 2009 and is 0.45 Rp/kWh (http://www.bfe.admin.ch/themen/00612/02073/index.html?lang=de). Therefore, the production price of label certified energy is assumed to be the supplyer price plus the 0.45Rp/kWh.The unit conversion from CH to EUR is based on the ecoinvent unit conversion file (1 CHF2005 = 0.644 EUR2005).</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a6430f02-352b-4290-b7c7-6f5c79676629" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" mathematicalRelation="" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkIdOverwrittenByChild="true" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0669" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Price for industrial users from IEA Key world energy statistics 2004 (www.iea.org). In addition, regarding label-certified electricity, the Swiss government has a market instrument for renewable energy which is calculated as the difference between the market price and the production price. This was started in 2009 and is 0.45 Rp/kWh (http://www.bfe.admin.ch/themen/00612/02073/index.html?lang=de). Therefore, the production price of label certified energy is assumed to be the supplyer price plus the 0.45Rp/kWh.The unit conversion from CH to EUR is based on the ecoinvent unit conversion file (1 CHF2005 = 0.644 EUR2005).</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.0669" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="59ba2a26-6155-4ed9-a372-488a06769daf" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" mathematicalRelation="" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkIdOverwrittenByChild="true" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0669" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Price for industrial users from IEA Key world energy statistics 2004 (www.iea.org). In addition, regarding label-certified electricity, the Swiss government has a market instrument for renewable energy which is calculated as the difference between the market price and the production price. This was started in 2009 and is 0.45 Rp/kWh (http://www.bfe.admin.ch/themen/00612/02073/index.html?lang=de). Therefore, the production price of label certified energy is assumed to be the supplyer price plus the 0.45Rp/kWh.The unit conversion from CH to EUR is based on the ecoinvent unit conversion file (1 CHF2005 = 0.644 EUR2005).</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="0.0669" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="82c8600f-ea02-4ff6-be73-cb98c5db3c7e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" mathematicalRelation="" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkIdOverwrittenByChild="true" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0669" isDefiningValue="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Price for industrial users from IEA Key world energy statistics 2004 (www.iea.org). In addition, regarding label-certified electricity, the Swiss government has a market instrument for renewable energy which is calculated as the difference between the market price and the production price. This was started in 2009 and is 0.45 Rp/kWh (http://www.bfe.admin.ch/themen/00612/02073/index.html?lang=de). Therefore, the production price of label certified energy is assumed to be the supplyer price plus the 0.45Rp/kWh.The unit conversion from CH to EUR is based on the ecoinvent unit conversion file (1 CHF2005 = 0.644 EUR2005).</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="efb9d43d-4607-4c95-a8f0-8813ff0d4412" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0298" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkId="428f11db-72ec-45f1-8888-ed921788c593" productionVolumeAmount="209202239.450961">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a3ef26bd-d90e-4ff1-9135-264572cf3029" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.060586472" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkId="9b4a8330-96ed-47bb-af81-c3c46a4a5c05" productionVolumeAmount="425329718.887012">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b85bf599-8f71-415a-9384-d2f294ddf8dd" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.030924314" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkId="2f4cb6e1-ba5f-4d1c-92e4-1c4e9bf72f01" productionVolumeAmount="217095159.137071">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1872a736-edc2-4e70-b58c-dd4623469795" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.908489214" intermediateExchangeId="ae13f419-fa76-4878-ab68-5bb94d3e24e6" activityLinkId="8691b7bc-74a6-4bbd-b6c3-248dd442fbed" productionVolumeAmount="6377784499.52495">
+        <name xml:lang="en">electricity, low voltage, label-certified</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="106b1b1d-3f81-4d75-bcb8-4df4471758e3" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="sf6_emissions" casNumber="002551-62-4" amount="2.99E-09" isCalculatedAmount="false" sourceId="307f02b5-e4cb-47be-af56-a57efdeebbe1" sourceYear="2012" sourceFirstAuthor="Itten R." elementaryExchangeId="35d1dff5-b535-4628-9826-4a8fce08a1f2">
+        <name xml:lang="en">Sulfur hexafluoride</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature value/estimation. SF6 (sulphur hexafluoride) is used as quenching and insulation gas in gas-insulated switchgear. SF6 has physically ideal properties for the use in high and medium voltage switchgear.
+
+About 5% of SF6-emissions are caused by the medium voltage level switchgear, which are allocated to the electricity demand on low voltage.
+
+The emission rate has been taken from UBA (1999) Schwefelhexafluorid. Retrieved 14.8.2002 from: http://www.ubavie.gv.at/publikationen/uba-aktuell/archiv/1999/08/SF6.html.</comment>
+        <uncertainty>
+          <lognormal meanValue="2.99E-09" mu="-19.63" variance="0.001" varianceWithPedigreeUncertainty="0.044225" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="5" geographicalCorrelation="2" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <parameter parameterId="de08658d-936a-46b6-b8e4-739e9b3f2399" variableName="electricity_transmission_losses" isCalculatedAmount="false" amount="0.24">
+        <name xml:lang="en">electricity transmission losses</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.24" mu="-1.427" variance="0.0006" varianceWithPedigreeUncertainty="0.0107" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="3" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <comment xml:lang="en">Losses of electricity during transmission in the low voltage grid. The Swiss shares of the electricity demand and losses are taken from Itten&amp;Frischknecht 2012, Tab. 4.1. Swiss data are based on Swiss electricity statistics 2009 (BFE 2010) and personal communication (ewz 2011)
+
+Tab. 4.1:
+Total losses = 100%
+
+Total losses high voltage: 39%, out of it 6% transformation and 33% transmission
+Total losses medium voltage: 13%, out of it 8% transformation and 5% transmission
+Total losses low voltage: 48%, out of it 24% transformation and 24% transmission
+
+Itten R. and Frischknecht R. (2012) Life Cycle Inventories of Electricity Mixes and Grid. ESU-services Ltd., Uster, Switzerland.
+
+BFE (2010) Schweizerische Elektrizitätsstatistik 2009. Bundesamt für Energie, Bern, CH, retrieved from: http://www.bfe.admin.ch/themen/00526/00541/00542/00630/index.html?lang=de&amp;dossier_id=04840
+
+Gerhard Emch, EWZ, personal communication on 22.06.2011</comment>
+      </parameter>
+      <parameter parameterId="a5b1977a-ec47-4123-beac-51e2c634cfa3" variableName="electricity_losses_total" isCalculatedAmount="false" amount="0.07">
+        <name xml:lang="en">total electricity losses within the country</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.07" mu="-2.659" variance="0.0006" varianceWithPedigreeUncertainty="0.0018" />
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <comment xml:lang="en">Total losses of electricity from the net electricity fed into the grid until arriving at the end user (transmission and transformation losses).
+The total share of electricity losses on the electricity delivered in this country was determined using the total amount of losses given in the statistics of the IEA (IEA 2010, 2011).
+
+IEA (2010) Energy Statistics for different countries. lectricity/Heat Data. Retrieved June 2011 from: http://www.iea.org/stats/prodresult.asp?PRODUCT=Electricity/Heat
+
+IEA (2011) OECD - Electricity and heat generation. International Energy Agency (IEA) Electricity information statistics (database), retrieved from: http://www.oecd-ilibrary.org/energy/.</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">national statistics AEE 2007</samplingProcedure>
+        <extrapolations xml:lang="en">This dataset has been extrapolated from year 2015 to the year of the calculation (2019). The uncertainty has been adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2016-04-06" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="5">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2016-04-07" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="5">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Property 'total length of network=0' of master data exchange was removed from exchange 'distribution network, electricity, low voltage'.
+Property 'lifetime=0' of master data exchange was removed from exchange 'distribution network, electricity, low voltage'.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, water in wet mass=0, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0
+
+</otherDetails>
+      </review>
+      <review reviewerId="9a963412-20a7-428b-8740-3582e217c4b6" reviewerName="Carl Vadenbo" reviewerEmail="vadenbo@ifu.baug.ethz.ch" reviewDate="2015-05-26" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="7">
+        <details>
+          <text xml:lang="en" index="0">The update of the whole electricity sector for the ecoinvent v3.2 database consist of hundreds of datasets. All these datasets have passed through a streamlined review processes where the underlying modelling of production volumes, technology shares and efficiencies was reviewed in detail prior to the datasets being submitted to the database.</text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2015-05-26" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="7">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Property 'lifetime=0' of master data exchange was removed from exchange 'distribution network, electricity, low voltage'.
+Property 'total length of network=0' of master data exchange was removed from exchange 'distribution network, electricity, low voltage'.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=0, wet mass=1, dry mass=1, carbon content, non-fossil=0, carbon content, fossil=0, water content=0
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" isActiveAuthor="true" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" />
+      <dataGeneratorAndPublication personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" dataPublishedIn="1" publishedSourceId="68f5ff5b-7196-4e63-aeb8-184b62ca2c7d" publishedSourceYear="2015" publishedSourceFirstAuthor="Stolz, P." isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2015-05-26T10:18:22" lastEditTimestamp="2016-04-05T10:05:19" fileGenerator="EcoEditor 3.7.200.14330" fileTimestamp="2016-04-05T10:05:19" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="5bb09177-1201-478c-9594-4f985a1fc172" activityNameId="f844d4c6-ffc9-4135-b459-2e42a48989b6" parentActivityId="81aef123-a8d1-4289-9028-bf0ed587166d" inheritanceDepth="-1" type="1" specialActivityType="1">
+        <activityName xml:lang="en">market for waste paper, unsorted</activityName>
+      </activity>
+      <classification classificationId="59483918-ff02-4aac-a852-6d048c86f59a">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">paper &amp; cardboard/pulps</classificationValue>
+      </classification>
+      <classification classificationId="c5c111f2-7555-4858-a8c4-2fe82e255c7f">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3811:Collection of non-hazardous waste</classificationValue>
+      </classification>
+      <geography geographyId="f9221622-cc45-11de-98ed-0019e336be3a">
+        <shortname xml:lang="en">Europe without Switzerland</shortname>
+        <comment>
+          <text xml:lang="en" index="1">transport inputs refer to this specific geography</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="0" />
+      <timePeriod startDate="2000-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1"></text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="dc3d12f8-894a-44c5-8112-f78bdde78af2" unitId="2f4daad7-5331-4f14-930c-d8bca924557d" amount="0.0264" intermediateExchangeId="53705574-11eb-4007-80f7-790ebd91374a" activityLinkId="c0b3bf81-045a-48fa-8cea-8549cfbdc59d">
+        <name xml:lang="en">municipal waste collection service by 21 metric ton lorry</name>
+        <unitName xml:lang="en">metric ton*km</unitName>
+        <comment xml:lang="en">Own estimation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0264" mu="-3.634" variance="0.19" varianceWithPedigreeUncertainty="0.3121" />
+          <pedigreeMatrix reliability="5" completeness="4" temporalCorrelation="5" geographicalCorrelation="3" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en">own estimation</comment>
+        </uncertainty>
+        <classification classificationId="2d02f6b3-e31d-4bae-906a-c967bb6c5d14">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">94231: General waste collection services, residential</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="03c7a6ea-8dea-4154-9466-35a239a7e32b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-1" intermediateExchangeId="f70c1877-6db5-4024-b260-69f50314b40c" productionVolumeAmount="20178000000">
+        <name xml:lang="en">waste paper, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.093" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Assumed to be 10% less than for sorted waste paper</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="5ba529c8-edd0-4225-9188-2a9852c24459">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39240: Waste and scrap of paper or paperboard</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cc515f14-08ef-4420-af3e-5e1154faea78" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-1" intermediateExchangeId="f70c1877-6db5-4024-b260-69f50314b40c" activityLinkId="6c97634d-ede4-4b2c-83ab-e00e9671c4a3" productionVolumeAmount="20178000000">
+        <name xml:lang="en">waste paper, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.093" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Assumed to be 10% less than for sorted waste paper</comment>
+        </property>
+        <classification classificationId="5ba529c8-edd0-4225-9188-2a9852c24459">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39240: Waste and scrap of paper or paperboard</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <extrapolations xml:lang="en">This dataset has been extrapolated from year 2000 to the year of the calculation (2019). The uncertainty has been adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2013-01-10" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-06-21" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="7">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- The following negative reference products do not appear on the current list of materials for treatment. No activities exist that produce these materials for treatment.
+ - waste paper, unsorted
+
+</otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2013-01-10" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3">
+        <details>
+          <text xml:lang="en" index="0">- Validation passed.
+</text>
+        </details>
+        <otherDetails xml:lang="en">- Validation passed.
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="c4597934-ecac-422c-b431-382e85fdcb83" isActiveAuthor="false" personName="[System]" personEmail="support@ecoinvent.org" />
+      <dataGeneratorAndPublication personId="c4597934-ecac-422c-b431-382e85fdcb83" personName="[System]" personEmail="support@ecoinvent.org" dataPublishedIn="2" publishedSourceId="2349c548-1d2c-46fd-bbad-b93abc019d7d" publishedSourceYear="2007" publishedSourceFirstAuthor="Hischier R." isCopyrightProtected="false" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.11" defaultLanguage="en" creationTimestamp="2012-05-31T14:00:24" lastEditTimestamp="2013-01-10T11:06:46" fileGenerator="EcoEditor 3.2.63.9512" fileTimestamp="2013-01-10T11:06:46" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

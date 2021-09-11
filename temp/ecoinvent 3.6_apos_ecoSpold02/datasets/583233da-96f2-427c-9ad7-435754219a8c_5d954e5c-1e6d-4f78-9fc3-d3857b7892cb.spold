@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="583233da-96f2-427c-9ad7-435754219a8c" activityNameId="416fb40b-6d75-4ce1-96a0-c6af1e1bb922" parentActivityId="b169e6ee-4d6b-4129-9fbe-f39def29a7b4" inheritanceDepth="-1" type="1" specialActivityType="0">
+        <activityName xml:lang="en">electricity production, hydro, aluminium industry</activityName>
+        <includedActivitiesStart xml:lang="en">Re-labelling dataset, not representing a real transformation activity. Conceptually, the activity can be said to start with the production of electricity.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">Re-labelling dataset, not representing a real transformation activity. Conceptually, the activity can be said to end with a given amount of high voltage electricity labelled as specifically used for the production of electricity. </includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="1">This is a dataset used to create an aluminium industry specific electricity market for 'aluminium production Area 9' (China). It identifies the portion of hydroelectricity production in China that is used for the electrolysis step of the aluminium life cycle. 
+Electricity markets specific to the aluminium-industry are needed in an LCI database because primary aluminium production is very energy intensive, and hence the location of production plants is often determined by access to large amounts of cheap electricity, which often results in an electricity mix that is different from the general grid mix of the countries where the production plants are located. 
+It is assumed that the production of electricity in general and in aluminium industry specific power plants is identical. Details on actual electricity generation with each technology can be found in the corresponding datasets.</text>
+        </generalComment>
+        <tag>electricity, primary aluminium industry</tag>
+        <tag>re-labelling activity</tag>
+      </activity>
+      <classification classificationId="4c3b7870-d05d-41cf-9a2f-d901c183b0d8">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3510:Electric power generation, transmission and distribution</classificationValue>
+      </classification>
+      <classification classificationId="a2151a25-4436-4100-b29b-85d910b709d4">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">hard coal/power plants</classificationValue>
+      </classification>
+      <geography geographyId="0c40fa1e-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">CN</shortname>
+        <comment>
+          <text xml:lang="en" index="1">China</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment />
+      </technology>
+      <timePeriod startDate="2015-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Production volume updated with 2015 data from IAI</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="341e3566-a1c2-4426-b061-cdce7c91363c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00056639815377" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="f764c3fe-86c4-4d31-b7c5-07a00cdc19a4">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00056639815377" mu="-7.476" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ee579ef5-d19e-4cad-9868-eb208a927846" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00369344437077" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="84a34fc7-f691-497a-af59-119e66b7d047">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00369344437077" mu="-5.601" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f6eae42e-80fa-40fd-91a1-cea51423913f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00452361534881" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="472c38e3-e69d-4316-8881-63bf7763d4cf">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00452361534881" mu="-5.398" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="39e2c0df-1b43-4ae5-ab39-d3bc5ec97559" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00933525010921" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="a6d749f5-8e42-4c7c-8155-b338bffdda8d">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00933525010921" mu="-4.674" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ca7df7d3-e54b-4522-a2bd-4737ec135698" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00082717406031" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="b55ece83-33fd-4116-9952-d20ded11965d">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00082717406031" mu="-7.097" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fd6ea760-720e-466b-b938-9a30267fa7bc" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1" isCalculatedAmount="true" mathematicalRelation="1" intermediateExchangeId="5d954e5c-1e6d-4f78-9fc3-d3857b7892cb" productionVolumeAmount="44412337759" productionVolumeMathematicalRelation="">
+        <name xml:lang="en">electricity, high voltage, aluminium industry</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Expressed as sum of contributing technologies (inputs) to allow uncertainty analysis: each technology share is uncertain, and in a Monte Carlo analysis will always be normalized by the sum contribution of each technology</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0977" mathematicalRelation="" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated in temporary price data. 94% of the average price (to account for a 6% loss in transformation and transmission) for electricity for industrial consumersin 2005 (excluded taxes). From IEA.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">The production volume, which is ultimately used to determine the share of hydroelectricity in the downstream market for aluminium industry specific high voltage electricity, is calculated by multiplying the following data:
+(1) public estimates of the electricity mix used to produce aluminium in the 'aluminium production area 9' (China), provided by the International Aluminium Institute (IAI), see http://www.world-aluminium.org/statistics/. These estimates are based on the subset of aluminium producers that provide information to the IAI.
+ (2) global average electricity requirements, per tonne primary aluminium, for the prebake electrolysis technology (100% prebake electrolysis in China).
+(3) electricity compensating line and transformation losses from production to consumption as medium voltage electricity, using country-level ecoinvent v3 data.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="44412337759" mu="26.24" variance="0.0006" varianceWithPedigreeUncertainty="0.0033" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </productionVolumeUncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ce42ac3d-ccfe-4bcd-862d-febf88d8e096" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00177251584352" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="ee1b6595-badd-45c5-a1dc-50ed1fe4abe5">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00177251584352" mu="-6.335" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bba575d8-8d9b-41be-b9e5-af042981d50d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0323699250336" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="f9514245-bef7-4281-9033-48324d1f93fd">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0323699250336" mu="-3.431" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="51135a6a-fb11-4f80-827f-0c72ded386ec" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0143821276266" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="d455d474-9d56-432e-8be3-426ca237c526">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0143821276266" mu="-4.242" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d87991bd-6947-4775-adc1-7c175c404e0c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00342686396414" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="99c07413-5572-4471-99e0-682ee1394f9b">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00342686396414" mu="-5.676" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="19144507-8182-4113-b260-9d231009585b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0172524875436" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="dbc642ef-6f0c-4692-bb78-5471ce4b203d">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0172524875436" mu="-4.06" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c0c34c28-0773-4195-8189-a8f03d86940c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0165434812062" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="2871904f-7a34-4fa5-a03b-3a07a2a46147">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0165434812062" mu="-4.102" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ad9cc0ee-b91b-4921-99a3-5641455c1542" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00957158555501" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="88d21579-68af-4343-be27-d410bdb097da">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00957158555501" mu="-4.649" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3fe4d993-9563-494a-8310-62e895d1f74c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00212701901223" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="943d4f42-0cd8-4341-bb24-7aa86593891b">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00212701901223" mu="-6.153" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="50b3ff0b-31eb-48ba-a2ee-d49681ea9a8b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0519594635093" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="317c3997-7996-459e-aa65-b1c698a42979">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0519594635093" mu="-2.957" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a734cfa9-580b-4370-bbc0-6841de03f2e3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00224518673513" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="67b74a0c-dfaf-4f57-b268-c47e853cdfa0">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00224518673513" mu="-6.099" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ae96c3ae-46aa-46e6-90be-4879dec2d6ee" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0541208170888" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="58aee0ad-6e16-4218-af18-29dc75bc17bc">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0541208170888" mu="-2.917" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="41d91ae8-af17-42a7-af05-62fe16115098" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0619198868003" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="82d22ac1-b97a-496b-89b8-aa278c72b753">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0619198868003" mu="-2.782" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1dddb11c-c3da-472a-89d9-366282a2f0b1" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00283602534963" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="5da5e133-1809-4fec-927f-710ee084123c">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00283602534963" mu="-5.865" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="021585d7-5fd0-4aa4-80e9-b92abf733270" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0661739248248" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="28d52f74-20e2-474c-b781-cb9f3e686a17">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0661739248248" mu="-2.715" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="29cab90e-eb5d-4621-a25c-0ad8778b9eaa" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.182569131883" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="12561682-3d2d-48d7-9b59-58f205d427e3">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.182569131883" mu="-1.701" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="07f0b0bb-15be-4f92-9ceb-f34a5279280c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.162328116699" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="855cc251-fef2-4c4d-9e28-55b8f9d84b05">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.162328116699" mu="-1.818" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a77173d2-efcf-43b6-8b8f-e432f8791fcb" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.36335445803E-05" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="71dedb61-88b4-4ef9-896f-3a96af845c99">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="2.36335445803E-05" mu="-10.65" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0479d4b6-bd8d-4177-b632-c119cc4c26f4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0555720716422" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="e932166f-47cb-4413-877f-3911d8b4ef4d">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0555720716422" mu="-2.89" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c9a50625-d43a-4723-b660-fb8f2e545dbc" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0242577232747" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="7f2151e4-b19a-44f3-bbc2-e46a3baec6a9">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0242577232747" mu="-3.719" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2a906a6a-ad23-403d-9103-bfe2981bca51" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0248152218093" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="76ba9346-f643-4812-9d86-df14d2a99157">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0248152218093" mu="-3.696" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bbb1c69b-2930-4143-a987-e4f645e37402" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.146527976398" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="f2e2eef4-9817-4249-a588-4d8ebb5716eb">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.146527976398" mu="-1.921" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e432f466-c36b-4880-8c31-bdd782db3d64" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00681939336096" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="b5bc51ee-f90d-4aa5-8bf8-cbdfaea6b974">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00681939336096" mu="-4.988" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6439cdae-beb6-4a42-b8d6-48b96eb76cfc" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0406496966781" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="a8b47605-d76c-4c1c-b9f7-446bea07c6b8">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0406496966781" mu="-3.203" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f14a852e-73f1-4b55-bc4d-f8a198e5fd01" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000789842575256" isCalculatedAmount="false" mathematicalRelation="" intermediateExchangeId="66c93e71-f32b-4591-901c-55395db5c132" activityLinkId="1a4bf5ea-631b-409d-9992-9714b2c9fd85">
+        <name xml:lang="en">electricity, high voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated amount (see general comments). Share of hydroelectricity used for primary aluminium production in Area 1 (Africa) that is produced in South Africa (ZA) and is assumed to come from non alpine region reservoir plants, based on the share of hydroelectricity produced from such plants in general in South Africa.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000789842575256" mu="-7.144" variance="0.0006" varianceWithPedigreeUncertainty="0.0053" />
+          <pedigreeMatrix reliability="3" completeness="2" temporalCorrelation="3" geographicalCorrelation="1" furtherTechnologyCorrelation="2" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness percent="89" systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">IAI data used for total electricity used in the production of aluminium that is from hydroelectric plants. ecoinvent data used to split hydroelectricity production to the respective technologies (reservoir, run-of-river, pumped storage). The cited 89% representativeness is for IAI data (data based on 100% of regional aluminium production). The percent representativeness of data used to split hydroelectricity production to different types of plants (national grid proxy) is 100%.</samplingProcedure>
+        <extrapolations xml:lang="en">This dataset has been extrapolated from year 2015 to the year of the calculation (2019). The uncertainty has been adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-06-12" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="5">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,0977'
+ - Input &lt; output by 0,0977 EUR2005 (100% of output)
+
+
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99,5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'electricity, high voltage, aluminium industry', global (2012-2012) production volume 251868554653, sum of all non-global production volumes 255913274074,84. Local datasets used in calculation: UN-OCEANIA (2012-2012) PV: 7985830740,38, IAI Area, South America (2012-2012) PV: 28799781808,8, IAI Area, EU27 &amp; EFTA (2012-2012) PV: 39993716862, IAI Area, Russia &amp; RER w/o EU27 &amp; EFTA (2012-2012) PV: 67919674912,2, IAI Area, Africa (2012-2012) PV: 11921635615,4, IAI Area, Asia, without China and GCC (2012-2012) PV: 4070539265,06, RNA (2015-2015) PV: 50809757112, CN (2015-2015) PV: 44412337759
+
+</otherDetails>
+      </review>
+      <review reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2018-06-12" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="5">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="ebf45305-b87c-4d3d-b74f-fbc6677bca1b" isActiveAuthor="false" personName="Lucia Valsasina" personEmail="valsasina@ecoinvent.org" />
+      <dataGeneratorAndPublication personId="ebf45305-b87c-4d3d-b74f-fbc6677bca1b" personName="Lucia Valsasina" personEmail="valsasina@ecoinvent.org" dataPublishedIn="0" isCopyrightProtected="false" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2018-06-12T10:32:35" lastEditTimestamp="2018-06-12T17:39:20" fileGenerator="EcoEditor 3.11.1000.30" fileTimestamp="2018-06-12T17:39:20" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

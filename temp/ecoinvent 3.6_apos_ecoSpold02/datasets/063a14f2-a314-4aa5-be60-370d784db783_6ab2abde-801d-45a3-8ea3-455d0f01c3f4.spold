@@ -1,0 +1,2079 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="063a14f2-a314-4aa5-be60-370d784db783" activityNameId="ea2a6e39-0545-48cd-ba6f-b6b1a9343bcd" parentActivityId="4fa3fb98-1acf-5270-b541-168fde728921" inheritanceDepth="-1" type="1" specialActivityType="0">
+        <activityName xml:lang="en">water production, decarbonised</activityName>
+        <includedActivitiesStart xml:lang="en">From the intake of raw surface water into the plant.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This dataset ends with the production of decarbonised water. It includes use of chemicals and some emissions for the treatment of water used in power plants.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="2">This dataset represents production of 1 kg of decarbonised water. It is a rough estimation for the decarbonation process.
+
+This dataset was created specifically for use in water cooling towers and flue gas scrubbers. The decarbonisation process is meant to remove organic suspended matter, as well as calcium bicarbonate.</text>
+          <text xml:lang="en" index="6">[This dataset is meant to replace the following datasets:
+ - water production and supply, decarbonised, GLO, 1993 - 1993 (9e0690cb-2ca4-496a-a83a-a24aab549025)]</text>
+          <text xml:lang="en" index="5">Jungbluth N. (2007) Erdöl. In: Sachbilanzen von Energiesystemen: Grundlagen für den ökologischen Vergleich von Energiesystemen und den Einbezug von Energiesystemen in Ökobilanzen für die Schweiz (ed. Dones R.). Swiss Centre for Life Cycle Inventories, Dübendorf, CH.</text>
+          <text xml:lang="en" index="4">Reference:</text>
+          <text xml:lang="en" index="3">This dataset is a copy of the global dataset and was created with the purpose to regionalize the production of decarbonised water. The production volume has been adapted. The original data for the inventory is described in Jungbluth (2017), section 13.3.1.</text>
+        </generalComment>
+        <tag>recontextualization</tag>
+      </activity>
+      <classification classificationId="2e230f2b-db03-4cc3-b350-5606e04d2aa0">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3600:Water collection, treatment and supply</classificationValue>
+      </classification>
+      <geography geographyId="7846b897-7c04-4f9f-b607-2b83fcd9a74c">
+        <shortname xml:lang="en">RoW</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Extrapolated from data provided by CH company. The uncertaininty was adjusted accordingly</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="2">Decarbonazation is a method that removes carbon dioxide from water very effectively to minimizes the potential of carbonates precipitation of mineral salts. Moreover, reducing the carbon dioxide level in feed water also diminishes the ionic load on ion exchange processes mostly used in water treatment systems (Technology Deegremont, 2017). </text>
+          <text xml:lang="en" index="3">The treatment involves feeding water into the top of a tower, at atmospheric pressure while air is injected from the bottom of the tower in a countercurrent flow design. When water bicarbonates are in contacted with air, cat ion exchanging processes are carried out converting them to carbonic acids, which easily break into water and carbon dioxide (Paramount, 2015). As the air moves to the top of the tower, it starts saturating with CO2 when contacting the water, where it is finally removed. High surface contact area in the tower bed, enhances CO2 transformation from the liquid to the gas phase (Technology Deegremont, 2017). </text>
+          <text xml:lang="en" index="1">Water treatment in power plants by precipitation or carbonates for the use as cooling water.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2010-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time of publication.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="38c48e6d-4f5b-4a14-8920-ca2d982f6129" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="-2.52726891299481E-05" isCalculatedAmount="true" mathematicalRelation="((water_river_input- RP/1000-(ByP_01*-1)/1000*WWM_BP01)*(1-0.15))*-1" intermediateExchangeId="3055997a-d565-4c92-9a91-431801587a3b" activityLinkId="f41e674c-cdeb-4b53-bcf9-f9c43a95f58f" productionVolumeAmount="532941642.21472" productionVolumeMathematicalRelation="RP_PV * ((Ref('38c48e6d-4f5b-4a14-8920-ca2d982f6129')*-1) / RP)">
+        <name xml:lang="en">wastewater, unpolluted</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. This value was taken from the dataset "water production and supply, decarbonised" (GLO) dataset (accessed on 2017-12-14) as it was considered adequate also for this dataset. 15% of water lost during production of decarbonised water is considered to be lost to air. The rest (1-0.15=85%) is considered to be released as an emission of water to water.</comment>
+        <uncertainty>
+          <lognormal meanValue="-2.52726891299481E-05" mu="-10.59" variance="0.04" varianceWithPedigreeUncertainty="0.0429" />
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Assumed to be like in tap water. Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17230710238" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.33747615607878" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Tap water dry mass was used as an estimation of the wastewater dry mass. This approach was chosen when the addition of compunds in wastewater was smaller than the mineral content estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.00178990835661632" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.662523843921" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Density of water was assumed that of tap water 1kg/L, that is 1000kg/m3.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00357981671323264" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.00120810278384832" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="34f49fca-a18e-48df-a635-ee7e24ef6dbb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39920: Sewage sludge</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="92203164-9d09-4ef2-95d8-455c08120d8b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="ByP_01" amount="-0.000882780914658202" isCalculatedAmount="true" mathematicalRelation="((water_river_input*0.02)*1000*0.03/0.7)*-1" intermediateExchangeId="cddade55-1d1f-491c-b2e2-59f6bed28f56" activityLinkId="6d7f598f-17aa-401b-a3b0-6ee1adcfd9d5" productionVolumeAmount="18615775628.5714" productionVolumeMathematicalRelation="ByP_01/ RP* RP_PV">
+        <name xml:lang="en">decarbonising waste</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated value copied from the amount of sewage sludge output in the dataset "water production, deionised" (GLO) as it was also considered adequate for this dataset. This value is based on the EPA guideline "Drinking Water Treatment Plant Residuals Management Technical Report" in which typical lime softening sludge volumes produced by water treatment plants are computed. 2% of the total water input was assumed as the produced sludge. The sludge contains calcium carbonate, magnesium hydroxide, other divalent ions, natural organic matter from the source water, inorganics, suspended solids, microorganisms, and radionuclides. Metals found in the softening sludges include calcium, magnesium, arsenic, barium, cadmium, chromium, lead, mercury, selenium, and silver (Cornwell, 1999). (Retrieved from: https://www.epa.gov/sites/production/files/2015-11/documents/dw-treatment-residuals-mgmt-tech-report-sept-2011.pdf)
+
+Moreover, based on the same EPA guideline, for lime softening carried out in conventional gravity sedimentation basins, the solids concentration of the sludge ranges from 2 to 4 percent. A solids concentration of 3 percent is assumed for the decarbonising waste. As the activity modelling the treatment of this waste is modelled based on a solids concentration of 70%, the amount is scaled accordingly.</comment>
+        <uncertainty>
+          <lognormal meanValue="-0.000882780914658202" mu="-7.032" variance="0.04" varianceWithPedigreeUncertainty="0.1629" />
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="ByP_01_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.428571428571429" isDefiningValue="false" mathematicalRelation="WWM_BP01/DM_BP01" isCalculatedAmount="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.12, ecoinvent v2.2 report 13_I.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab A.12, ecoinvent v2.2 report 13_I.</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" variableName="WWM_BP01" amount="0.3" isDefiningValue="false" mathematicalRelation="WM_BP01 - DM_BP01" isCalculatedAmount="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass - dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="DM_BP01" amount="0.7" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Amount based on the waste composition inventoried in the activity that models the treatment of decarbonising waste ("treatment of decarbonising waste, residual material landfill").</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" variableName="WM_BP01" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Inventoried waste contains 100% decarbonising waste</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from the production volume of water, decarbonised, at user in proportion to the respective output amounts.</productionVolumeComment>
+        <classification classificationId="5f29a8d8-03d5-430d-b504-5bc91545a88b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39990: Other wastes n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c76433a8-7952-4060-8d88-906d2e0d38d7" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="2.05982213420247E-07" intermediateExchangeId="b055cb73-3656-4bb2-b53c-928352e1e8ac" activityLinkId="3cd1ce7c-bd29-4572-ba70-149ada74664e">
+        <name xml:lang="en">lime, hydrated, packed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature information for a modern power plant  taken from the 'water production and supply, decarbonised, GLO' dataset (accessed 20171214) as it was considered adequate also for this dataset.
+
+</comment>
+        <uncertainty>
+          <lognormal meanValue="2.05982213420247E-07" mu="-15.4" variance="0.0006" varianceWithPedigreeUncertainty="0.0986" />
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Mainly Ca(OH)2. Tab 3.4, ecoinvent v2.2 report 7, part VII, pg 7</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.003" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Tab 3.4, ecoinvent v2.2 report 7, part VII, pg 7</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.997" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-water mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Mainly Ca(OH)2. Tab 3.4, ecoinvent v2.2 report 7, part VII, pg 7</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.00300902708124373" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="d7044cba-9c33-4cfd-9423-d02ed13bd123">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">37420: Quicklime, slaked lime and hydraulic lime</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c8280e37-f472-4ec7-9c92-a3f53c8546ab" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7647-01-0" amount="1.54986616893875E-08" intermediateExchangeId="3ab60559-40d3-42e4-9cac-476a519098fa" activityLinkId="85eebaac-951e-46fb-9f55-51acec7d444d">
+        <name xml:lang="en">hydrochloric acid, without water, in 30% solution state</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature information for a modern power plant, split of old data. This value was taken from the 'water production and supply,decarbonised, GLO' dataset (accessed 20171214) as it was considered adequate also for this dataset</comment>
+        <uncertainty>
+          <lognormal meanValue="1.54986616893875E-08" mu="-17.98" variance="0.0006" varianceWithPedigreeUncertainty="0.0986" />
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">HCl. </comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">HCl. </comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="bce08813-09df-42b9-9f2b-0926ce543889">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34: Basic chemicals</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b1902d92-978b-4d80-8072-4f802fc42852" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007705-08-0" amount="2.20980918280945E-07" intermediateExchangeId="51202bed-5f41-4b96-a788-9f6649dcb3c8" activityLinkId="116a9fde-8489-4ad0-891b-5163d20fc1b5">
+        <name xml:lang="en">iron (III) chloride, without water, in 40% solution state</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature information for a modern power plant  taken from the 'water production and supply, decarbonised, GLO' dataset (accessed 20171214) as it was considered adequate also for this dataset.
+
+</comment>
+        <uncertainty>
+          <lognormal meanValue="2.20980918280945E-07" mu="-15.33" variance="0.0006" varianceWithPedigreeUncertainty="0.0986" />
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">FeCl3</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">FeCl3</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="d3e80077-bb2e-4851-a954-d695daaa3f86">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34240: Phosphates of triammonium; salts and peroxysalts of inorganic acids and metals n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ed0afbd5-862f-48e7-8405-cc097ab3d70f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="RP" amount="1" intermediateExchangeId="6ab2abde-801d-45a3-8ea3-455d0f01c3f4" productionVolumeAmount="21085830000000" productionVolumeVariableName="RP_PV" productionVolumeMathematicalRelation="7.588E+10*1000">
+        <name xml:lang="en">water, decarbonised</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.00046" isDefiningValue="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Converted from EU price by using Purchasing Power Parities  (0.8458 in 2003 and 0.8426 in 2004)</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" variableName="RP_true_value" amount="0.00046" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Estimated at 10% of industrial water withdrawals. Source for industrial water withdrawals: Table 7.1 in World Water Assessment Programme. 2009. The United Nations World Water Development Report 3: Water in a Changing World. Paris: UNESCO, and London: Earthscan</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="21085830000000" mu="31.96" variance="0.0006" varianceWithPedigreeUncertainty="0.0014" />
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="2" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3ab958a1-c6a2-4873-b517-3ca17cb1faaa" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="02de4072-2353-4a56-b2b6-9130364bb3a2" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.66953754592105E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b0857112-d108-4921-a75c-b98a0887c706">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="4.66953754592105E-07" mu="-14.58" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="210ad4f9-f39d-48db-ac33-7ff13300d2e4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.72958089114081E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="3f8a96f2-4b4c-4331-be3f-29b628e2fd7d">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="4.72958089114081E-07" mu="-14.56" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="89ffd399-762d-4dd1-ba31-673729570353" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.48921245122655E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="95e87daf-4510-4aa0-847d-ae5c6b406207">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="3.48921245122655E-06" mu="-12.57" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="160baf77-2ff5-41cc-9571-a31af96de17b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.13376026310093E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="49fedc63-9369-45fb-8fd0-1bb19653488d">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.13376026310093E-05" mu="-11.39" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4380e759-b152-42e6-a71f-1be81070e5de" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.42328425342998E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="491a99b9-07bf-4b26-9ed8-e13cc9721425">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="6.42328425342998E-07" mu="-14.26" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="eb6f9b5e-0056-4182-b606-296e56dfb7e9" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.03590039846931E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="f5f32942-1f69-4944-848b-00716e63bb9e">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="4.03590039846931E-06" mu="-12.42" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="36f9792b-f9b5-4936-bd97-1f0829e6b309" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.74120450510792E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="e516bbb3-49e5-4a2e-9a89-b10e770bb640">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.74120450510792E-06" mu="-13.26" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="702aebde-3ccc-4bf0-bc72-e96383902c67" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.47458051492137E-08" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="07b81f60-0f79-42e1-a51b-0039ff089443">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="6.47458051492137E-08" mu="-16.55" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6a3f0656-1b34-4464-ac60-91f4c6159281" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.07727568338291E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="32939900-cce1-4bd1-860f-6df32efb10f7">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.07727568338291E-07" mu="-15.39" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="473622c5-e781-4464-a933-57e1ab17dc55" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.58568731486153E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="0bbb6500-e3d7-415c-ac43-0b8d26131a3d">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.58568731486153E-06" mu="-13.35" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a9bcf4cd-bced-4391-b423-81dfb85a4edd" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.2617002348805E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="4befc854-0eb7-4ea5-bdcf-ec29dcd46985">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="4.2617002348805E-07" mu="-14.67" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c4c5c710-2f46-4f13-99ef-b81089c16558" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.90190545252192E-08" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a7fe47c4-3028-4137-9814-40a283e1c256">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="3.90190545252192E-08" mu="-17.06" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="22005c9c-71a3-490a-b8ec-43c18c4ae721" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.64424419487455E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="5ac0d63b-2c39-4ce4-a52b-aed480f680a1">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="3.64424419487455E-07" mu="-14.82" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="605cdaa6-0863-4bc3-ad24-32200f7fd601" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.34373942745398E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b3147cf2-6eb1-407b-a3df-68fffc50be66">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.34373942745398E-07" mu="-15.27" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c9d59a26-bb40-490d-a499-a7b30053e2b0" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.81277786740535E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="4608e1d0-e3c2-4208-bcc5-ecc3bccfd4bb">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.81277786740535E-06" mu="-12.78" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3ee2765b-0e54-4145-b0d8-48494e8d3ea7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.63696437621876E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="4f4d728a-d400-4946-9ca4-6b1ec412afd6">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.63696437621876E-06" mu="-13.32" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6ef20dfa-0f31-4cc7-b22c-3b9f4c45ef3d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.01028708609803E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="806ce63d-5ee7-49b2-ac41-7f5d9456b450">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="3.01028708609803E-06" mu="-12.71" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="82353720-b699-43b5-b7ae-599f3dcfeb4c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.93645716058285E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="7bf90248-9d88-4ee9-88c1-7c115b136199">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="3.93645716058285E-07" mu="-14.75" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ca88bc67-97e4-47ee-8855-2364c021a619" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.0364661130725E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="eee21624-8f86-4ffa-ac53-ffeb491f8d06">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="9.0364661130725E-06" mu="-11.61" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="09205814-936f-4c03-be0e-f9483faf72b7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.86691076842768E-08" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9336d002-2730-4eae-b4ca-b00402c04420">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.86691076842768E-08" mu="-17.8" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b93daa28-e0cb-4257-8a6b-9da66089c906" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.30982056406484E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="ece0bde8-2384-454e-87fa-51010547fc85">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="5.30982056406484E-07" mu="-14.45" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a2b1332a-4fac-40ba-8a0c-ad599446352e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.97450372567792E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b6a2de02-d612-4e17-bb0f-e1e31d25fced">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="3.97450372567792E-06" mu="-12.44" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5a08f8a8-015e-4f8b-89ef-b061b35de482" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.13804935835633E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="7583fd06-87e3-4c58-ab79-2234895d92ac">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.13804935835633E-07" mu="-15.99" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7f837f35-262f-4e94-a5ef-76df16bae242" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.96347489828844E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b8ba6734-909f-4153-b962-9ad0b20a8b80">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="5.96347489828844E-07" mu="-14.33" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c610c6ad-4c25-4e75-97f8-943170db9da8" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.23563226383621E-08" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="2b46f728-6f27-44f9-90e6-cf859a967eb2">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.23563226383621E-08" mu="-18.21" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c1e30aba-098e-4e25-bc9c-e08beb938bf6" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.72842343156179E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="62832c71-e2cc-43ca-9745-e2d6a9209008">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.72842343156179E-06" mu="-12.81" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="852119cd-a333-42e0-a234-93666f1bf0d0" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="8.87135529522374E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="f00bdf8b-31bf-444b-8fbb-4751ee7c69b2">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="8.87135529522374E-07" mu="-13.94" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="16d365db-3772-4d37-9a15-a0982b6b53cc" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.10695897685985E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="3526ba1b-3d10-407e-a945-e5c4bf3cfbca">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.10695897685985E-06" mu="-13.07" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6b68f83d-ffbb-4c4c-ab5c-32dd9bfc78d0" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.37023735412104E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="289f0e36-1637-4e9a-92db-af1a87e82159">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.37023735412104E-06" mu="-13.5" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="524558a0-984e-4b33-8d39-f5019a0a817b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.41864858516577E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9d3e0de5-6537-478a-900b-a24bc79dc6c1">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="9.41864858516577E-07" mu="-13.88" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7ebeafb7-bc2b-47e4-94c8-c5644ee29d56" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.42060627760682E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="8b13db01-ecb2-4825-b410-55ccc8605d0f">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.42060627760682E-05" mu="-11.16" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a17700c6-d842-414c-b24a-58e8cb85d305" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.42967447172745E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="92848186-8e7b-4899-a834-6d6f139e839e">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="4.42967447172745E-07" mu="-14.63" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="075d1e14-7aa1-4561-b39c-8fa9940f6f72" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.55810183163082E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a4ca9c5b-8606-45b7-b9e5-9fd9ac3076e1">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="3.55810183163082E-07" mu="-14.85" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9c2d99ea-2f22-4f34-9c57-94eaf6a5c25f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.24529296198113E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="1ff933f5-118d-41d5-a728-ab29d7edea71">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="4.24529296198113E-07" mu="-14.67" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1fb63998-5711-4511-8d61-932e85c145af" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.89130996735519E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="4a559ac6-e331-409d-871a-1bf3b9aa27c2">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.89130996735519E-07" mu="-15.06" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="431b09c6-ad66-46ad-bc71-f612122b8d2b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.63914642258248E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="4ab7e439-f708-4dbb-b5b2-a0f4987cc825">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.63914642258248E-06" mu="-13.32" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="27999e59-876c-4e72-845b-86faa571a0ab" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.67507834049841E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="46b7c9de-cb70-4729-90c1-6fbd331b8a45">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.67507834049841E-06" mu="-13.3" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="84167fd7-a047-437d-a400-8890ad6b51d2" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.59859868242474E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="da80017d-a87e-47a2-bb58-89ce235ee67f">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.59859868242474E-07" mu="-15.16" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9081f2d2-495c-4d69-8f76-c5d084059d82" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.53644521200363E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9b5d2ec7-267f-446f-abb5-abf162d4142d">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.53644521200363E-07" mu="-15.19" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bba28eac-63af-44fb-a6ac-508ff414c1ac" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.25797306601447E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="cd55787a-65ba-47e8-8718-3c446afe89ea">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="5.25797306601447E-07" mu="-14.46" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7712a07a-248d-47c9-98d9-c75af20ca6be" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.11213820150325E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="bf29c9f5-1cb6-4a64-a5e1-2212421b118f">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.11213820150325E-07" mu="-16.01" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4302fb55-dc13-4f09-a16d-ff8eb33525c4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.9286464904462E-08" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="7ecd424e-a956-403c-b89a-021fcd7b734b">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="5.9286464904462E-08" mu="-16.64" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3070ec0c-d25a-4b56-97b2-06418e55601e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.78612214672288E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="6a87b5fe-f6c2-467c-ac82-3d2aed87fcd7">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="6.78612214672288E-07" mu="-14.2" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="36640079-07fa-4343-a27b-cc8b7da625ef" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.1987142745047E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b0b46284-fed7-4cdf-947a-952706ad219a">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.1987142745047E-07" mu="-15.33" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ffc9a1be-efeb-45d3-90eb-8d654656419b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.74199578097758E-08" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="bda82c56-1d29-4ae2-b4b1-731dfd16cfdb">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="5.74199578097758E-08" mu="-16.67" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9200eb8d-5b94-4d0f-af45-47bea4173a57" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.17061829142111E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="cb59b1ee-2995-4307-bf07-360f4b24dc13">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.17061829142111E-06" mu="-13.66" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e69181dc-fecb-4c1d-b6f8-2399a4091877" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.8534642030701E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="0c69682f-70b7-4bf9-9c1c-2cda24c63dd9">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="4.8534642030701E-06" mu="-12.24" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3adbe6ac-b591-43e6-b8d1-1fb75a86efc5" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.6024320044505E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="d1811cfa-cd24-4e4d-b6b4-92b89512b712">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="6.6024320044505E-06" mu="-11.93" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6eb5e820-ae41-4883-aaa3-686bbc0bf03a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.06296541653823E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a2aed1e6-cd9f-4c62-b96b-2d57e5ed2df2">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.06296541653823E-06" mu="-13.09" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="18374bc9-272b-4c3b-9d24-6ce24baa2b05" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.47334566015377E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="05ca2087-b0d7-4c86-85c5-781e9555a29b">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="7.47334566015377E-06" mu="-11.8" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="975793e0-4908-4642-b29e-31e0e42bde61" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.29638325306166E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="06488993-2f34-4d6d-9955-57f19780c7dd">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.29638325306166E-06" mu="-12.98" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="49cc0350-349b-4ca5-9d7f-ae046fcfd635" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.43558907093084E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="ab001dae-cb44-49b9-840c-f6bde7d10265">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.43558907093084E-06" mu="-12.93" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8916a2f1-f35d-44dc-8499-d45ef98ece30" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.76021991722299E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9d9951fe-f63d-48d6-939d-7fbc5611722a">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.76021991722299E-06" mu="-13.25" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d9858a95-75d5-455f-a2a6-20a1ce093199" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.91162475888053E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="15f0e99a-1f61-4da4-809d-905266d8210e">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="6.91162475888053E-07" mu="-14.18" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c6a782eb-3c98-4dd3-a931-071871384bcc" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.05164197663598E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="37f3427b-19c2-4a39-a5fa-48de05ffc6ea">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="7.05164197663598E-06" mu="-11.86" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="24ff2be9-b306-483b-8d58-cf35239ef269" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.00389027348327E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="da4c76e6-8f2f-45bc-8b2f-588dcdae4deb">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="7.00389027348327E-07" mu="-14.17" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6a3c6066-6d34-4894-b9dc-ece853a68d86" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.29364347148746E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="baa09759-3bdb-41cd-bce6-f450a0314975">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.29364347148746E-06" mu="-13.56" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9cf4cbfb-0c33-46e7-a46e-07e92a9f6d94" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.65538640661916E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="2d0f1007-01c5-4d1b-b527-7aa4894029fa">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="1.65538640661916E-07" mu="-15.61" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4d6eb349-159e-426e-bf41-5be0105fce23" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="8.9666213296056E-09" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="d2c9ef69-13a7-433a-8c1e-3ae347c09686">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="8.9666213296056E-09" mu="-18.53" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="afe237ee-7787-403f-bf8c-1f468248271e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.92910447817945E-08" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="742acc66-659f-4ad9-a947-8a6100cb6865">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="6.92910447817945E-08" mu="-16.48" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f5155492-441c-4739-8e69-51578549b0e0" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="8.4476201844572E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="c7dc190e-364e-419e-b3b3-ac97a65a7274">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="8.4476201844572E-07" mu="-13.98" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e8b52e08-5772-4949-a30f-2073c72f4b2f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.29298022398647E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="ed3349f2-588b-43ac-8824-72f42e40e925">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="3.29298022398647E-07" mu="-14.93" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fea13ee8-51f9-44ff-9e40-d2809e122569" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.41188603954613E-06" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="873e7924-864d-4c6c-91fb-8feeb04b9867">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="7.41188603954613E-06" mu="-11.81" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3b636ab7-924c-4870-aac9-b762a1fa6a5c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="2.40360502573346E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="3a3bbd10-2ddd-4e3e-88a3-9fdd9237db2d">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="2.40360502573346E-07" mu="-15.24" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a4db63ad-dda0-48f0-8f3d-4a4b21296850" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.37224538473262E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="aef6a33d-e672-435a-a199-9d2e91ac3e09">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="6.37224538473262E-07" mu="-14.27" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a304f808-3b57-4050-af14-a082ea343841" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="4.1186060164687E-07" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="883041db-0de9-47c9-a719-d14c27850f28">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Calculated value based on a LCA study: " Life cycle assessment of central softening of very hard drinking water" -B. Godskesen et al. This data was considered adequated for this dataset, although the registed data is for softened water with chemicals. </comment>
+        <uncertainty>
+          <lognormal meanValue="4.1186060164687E-07" mu="-14.7" variance="0.0006" varianceWithPedigreeUncertainty="0.1258" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dc5e9966-2108-491d-b3bb-189a1152b1a4" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="45fbbc41-7ae9-46cc-bb31-abfa11e69de0" productionVolumeAmount="34201311.4723768">
+        <name xml:lang="en">heat, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">WTE</synonym>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_th_prod_MSWI_exergy" amount="0.1842" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_th_prod_MSWI_price_EUR2005" amount="0.0106" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. 10.6 EUR/GJ i s the price of district heat. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_th_prod_MSWI_true_value_relation" amount="0.1842" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="1.06936967503696E-08" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cccd7651-2543-49bc-836b-8f19d6063be3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" productionVolumeAmount="4750170.8754817">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_el_prod_MSWI_price_EUR2005" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_el_prod_MSWI_exergy" amount="3.6" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_el_prod_MSWI_true_value_relation" amount="3.6" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" amount="2.9027338141563E-08" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from true value relation</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="f7c1d360-27a6-4ba5-bf80-53a96be5fe1e" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_river_input" casNumber="007732-18-5" amount="0.00102991106710124" elementaryExchangeId="8c75e7ab-8ab8-41e4-b394-c166ff5b050d">
+        <name xml:lang="en">Water, river</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Estimation taken from the 'water production and supply, decarbonised, GLO' dataset (accessed 20171214) as it was considered adequate also for this dataset.
+
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00102991106710124" mu="-6.878" variance="0.03" varianceWithPedigreeUncertainty="0.0802" />
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">E</comment>
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.8899" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="9081.65213442325" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.1101" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">TDS in an average river is 110.1 mg/L (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0104328554239022" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab 4.8, calculated from bicarbonate content in river (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0104328554239022" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.00114865738217163" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="30347aef-a90b-46ba-8746-b53741aa779d">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in water</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="6a1f8874-3657-430e-9d88-b688c7598653" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="016887-00-6" amount="1.59986185180774E-07" elementaryExchangeId="5e050fab-1837-4c42-b597-ed2f376f768f">
+        <name xml:lang="en">Chloride</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculation taken from the 'water production and supply, decarbonised, GLO' dataset (accessed 20171214) as it was considered adequate also for this dataset.
+
+</comment>
+        <uncertainty>
+          <lognormal meanValue="1.59986185180774E-07" mu="-15.65" variance="0.05" varianceWithPedigreeUncertainty="0.064" />
+          <pedigreeMatrix reliability="3" completeness="4" temporalCorrelation="4" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">C</comment>
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="963f8022-3e2e-4be9-ad4d-b3b7a2282099">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">surface water</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="bc352405-ae65-4e7e-8f14-9cc7f628c370" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_air_unspecified" casNumber="007732-18-5" amount="4.45988631704967E-06" isCalculatedAmount="true" mathematicalRelation="(water_river_input- RP/1000-(ByP_01*-1)/1000* WWM_BP01)*0.15" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. This value was taken from the dataset "water production and supply, decarbonised" (GLO) dataset (accessed on 2017-12-14) as it was considered adequate also for this dataset. 15% of water lost during production of decarbonised water is considered to be lost to air. The rest (1-0.15=85%) is considered to be released as an emission of water to water.</comment>
+        <uncertainty>
+          <lognormal meanValue="4.45988631704967E-06" mu="-12.32" variance="0.04" varianceWithPedigreeUncertainty="0.0429" />
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="ed9ccf89-0acb-4097-8f74-867ed82f5fd0" variableName="fraction_origin_salt_water" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: salt water</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is salt water.</comment>
+        </property>
+        <property propertyId="1f45c101-983d-43ff-a576-9601b15e0c65" variableName="fraction_origin_unspecified" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: unspecified</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is unspecified. It can be either salt or fresh water.</comment>
+        </property>
+        <property propertyId="d2efbebc-9ec8-4ce3-aea4-f4353094f458" variableName="fraction_origin_fresh_water" amount="1" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: fresh water</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is fresh water.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Literature and information of plant manufacturer. The inventory data is published in Jungbluth (2007), section 13.3.1.
+
+Reference:
+Jungbluth N. (2007) Erdöl. In: Sachbilanzen von Energiesystemen: Grundlagen für den ökologischen Vergleich von Energiesystemen und den Einbezug von Energiesystemen in Ökobilanzen für die Schweiz (ed. Dones R.). Swiss Centre for Life Cycle Inventories, Dübendorf, CH.</samplingProcedure>
+        <extrapolations xml:lang="en">This dataset was orignally created based on data representing the European situation. The uncertainty has been adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-07-24" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="2">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-07-24" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="2" reviewedMinorRevision="2">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'dry mass':
+ - Input='0,000113844882', Output='0,0006266896664551'
+ - Input &lt; output by 0,0005128447844551 kg (81,83% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='0', Output='1,52673212671328E-08'
+ - Input &lt; output by 1,52673212671328E-08 kg (100% of output)
+
+Property 'carbon content, fossil':
+ - Input='1,18311710363678E-06', Output='1,52673212671328E-08'
+ - Input &gt; output by 1,16784978236965E-06 kg (7649,34% of output)
+
+Property 'price':
+ - Input='0', Output='0,00046'
+ - Input &lt; output by 0,00046 EUR2005 (100% of output)
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, dry mass=0,7, water in wet mass=0,3, carbon content, fossil=0, carbon content, non-fossil=0, water content=0,428571428571429, dry mass=0,33747615607878, carbon content, fossil=0,00178990835661632, carbon content, non-fossil=0,00178990835661632, wet mass=1000, water in wet mass=999,662523843921, water content=2962,17230710238, water in wet mass=1000, dry mass=0, fraction, origin: fresh water=1, carbon content, non-fossil=0, fraction, origin: unspecified=0, fraction, origin: salt water=0, wet mass=1000, carbon content, fossil=0, carbon content, fossil=0, water content=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, water in wet mass=999,8899, carbon content, fossil=0,0104328554239022, carbon content, non-fossil=0, wet mass=1000, water content=9081,65213442325, dry mass=0,1101
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, dry mass=0,7, water in wet mass=0,3, carbon content, fossil=0, carbon content, non-fossil=0, water content=0,428571428571429, dry mass=0,33747615607878, carbon content, fossil=0,00178990835661632, carbon content, non-fossil=0,00178990835661632, wet mass=1000, water in wet mass=999,662523843921, water content=2962,17230710238, water in wet mass=1000, dry mass=0, fraction, origin: fresh water=1, carbon content, non-fossil=0, fraction, origin: unspecified=0, fraction, origin: salt water=0, wet mass=1000, carbon content, fossil=0, carbon content, fossil=0, water content=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, water in wet mass=999,8899, carbon content, fossil=0,0104328554239022, carbon content, non-fossil=0, wet mass=1000, water content=9081,65213442325, dry mass=0,1101
+
+</otherDetails>
+      </review>
+      <review reviewerId="96770571-53f9-4cab-a137-d5004ccf09ce" reviewerName="Philippe Loubet" reviewerEmail="philippe.loubet@u-bordeaux.fr" reviewDate="2018-02-19" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="41">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-07-03" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="4">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-02-19" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="41">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-07-03" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="4">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, non-fossil':
+ - Input='0', Output='5,14367881765186E-09'
+ - Input &lt; output by 5,14367881765186E-09 kg (100% of output)
+
+Property 'dry mass':
+ - Input='0,000113844882', Output='0,000621033710711858'
+ - Input &lt; output by 0,000507188828711858 kg (81,67% of output)
+
+Property 'carbon content, fossil':
+ - Input='1,18311710363678E-06', Output='5,14367881765186E-09'
+ - Input &gt; output by 1,17797342481913E-06 kg (22901,38% of output)
+
+Property 'price':
+ - Input='0', Output='0,00046'
+ - Input &lt; output by 0,00046 EUR2005 (100% of output)
+
+
+- Amount of property 'water content=32,3333333333333' of exchange 'decarbonising waste' deviates from the default amount in the master file.
+Amount of property 'dry mass=0,03' of exchange 'decarbonising waste' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0,97' of exchange 'decarbonising waste' deviates from the default amount in the master file.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0,00178990835661632, carbon content, fossil=0,00178990835661632, dry mass=0,33747615607878, wet mass=1000, water in wet mass=999,662523843921, water content=2962,17230710238, dry mass=0,03, water in wet mass=0,97, carbon content, non-fossil=0, water content=32,3333333333333, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, water content=9081,65213442325, dry mass=0,1101, wet mass=1000, carbon content, fossil=0,0104328554239022, water in wet mass=999,8899, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, fraction, origin: unspecified=0, water in wet mass=1000, wet mass=1000, fraction, origin: salt water=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=0, fraction, origin: fresh water=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, non-fossil=0,00178990835661632, carbon content, fossil=0,00178990835661632, dry mass=0,33747615607878, wet mass=1000, water in wet mass=999,662523843921, water content=2962,17230710238, dry mass=0,03, water in wet mass=0,97, carbon content, non-fossil=0, water content=32,3333333333333, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0, water content=9081,65213442325, dry mass=0,1101, wet mass=1000, carbon content, fossil=0,0104328554239022, water in wet mass=999,8899, water in wet mass=0, water content=0, dry mass=1, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, fraction, origin: unspecified=0, water in wet mass=1000, wet mass=1000, fraction, origin: salt water=0, carbon content, non-fossil=0, carbon content, fossil=0, dry mass=0, fraction, origin: fresh water=1
+
+</otherDetails>
+      </review>
+      <review reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2018-02-19" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="41">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-03-05" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="41">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='1,18311710363678E-06', Output='1,54033073209842E-08'
+ - Input &gt; output by 1,1677137963158E-06 kg (7580,93% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='0', Output='1,54033073209842E-08'
+ - Input &lt; output by 1,54033073209842E-08 kg (100% of output)
+
+Property 'dry mass':
+ - Input='0,000113844882', Output='8,78006020724668E-06'
+ - Input &gt; output by 0,000105064821792753 kg (1196,63% of output)
+
+Property 'price':
+ - Input='0', Output='0,00046'
+ - Input &lt; output by 0,00046 EUR2005 (100% of output)
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0,7, water content=0,428571428571429, water in wet mass=0,3, wet mass=1, dry mass=0,33747615607878, water in wet mass=999,662523843921, wet mass=1000, water content=2962,17230710238, carbon content, non-fossil=0,00178990835661632, carbon content, fossil=0,00178990835661632, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, fraction, origin: fresh water=1, fraction, origin: salt water=0, fraction, origin: unspecified=0, water in wet mass=1000, wet mass=1000, carbon content, fossil=0,0104328554239022, carbon content, non-fossil=0, dry mass=0,1101, water content=9081,65213442325, water in wet mass=999,8899, wet mass=1000
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0,7, water content=0,428571428571429, water in wet mass=0,3, wet mass=1, dry mass=0,33747615607878, water in wet mass=999,662523843921, wet mass=1000, water content=2962,17230710238, carbon content, non-fossil=0,00178990835661632, carbon content, fossil=0,00178990835661632, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=1, water content=0, water in wet mass=0, wet mass=1, carbon content, fossil=0, carbon content, non-fossil=0, dry mass=0, fraction, origin: fresh water=1, fraction, origin: salt water=0, fraction, origin: unspecified=0, water in wet mass=1000, wet mass=1000, carbon content, fossil=0,0104328554239022, carbon content, non-fossil=0, dry mass=0,1101, water content=9081,65213442325, water in wet mass=999,8899, wet mass=1000
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="697566ba-02bf-4170-8d49-85bc82e1fa71" isActiveAuthor="true" personName="Laura Rubio" personEmail="laura.rubio@quantis-intl.com" />
+      <dataGeneratorAndPublication personId="697566ba-02bf-4170-8d49-85bc82e1fa71" personName="Laura Rubio" personEmail="laura.rubio@quantis-intl.com" dataPublishedIn="2" publishedSourceId="923e7058-2c3e-45fa-a7c6-5382cf60b420" publishedSourceYear="2007" publishedSourceFirstAuthor="Jungbluth, N." isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="3" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" lastEditTimestamp="2019-07-24T16:19:09" fileGenerator="EcoEditor 3.11.1000.19016" fileTimestamp="2019-07-24T16:19:09" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="5b6e5413-2b18-47ed-84f8-639f92b488de" activityNameId="a4a86d3f-8ee8-437a-b335-7707c176f8ea" parentActivityId="377311bf-ce03-4e97-852d-cceb357af47f" inheritanceDepth="-1" type="1" specialActivityType="1">
+        <activityName xml:lang="en">market for electricity, for reuse in municipal waste incineration only</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">This is a constrained market. The justification for a market constraint is included in the comment field of the conditional exchange. </text>
+        </generalComment>
+      </activity>
+      <classification classificationId="9a63625a-358b-4c1d-bf95-50ba038a759b">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3821:Treatment and disposal of non-hazardous waste</classificationValue>
+      </classification>
+      <geography geographyId="10f1ec30-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">NO</shortname>
+      </geography>
+      <technology technologyLevel="0" />
+      <timePeriod startDate="2008-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true" />
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="aa8cf22a-8b6f-44ce-a728-9e7ee3cf2e00" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" activityLinkId="faf2f16d-91c0-40f8-82b3-9cd4497bcb6a" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">This is a conditional exchange, i.e. it is activated only during the linking of the consequential system model. During the linking of the allocation system model this market behaves as any other market.
+
+The market for electricity, municipal waste incineration is not fully elastic, which means that in a case when demand is higher than supply one of the uses of electricity, municipal waste incineration will be affected by this shortage. 
+
+In the linking of the consequential system model, this negative by-product will be moved to be a positive input linked to electricity, medium voltage, from waste incineration, to generic market for electricity, medium voltage linking activity, which is the activity that will reduce the consumption of the exchange in response to a demand. 
+
+This means that an additional demand for electricity, municipal waste incineration will be supplied by reducing the volume of the electricity, medium voltage, from wasteincineration, to generic market for electricity, medium voltage linking activity thereby liberating the demanded amount of electricity, municipal waste incineration.</comment>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <property propertyId="2903bca6-1b3d-4ac5-87a4-b6701cfbbe42" amount="1" isDefiningValue="false">
+          <name xml:lang="en">consequential</name>
+          <comment xml:lang="en">set to 1 for conditional exchanges to be used in consequential system model only</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3800fe70-2f14-49e4-9ae1-3f69ddba77fe" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" variableName="E_el_prod_MSWI" amount="1" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" productionVolumeAmount="117009493.910623">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_el_prod_MSWI_price_EUR2005" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" amount="3.6" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This is a calculated weighted average.</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" amount="3.6" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This is a calculated weighted average.</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="45bb6197-8fb8-442f-8477-1a720df4294f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" activityLinkId="d0185074-36b3-4015-8d71-de70873aaa07" productionVolumeAmount="117009493.910623">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" amount="3.6" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" amount="3.6" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <extrapolations xml:lang="en">This dataset has been extrapolated from year 2013 to the year of the calculation (2019). The uncertainty has been adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2014-06-17" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="5">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:
+
+- At least one supplier for the reference product 'electricity, municipal waste incineration' must be available within the market's geography. Supplier(s) found for reference product: treatment of waste rubber, unspecified, municipal incineration, GLO, 2006 - 2012##treatment of waste bitumen sheet, municipal incineration, GLO, 2006 - 2012##treatment of raw sewage sludge, municipal incineration, GLO, 2006 - 2012##treatment of digester sludge, municipal incineration, GLO, 2006 - 2012##treatment of biowaste, municipal incineration, GLO, 2006 - 2012##treatment of residue from mechanical treatment, desktop computer, municipal waste incineration, GLO, 2006 - 2012##treatment of residue from mechanical treatment, laptop computer, municipal waste incineration, GLO, 2006 - 2012##treatment of residue from mechanical treatment, cathode ray tube display, municipal waste incineration, GLO, 2006 - 2012##treatment of residue from mechanical treatment, liquid crystal display, municipal waste incineration, GLO, 2006 - 2012##treatment of residue from mechanical treatment, laser printer, municipal waste incineration, GLO, 2006 - 2012##treatment of residue from mechanical treatment, industrial device, municipal waste incineration, GLO, 2006 - 2012##treatment of residue from mechanical treatment, IT accessory, municipal waste incineration, GLO, 2006 - 2012##treatment of residue from shredder fraction from manual dismantling, municipal waste incineration, GLO, 2006 - 2012##treatment of liquid crystal display, municipal waste incineration, GLO, 2006 - 2012##treatment of waste wood pole, chrome preserved, municipal incineration, GLO, 2006 - 2012##treatment of waste building wood, chrome preserved, municipal incineration, GLO, 2006 - 2012##treatment of waste expanded polystyrene, municipal incineration, GLO, 2006 - 2012##treatment of waste cement-fibre slab, municipal incineration, GLO, 2006 - 2012##treatment of waste sealing sheet, polyvinylchloride, municipal incineration, GLO, 2006 - 2012##treatment of waste sealing sheet, polyethylene, municipal incineration, GLO, 2006 - 2012##treatment of waste vapour barrier, flame-retarded, municipal incineration, GLO, 2006 - 2012##treatment of waste wire plastic, municipal incineration, GLO, 2006 - 2012##treatment of waste plastic, industrial electronics, municipal incineration, GLO, 2006 - 2012##treatment of waste plastic, consumer electronics, municipal incineration, GLO, 2006 - 2012##treatment of waste textile, soiled, municipal incineration, GLO, 2006 - 2012##treatment of spent anion exchange resin from potable water production, municipal incineration, GLO, 2006 - 2012##treatment of waste polyvinylfluoride, municipal incineration, GLO, 2006 - 2012##treatment of waste emulsion paint, municipal incineration, GLO, 2006 - 2012##treatment of waste newspaper, municipal incineration, GLO, 2006 - 2012##treatment of waste paperboard, municipal incineration, GLO, 2006 - 2012##treatment of waste packaging paper, municipal incineration, GLO, 2006 - 2012##treatment of waste paint, municipal incineration, GLO, 2006 - 2012##treatment of waste graphical paper, municipal incineration, GLO, 2006 - 2012##treatment of waste plastic, mixture, municipal incineration, GLO, 2006 - 2012##treatment of waste polyethylene, municipal incineration, GLO, 2006 - 2012##treatment of waste polyethylene terephtalate, municipal incineration, GLO, 2006 - 2012##treatment of waste polypropylene, municipal incineration, GLO, 2006 - 2012##treatment of waste polystyrene, municipal incineration, GLO, 2006 - 2012##treatment of waste polyurethane, municipal incineration, GLO, 2006 - 2012##treatment of waste polyvinylchloride, municipal incineration, GLO, 2006 - 2012##treatment of waste wood, untreated, municipal incineration, GLO, 2006 - 2012##treatment of municipal solid waste, incineration, GLO, 2006 - 2012
+
+</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Non-global market activities should have a geography comment.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): consequential=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): consequential=1
+
+</otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2014-06-17" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="5">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2013-08-20" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="4">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2013-08-20" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="3">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2013-08-20" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="3">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:
+
+- At least one supplier for the reference product 'electricity, municipal waste incineration' must be available within the market's geography. No supplier found for reference product.
+
+</text>
+        </details>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2013-08-20" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="4">
+        <details>
+          <text xml:lang="en" index="0">Validation failed with errors:
+
+- At least one supplier for the reference product 'electricity, municipal waste incineration' must be available within the market's geography. No supplier found for reference product.
+
+</text>
+        </details>
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): consequential=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): consequential=1
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" isActiveAuthor="true" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" />
+      <dataGeneratorAndPublication personId="610bd1b2-fec3-4e8e-84a6-76fef8b6b7b8" personName="Karin Treyer" personEmail="karin.treyer@psi.ch" isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2014-06-10T13:51:28" lastEditTimestamp="2014-06-17T10:24:26" fileGenerator="EcoEditor 3.3.65.10874" fileTimestamp="2014-06-17T10:24:26" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

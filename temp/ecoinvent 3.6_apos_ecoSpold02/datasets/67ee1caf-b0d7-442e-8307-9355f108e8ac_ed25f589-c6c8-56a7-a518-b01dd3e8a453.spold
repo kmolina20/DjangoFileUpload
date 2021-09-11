@@ -1,0 +1,2212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="67ee1caf-b0d7-442e-8307-9355f108e8ac" activityNameId="a6483b4c-9790-5999-9552-7279fda90229" parentActivityId="63aa729b-e89c-5543-b1bf-38d229d00652" inheritanceDepth="-1" type="1" specialActivityType="0">
+        <activityName xml:lang="en">treatment of waste polyethylene, for recycling, unsorted, sorting</activityName>
+        <includedActivitiesStart xml:lang="en">Service is starting with the receipt of unsorted waste PE</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This module includes all processes of the sorting of waste PE up to the factory gate. Machinery infrastructure is excluded</includedActivitiesEnd>
+        <allocationComment>
+          <text xml:lang="en" index="1">no allocation involved</text>
+        </allocationComment>
+        <generalComment>
+          <text xml:lang="en" index="2">Once the postconsumer PET has been collected, they must be separated from other co-collected materials and plastics. Although some recovered plastic is separated by curbside sorting and the use of separate bins at drop-off recycling centers, sorting and separation of plastics most commonly takes place at material recovery facilities (MRFs). Sorting operations at MRFs range from manual sorting of items on a conveyor to highly automated systems using magnets, air classifiers, optical sorters, and other technologies to sort and separate mixed incoming materials. Postconsumer plastics may be separated and baled as mixed plastics, or the facility may have the capability to further sort down to individual resin bales.</text>
+          <text xml:lang="en" index="1">The functional unit represents the treatment of unsorted waste polyethylene, for recycling, yielding 1 kg of sorted waste polyethylene, for recycling.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="c5c111f2-7555-4858-a8c4-2fe82e255c7f">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3811:Collection of non-hazardous waste</classificationValue>
+      </classification>
+      <geography geographyId="13d387f6-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">US</shortname>
+      </geography>
+      <technology technologyLevel="3" />
+      <timePeriod startDate="2010-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true" />
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="0e5f3336-a58a-4bfd-9216-d233d6dc0a52" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="BP_MSW" amount="0" intermediateExchangeId="27da8130-82ba-485c-a800-b89efdcb0491" activityLinkId="f4719577-9cf9-4823-baeb-291179b17f4e" productionVolumeAmount="0" productionVolumeMathematicalRelation="ABS(BP_MSW/RP_amount*RP_PV)">
+        <name xml:lang="en">municipal solid waste</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en"></comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="BP_MSW_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.297016861219196" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.771" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-water mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.261654993514916" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">MSW composition in tab 4.1, ecoinvent v2.2 report 13_I. C content referred to 1 kg DM</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" amount="0" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.171548638132296" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">MSW composition in tab 4.1, ecoinvent v2.2 report 13_I. C content referred to 1 kg DM</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.229" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.433203631647212" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.334" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Assumption according to Association of Plastic Recyclers (APR; www.plasticsrecycling.org): 1.5 Mio t of plastic recycling, half of it PET; waste input material (for treatment) and by-product/waste generated scaled accordingly</productionVolumeComment>
+        <classification classificationId="595a05b0-c7e6-4681-b3ee-b0f59c85c9f2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39910: Municipal waste</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c28fb301-0a3c-42b2-8da3-9bb9880f1c6d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" intermediateExchangeId="817c3650-4fed-4ef2-b9b6-404a198834e6" activityLinkId="c3199de4-411a-4300-b233-2de0ba497734" productionVolumeAmount="0">
+        <name xml:lang="en">steel, low-alloyed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Not included in the original report. Added based on the CH inventory in order to have better consistency.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.005" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.005" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.005" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="012af131-55e8-448d-a147-251ce352304e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41122: Alloy steel in ingots or other primary forms and semi-finished products of alloy steel</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e5d1f37b-0b33-4c4c-853b-51426fa8292e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="12998146-ca32-4edd-805c-d187bf94af1a" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1b89ee93-b139-4828-be61-133384a3f34d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="BP_waste_PE_sorted" amount="0" intermediateExchangeId="ed25f589-c6c8-56a7-a518-b01dd3e8a453" productionVolumeAmount="0" productionVolumeMathematicalRelation="ABS(BP_waste_PE_sorted/RP_amount*RP_PV)">
+        <name xml:lang="en">waste polyethylene, for recycling, sorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.00603621730382294" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.00600000000000001" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.829" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.035" isDefiningValue="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Convert from EU 27 price to the world by currency exchange rate.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.994" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.829" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.824026" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Assumption according to Association of Plastic Recyclers (APR; www.plasticsrecycling.org): 1.5 Mio t of plastic recycling, half of it PET; waste input material (for treatment) and by-product/waste generated scaled accordingly</productionVolumeComment>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cef2aae6-8e17-447f-8ab2-5a1c7bec2e13" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" intermediateExchangeId="444d81a0-13e0-41a4-8f63-e691b0133c04" activityLinkId="27f728ff-d064-4242-989e-bdd4c13f9c56" productionVolumeAmount="0">
+        <name xml:lang="en">wire drawing, steel</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Not included in the original report. Added based on the CH inventory in order to have better consistency.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="05328733-595f-4fcb-ac5c-2d4b39a4784e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">89330: Metal forging, pressing, stamping, roll forming and powder metallurgy services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0b0e9e44-fd2e-48bd-a110-dd42d8e2410f" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="705f483c-0d06-4f1c-9be9-7d54b88c4015" activityLinkId="feaaafe4-7878-49c7-8ed5-8d8b0ba5c448" productionVolumeAmount="0">
+        <name xml:lang="en">propane, burned in building machine</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="a5ec235d-096a-4443-a41b-f5b9aaaa9362">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">543: Site preparation services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2d5ce00d-3b25-49a4-89f4-16918cf3b056" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="RP_amount" amount="0" intermediateExchangeId="101e55f2-2da0-528b-96fd-21687e242c1c" productionVolumeAmount="0" productionVolumeVariableName="RP_PV">
+        <name xml:lang="en">waste polyethylene, for recycling, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.026" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.026694045174538" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0315" isDefiningValue="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Convert from EU 27 price to the world by currency exchange rate.</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.974" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.81" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.81" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.78894" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Assumption according to Association of Plastic Recyclers (APR; www.plasticsrecycling.org): 1.5 Mio t of plastic recycling, half of it PET; ; waste input material (for treatment) and by-product/waste generated scaled accordingly</productionVolumeComment>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8d15b582-f88a-4f59-99a1-944cee4e3b50" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="f0aef38d-d26d-4b3a-8ca0-8f22685af800" productionVolumeAmount="0">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1e4d255c-14f4-4b40-b2a6-6c910f78d2dc" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="BP_scrap_steel" amount="0" intermediateExchangeId="d7432632-40dc-4af8-8125-cb70dd9742c5" productionVolumeAmount="0" productionVolumeMathematicalRelation="ABS(BP_scrap_steel/RP_amount*RP_PV)">
+        <name xml:lang="en">iron scrap, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Not included in the original report. Added based on the CH inventory in order to have better consistency.; 
+The amount and annual production volume for the recyclable by-product output 'iron scrap, sorted' was set to 0 during the review of the database for the release of v3.4. This is a temporary solution to ensure the appropriate point of cut-off for this product within the database. Original amount: 0.00619 kg/reference flow</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.149" isDefiningValue="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: estimated at 85% of sorted scrap</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Assumption according to Association of Plastic Recyclers (APR; www.plasticsrecycling.org): 1.5 Mio t of plastic recycling, half of it PET; waste input material (for treatment) and by-product/waste generated scaled accordingly</productionVolumeComment>
+        <classification classificationId="49a5cb0e-a492-40f3-84b9-6d06674709da">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39310: Slag, dross, scalings and other waste from the manufacture of iron or steel</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="74ed2e62-96aa-4f73-8d8c-d91f9f4636c1" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="0" intermediateExchangeId="91ecda95-607d-54b4-ac43-91b892561678" activityLinkId="aa3706a6-ee9f-45f1-9016-433799ca7f08" productionVolumeAmount="0">
+        <name xml:lang="en">waste preparation facility</name>
+        <unitName xml:lang="en">unit</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="964f8b50-ce16-4364-835a-a3db5fb760b0" amount="50" isDefiningValue="false" unitId="2cf92850-0f92-4004-9dba-a6ceb6a414c2">
+          <name xml:lang="en">lifetime</name>
+          <unitName xml:lang="en">year</unitName>
+        </property>
+        <property propertyId="38583c32-c20b-4553-9152-b14b0bee1e61" amount="500000000" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">lifetime capacity [kg]</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <classification classificationId="26a709ee-0d8e-45f7-9bf7-8c0121a98202">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53290: Other civil engineering works</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="16d2d9af-e7f4-42a1-af9c-0ff59c2fca44" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="b0f4c2fb-5081-474a-8ffa-1457da8345db" activityLinkId="54556c84-e160-4a61-bdd2-3be56c2f0035" productionVolumeAmount="0">
+        <name xml:lang="en">diesel, burned in building machine</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="a5ec235d-096a-4443-a41b-f5b9aaaa9362">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">543: Site preparation services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a8aaf20d-c21b-4ed2-aca9-3e5daffa8cb4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_el_prod_MSWI_exergy" amount="3.6" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_el_prod_MSWI_true_value_relation" amount="3.6" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_el_prod_MSWI_price_EUR2005" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="700d11e5-b9da-4b17-946a-695a4ea6c7cd" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" intermediateExchangeId="4f312355-ac65-4635-8fb2-006dba64ce60" productionVolumeAmount="0">
+        <name xml:lang="en">iron scrap, sorted, pressed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Iron scrap recovered from this waste.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty calculated from uncertainty in waste composition, uncertainty of share of recyclable metal, uncertainty of transfer coefficient to bottom ash, uncertainty of the efficiency of scrap removal in MSWI plant.</comment>
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.175" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 2005 import and export prices (total trades (USD) divided by total weight (kg) in biggest economies of the world: EU27, USA, Brasil, China, India, Japan and Russia) from UN Commodity Trade Statistics Database  (http://data.un.org/Explorer.aspxDatabase [Accessed 2011.06.20]). Commodity: Waste or scrap, of cast iron</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <classification classificationId="49a5cb0e-a492-40f3-84b9-6d06674709da">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39310: Slag, dross, scalings and other waste from the manufacture of iron or steel</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ebe9b516-43cf-4aa1-8e8d-c3a9aaff6aa7" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="45fbbc41-7ae9-46cc-bb31-abfa11e69de0" productionVolumeAmount="0">
+        <name xml:lang="en">heat, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">WTE</synonym>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_th_prod_MSWI_exergy" amount="0.1842" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_th_prod_MSWI_true_value_relation" amount="0.1842" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_th_prod_MSWI_price_EUR2005" amount="0.0106" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. 10.6 EUR/GJ i s the price of district heat. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e3a0dcb0-544f-4f6c-89ed-ad351c389a52" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="1344-28-1" amount="0" sourceId="97a5dfe8-7bf3-47c9-b404-6dcd17732603" sourceYear="2008" sourceFirstAuthor="European Aluminium Association" intermediateExchangeId="96f36f31-8f6a-48f8-921f-1d781b7a545f" productionVolumeAmount="0">
+        <name xml:lang="en">aluminium oxide, non-metallurgical</name>
+        <unitName xml:lang="en">kg</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" variableName="C_content_non_fossil" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="Al2O3Amount_price_EUR2005" amount="0.28" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">From UN trade database. http://data.un.org/ Import data from the largest economies of the world are used (Brazil, India, USA, China, Japan and EU-27).</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="DM" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" variableName="water_content" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" variableName="WM" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" variableName="WWM" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" variableName="C_content_fossil" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="0b7946e8-7395-49e5-b9b2-730edabae135">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41432: Alumina (aluminium oxide), except artificial corundum</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="85bd81a6-cff3-47f3-a0ce-d38f9cf38363" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" sourceId="97a5dfe8-7bf3-47c9-b404-6dcd17732603" sourceYear="2008" sourceFirstAuthor="European Aluminium Association" intermediateExchangeId="a430f433-cdc8-45be-ace2-32a634634d3b" productionVolumeAmount="0">
+        <name xml:lang="en">aluminium, cast alloy</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Aluminium</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="castAlloyAmount_price_EUR2005" amount="1.3" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Source: London Metal Exchange, Aluminium alloy price for 2005</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Aluminium</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f77d787c-7bec-48ba-a54a-b9c169d656c3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41431: Unwrought aluminium</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d112a208-d482-4588-98ff-91a68b0d47b8" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" sourceId="97a5dfe8-7bf3-47c9-b404-6dcd17732603" sourceYear="2008" sourceFirstAuthor="European Aluminium Association" intermediateExchangeId="fef44ccb-917e-4c8d-bb35-a1898827b659" productionVolumeAmount="0">
+        <name xml:lang="en">aluminium, wrought alloy</name>
+        <unitName xml:lang="en">kg</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="secondaryAluminiumOutput_price_EUR2005" amount="1.44" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated based on literature values and expert judgement. Aluminium ccast alloys are about 90% of the price of aluminium wrought alloys.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="dc99ca2f-4960-4f4c-8dfa-2df3c5392d27">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">4153: Semi-finished products of aluminium or aluminium alloys</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="13762645-2533-4755-9df6-e9948c109882" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" sourceId="cdf01d7b-b4d1-4c52-8aa7-404bf945a6b2" sourceYear="1999" sourceFirstAuthor="Rentz O." intermediateExchangeId="fbb039f7-f9cc-46d2-b631-313ddb125c1a" productionVolumeAmount="0">
+        <name xml:lang="en">copper</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature value. Copper uses: Before end-use copper is manufactured into semi fabricated products, such as shapes and ingots (known as 'semis'). These manufacturing processes are subdivided into hot working, cold working and, if necessary, process annealing. Few of the semis are ready for use as such. They more typically travel to first-stage manufacturers, who make metal rods, wire, and casting, and then to component manufacturers who produce such things as motors, valves, and insulated cables The components in turn are incorporated by final-stage manufacturers into a variety of finished products - automobiles, commercial buildings, residential housing, and so forth. These uses account for about 79% of the world-wide consumption of copper.</comment>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Cu</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="5.52" isDefiningValue="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Literature value (http://www.economist.com/news/business/21576714-mining-industry-has-enriched-chile-its-future-precarious-copper-solution). Average price between 20015 and 2013.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Cu</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="bd5e293b-6d66-47a9-afb6-7fb659e2d6a0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41413: Refined copper and copper alloys, unwrought; master alloys of copper</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f79261d4-9449-44ca-aaa0-bfe2e7656968" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" isCalculatedAmount="true" intermediateExchangeId="b7e3b1ef-098a-48f1-b686-8baa82cff1d3" productionVolumeAmount="0">
+        <name xml:lang="en">zinc concentrate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value from the knowledge of the properties of both products.</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="ByP_price_EUR2005" amount="0.38" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Zinc content in concentrate 53%. Concentrate price per kg Zn 86.5% of refined Zn price (13.5% treatment charges according to CHR Metals Limited 2005: Dynamic cost curves. http://www.minecost.com/dynamic.pdf). 2004 zinc price from USGS (2007) Mineral commodity summaries 2007. &lt;http://minerals.usgs.gov/minerals/pubs/mcs/2007/mcs2007.pdf&gt; [Accessed 25 May 2010]</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="33f96fe7-39da-47ca-837f-f2c311681d1b" variableName="zinc_C_zinc_concentrate" amount="0.53" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">zinc content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Zinc content on a dry matter basis. Value taken from teh "zinc mine operation" /GLO dataset. </comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="DM_zinc_concentrate" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ffd93ac8-701d-4a0a-a6b5-9ef48fc7b621">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">14290: Other non-ferrous metal ores and concentrates (other than uranium or thorium ores and concentrates)</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fae1df0b-3c84-4373-9dd2-a159966cf685" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1" intermediateExchangeId="ed25f589-c6c8-56a7-a518-b01dd3e8a453" productionVolumeAmount="809250000">
+        <name xml:lang="en">waste polyethylene, for recycling, sorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5b54c0dd-cdfe-484a-a9a2-c9df3cb13da2" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="9002-88-4" amount="0.00474179191923742" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="947a85fa-114e-4d9e-b36c-3293e48ea5ae" activityLinkId="3b0597bc-4fe8-4997-8b22-ed29141d04cc">
+        <name xml:lang="en">polyethylene, low density, granulate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Plastic film</comment>
+        <uncertainty>
+          <triangular minValue="0.00474179191923742" mostLikelyValue="0.00474179191923742" maxValue="0.00474179191923742" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="59218a6b-437d-4703-bd26-060329f62965">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34710: Polymers of ethylene, in primary forms</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="90134913-eb6e-4bed-894e-f1a0227a71d2" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.000662591159408643" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="a5fc651b-3ee2-405f-b2f0-d035c8132be1" activityLinkId="20dbac25-d3fb-44b7-b24a-06071d4a99ae">
+        <name xml:lang="en">metal working, average for chromium steel product manufacturing</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Tinplate can</comment>
+        <classification classificationId="fbcc6323-6fd5-474f-9d7c-21306025c8bb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">893: Casting, forging, stamping and similar metal manufacturing services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="65c165ca-cd95-4530-a29a-c438690ac71f" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="1.06522410788994E-11" isCalculatedAmount="true" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="8cc14249-6937-4cdf-9ab2-f838e03bb786" activityLinkId="d4966393-7b5f-4739-ab4a-bafa6741d640">
+        <name xml:lang="en">fish canning plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">One unit of plant represents the installed capacity required to process 1 t of raw material</comment>
+        <classification classificationId="cd744d31-6a3b-48fc-9399-afdd06504c85">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8812: Fish processing services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="634592b0-5814-49f6-afdc-bf253da5ae13" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00929094405912432" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="d2184fe3-da8e-40d0-a15e-f35bc3624d26" activityLinkId="4ac2210e-d1e2-422f-bde1-2f4f7cb55500">
+        <name xml:lang="en">vegetable oil, refined</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Oil for canned fish</comment>
+        <uncertainty>
+          <triangular minValue="0.00929094405912432" mostLikelyValue="0.00929094405912432" maxValue="0.00929094405912432" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="30f55752-357a-4ed9-b19d-680440e19ab7">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">216: Vegetable oils</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0b75f3d3-90ef-4f4f-9b6c-9006dd63254e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00106992928071771" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="40462fcf-07cc-4df8-83fd-f1395b5f2bb9" activityLinkId="2a976689-539b-4150-845b-740a22161328">
+        <name xml:lang="en">carton board box production, with offset printing</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Cardboard boxes</comment>
+        <uncertainty>
+          <triangular minValue="0.00106992928071771" mostLikelyValue="0.00106992928071771" maxValue="0.00106992928071771" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="a26e4040-3b2d-4ecc-b008-93abe2ad3f23">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">32153: Cartons, boxes, cases, record sleeves and other packing containers (except bags) of paper, paperboard, cellulo[…]</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b7ce40d8-8594-4436-8229-69346840474b" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0.000662591159408643" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="cb4737ad-692c-4006-9b99-853be76f6ad9" activityLinkId="56294b1f-9c91-4174-ab32-f1d980bb20c0">
+        <name xml:lang="en">tin plated chromium steel sheet, 2 mm</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Tinplate can</comment>
+        <uncertainty>
+          <triangular minValue="0.000662591159408643" mostLikelyValue="0.000662591159408643" maxValue="0.000662591159408643" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="012af131-55e8-448d-a147-251ce352304e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41122: Alloy steel in ingots or other primary forms and semi-finished products of alloy steel</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="11adc426-c28c-4acf-aef7-b7e1a22f6809" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="4.75453687180142E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="c5638b4f-3c4b-4874-9188-644d52be12bc" activityLinkId="dc3407eb-c5e2-44df-9cb5-526eef864eef">
+        <name xml:lang="en">extrusion of plastic sheets and thermoforming, inline</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Plastic boxes</comment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e7375b83-b29a-457d-bc5c-5a6762854e5b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">89200: Moulding, pressing, stamping, extruding and similar plastic manufacturing services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="097e77da-5b13-4ca4-8756-5f0cc1393c9d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00474842454317646" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="579049d0-3db8-4496-a234-2f61ed28a72b" activityLinkId="4d95fd3d-1c94-41f2-82e7-02c682d51b85">
+        <name xml:lang="en">extrusion, plastic film</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Plastic film</comment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e7375b83-b29a-457d-bc5c-5a6762854e5b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">89200: Moulding, pressing, stamping, extruding and similar plastic manufacturing services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ef01691b-8ff8-41c3-ac6f-eff36c536ac4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-0.0103364220867748" isCalculatedAmount="true" sourceId="b1561a49-1f04-4f61-a8b9-7082ce2a4c89" sourceYear="2018" sourceFirstAuthor="Avadí, A." intermediateExchangeId="b7667b06-c667-481c-8718-bfbdfcd20d94" activityLinkId="6fc138e9-67d2-43b7-9c41-66fbc2713290" productionVolumeAmount="1307134400">
+        <name xml:lang="en">scrap tin sheet</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste tinplate cans (sheet use times weight of each sheet)</comment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="1173c239-6e55-41bd-8736-051a53902141">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39366: Waste and scrap of tin</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b24fab7c-4358-4b18-8466-3b411b4e7c23" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="9002-88-4" amount="1.13871608108459E-05" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="b685192a-e033-421e-9074-8fe7cb176046" activityLinkId="ef472d7b-fd57-44e4-9298-ed24fa4bde08">
+        <name xml:lang="en">polyethylene, high density, granulate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Plastic boxes</comment>
+        <uncertainty>
+          <triangular minValue="1.13871608108459E-05" mostLikelyValue="1.13871608108459E-05" maxValue="1.13871608108459E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="59218a6b-437d-4703-bd26-060329f62965">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34710: Polymers of ethylene, in primary forms</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1028b982-b7bb-4a36-9470-967a9330d3db" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="-0.00195763628504017" isCalculatedAmount="true" sourceId="b1561a49-1f04-4f61-a8b9-7082ce2a4c89" sourceYear="2018" sourceFirstAuthor="Avadí, A." intermediateExchangeId="029abc12-645e-4f5a-9ece-f50a76b0910e" activityLinkId="47812875-6af1-47fe-b315-ab3d1636380e" productionVolumeAmount="332551287.2">
+        <name xml:lang="en">wastewater from vegetable oil refinery</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Proxy for wastewater from fish processing plant. Asumed 40% of the water is either incorporated into the product or lost</comment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="439c9891-5c98-4664-bbef-01753519dae0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">94110: Sewerage and sewage treatment services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="77eaeacc-09ea-44d3-b88f-c2780662f744" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7647-14-5" amount="0.0247132147736434" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="edcfa83a-363a-4b2d-8d6a-612e32dfcdfc" activityLinkId="6532b6c7-e828-4db6-ac11-9bb662b9ba63">
+        <name xml:lang="en">sodium chloride, powder</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Salt for brine</comment>
+        <uncertainty>
+          <triangular minValue="0.0247132147736434" mostLikelyValue="0.0247132147736434" maxValue="0.0247132147736434" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="53ee2434-256c-4e1f-8356-601663e73388">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">16200: Salt and pure sodium chloride; sea water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6d79adbc-e7a7-409d-a25e-5d1736f7a974" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000120483470974486" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="764abb1c-4fa0-4a58-8eac-d74d251a8377">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="0.000120483470974486" mostLikelyValue="0.000120483470974486" maxValue="0.000120483470974486" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="943905b1-31a0-498e-86e0-b97d80488bf3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.97129268818932E-05" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="07aed29f-7522-4846-9bc9-32802c9a089f">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="5.97129268818932E-05" mostLikelyValue="5.97129268818932E-05" maxValue="5.97129268818932E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f22a5e33-7bfc-4913-8c56-a99d64364a2d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.60795450699149E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b25b2127-7e84-4483-b9fe-6606063cb5c5">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="9.60795450699149E-06" mostLikelyValue="9.60795450699149E-06" maxValue="9.60795450699149E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="07ba055d-3353-42f6-adff-be3e313142df" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000565344074565262" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="f38fd36a-8d57-4599-b270-eb4150284baa">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="0.000565344074565262" mostLikelyValue="0.000565344074565262" maxValue="0.000565344074565262" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="405b74ed-7e8a-4f51-bfa3-8a1454c28fd9" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000201990261827083" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="49fedc63-9369-45fb-8fd0-1bb19653488d">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="0.000201990261827083" mostLikelyValue="0.000201990261827083" maxValue="0.000201990261827083" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5ee3e437-18a7-4774-9a41-b27184d7ecbf" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="7.61738112047187E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="c66a9a1d-548b-49d3-bdb3-69c860f1c410">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="7.61738112047187E-06" mostLikelyValue="7.61738112047187E-06" maxValue="7.61738112047187E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4234f12e-db43-4e85-bff1-8acacb92207c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.2530380574611E-05" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="0658fd06-aa3a-46af-9a1a-a69ee9d2c018">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="6.2530380574611E-05" mostLikelyValue="6.2530380574611E-05" maxValue="6.2530380574611E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f5a3d908-3d91-49e0-9872-e67d50e8ad9e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.54957950796114E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="5a7b3411-6dc8-4bd2-8d7f-00a5922ae8bc">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="9.54957950796114E-06" mostLikelyValue="9.54957950796114E-06" maxValue="9.54957950796114E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9d4e1727-d28c-4737-b054-6c229b611951" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.58368776875176E-05" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="feaaf9a8-45db-4733-be8c-69c95b592eb1">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="1.58368776875176E-05" mostLikelyValue="1.58368776875176E-05" maxValue="1.58368776875176E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e64932e6-e123-451f-a6e7-a043293daa5c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.18130228604025E-07" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="46bb8aa3-6500-431e-8123-2290a35c3a0a">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="3.18130228604025E-07" mostLikelyValue="3.18130228604025E-07" maxValue="3.18130228604025E-07" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fd688a38-3050-4761-8ad5-2f1b3ae58a33" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.29131232202754E-05" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="6610e8ce-2a22-4d9f-b600-2dac1b8f21bc">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="1.29131232202754E-05" mostLikelyValue="1.29131232202754E-05" maxValue="1.29131232202754E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5d5d89ac-dc2c-490c-85ae-d4a5b85269b3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.06219661350202E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="fb3023b9-94ce-4e0f-a997-87b3cd6661c6">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="9.06219661350202E-06" mostLikelyValue="9.06219661350202E-06" maxValue="9.06219661350202E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6a403da6-5b87-45f8-b671-23fb954b468f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="6.14775678053842E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="408bec13-7540-4960-8283-ac5ebd2e356d">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="6.14775678053842E-06" mostLikelyValue="6.14775678053842E-06" maxValue="6.14775678053842E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8f2728c3-64a1-4c3e-8774-8e5025d17d6e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.53473142901467E-07" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="eb98a408-0913-411f-8601-19bcfc8e8281">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="5.53473142901467E-07" mostLikelyValue="5.53473142901467E-07" maxValue="5.53473142901467E-07" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5a779a0b-71c9-459d-a633-28159ee72554" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.86626903892944E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="85612650-94aa-4da7-a0a8-8ed685d40f44">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="1.86626903892944E-06" mostLikelyValue="1.86626903892944E-06" maxValue="1.86626903892944E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="275dac2a-2d1f-41c8-bac5-e74e5340517e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000227777055529433" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="cfef3c68-3142-4042-bec4-310557290514">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="0.000227777055529433" mostLikelyValue="0.000227777055529433" maxValue="0.000227777055529433" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dad12b88-b4d8-4b16-a25d-d4a11ca986ec" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.34227268449877E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="6bdb63aa-d3c6-4673-812c-37e9fff3cdd3">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="3.34227268449877E-06" mostLikelyValue="3.34227268449877E-06" maxValue="3.34227268449877E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d2025ea7-fa81-492c-860d-af97fec1fa05" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.67537069509798E-05" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a2aed1e6-cd9f-4c62-b96b-2d57e5ed2df2">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="3.67537069509798E-05" mostLikelyValue="3.67537069509798E-05" maxValue="3.67537069509798E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d2946718-9cff-4b93-9a5d-0f8cdd9bfd3e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="8.85037952320425E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9932a863-f661-4857-aba1-06028bb0b3ec">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="8.85037952320425E-06" mostLikelyValue="8.85037952320425E-06" maxValue="8.85037952320425E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b778e604-72b5-4d19-9d39-45a29a1a50a6" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.21441403663327E-05" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a848e069-9cf3-4347-8ee1-a54e7df0c389">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="1.21441403663327E-05" mostLikelyValue="1.21441403663327E-05" maxValue="1.21441403663327E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4f71d653-44db-4765-8d2c-5c3b9b29d177" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000848382181675816" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9c58ab77-f05f-4552-9aba-b3b6211fb786">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="0.000848382181675816" mostLikelyValue="0.000848382181675816" maxValue="0.000848382181675816" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5b514073-f71c-4994-bfab-33eac7d9cbc1" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="5.24763834756158E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="18293438-8bd4-44a6-87fd-a9405c927bfb">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="5.24763834756158E-06" mostLikelyValue="5.24763834756158E-06" maxValue="5.24763834756158E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0d2045be-02a7-4ea4-83ba-d1b46a11b951" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.26515597928973E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a47aee74-7b9b-4f72-af2f-938cff89cdb6">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="9.26515597928973E-06" mostLikelyValue="9.26515597928973E-06" maxValue="9.26515597928973E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b01d311c-4db1-4790-9ccc-3cf0e0fac1d3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.33930512840938E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b4030d2d-00a6-4f95-b7e3-bd6ea75e5326">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="9.33930512840938E-06" mostLikelyValue="9.33930512840938E-06" maxValue="9.33930512840938E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6d51ca75-0a11-48b8-a70d-f67ddcba4452" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="8.44485302764157E-05" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="7ee6382b-0ef8-4505-9399-88e883de9277">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="8.44485302764157E-05" mostLikelyValue="8.44485302764157E-05" maxValue="8.44485302764157E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b2b7119e-3a66-468f-b0da-b9d1af73bf50" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000623287115489496" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="667f5548-c917-4a33-9051-d18ff6efb952">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="0.000623287115489496" mostLikelyValue="0.000623287115489496" maxValue="0.000623287115489496" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="93bf5be2-2656-437f-bedc-4e4994ce6b57" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00903701114332614" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="6b7a0e43-6e85-4179-876b-a774cce5bffb">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="0.00903701114332614" mostLikelyValue="0.00903701114332614" maxValue="0.00903701114332614" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d2746817-38c1-4101-ade5-34cdad001098" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00293435437652706" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="e6e61cc8-a65d-44a1-912e-80a19853dd08">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="0.00293435437652706" mostLikelyValue="0.00293435437652706" maxValue="0.00293435437652706" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="56868176-a1a1-48e1-b6e7-51ac0055a5b7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00423759696915882" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="40fdaac9-39b1-4a79-b321-16683f3d5fb9">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use for all production phases from reception/cold storage to final product</comment>
+        <uncertainty>
+          <triangular minValue="0.00423759696915882" mostLikelyValue="0.00423759696915882" maxValue="0.00423759696915882" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="eb277e34-2c60-4086-b46b-6fc7f71913bd" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.35481557284278" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="cfc90fee-20f0-451a-8e50-a5bd859d3feb" activityLinkId="c869e4b2-70c5-45c0-a836-4d9423274d05">
+        <name xml:lang="en">water, completely softened</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Soft water for process</comment>
+        <uncertainty>
+          <triangular minValue="1.35481557284278" mostLikelyValue="1.35481557284278" maxValue="1.35481557284278" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a0aa87c8-0ffd-4da9-9842-7e00f291e119" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.88495532047958" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="cfc90fee-20f0-451a-8e50-a5bd859d3feb" activityLinkId="61a2b6ff-0ca9-4ebf-8da1-8280ad779ce4">
+        <name xml:lang="en">water, completely softened</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Soft water for process</comment>
+        <uncertainty>
+          <triangular minValue="1.88495532047958" mostLikelyValue="1.88495532047958" maxValue="1.88495532047958" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7b305b2c-3f1e-4736-8a26-288a88e6953c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-1.14039845178061E-05" isCalculatedAmount="true" sourceId="b1561a49-1f04-4f61-a8b9-7082ce2a4c89" sourceYear="2018" sourceFirstAuthor="Avadí, A." intermediateExchangeId="101e55f2-2da0-528b-96fd-21687e242c1c" activityLinkId="237f4c77-d438-4613-93b4-96e53533f123" productionVolumeAmount="36290026.6666666">
+        <name xml:lang="en">waste polyethylene, for recycling, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste PET from crates and packaging</comment>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ffab7947-f6be-4bfe-871a-3d6efe92bde3" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-0.00378927599576147" isCalculatedAmount="true" sourceId="b1561a49-1f04-4f61-a8b9-7082ce2a4c89" sourceYear="2018" sourceFirstAuthor="Avadí, A." intermediateExchangeId="101e55f2-2da0-528b-96fd-21687e242c1c" activityLinkId="c9526f61-0b79-4144-8c75-656a1375757a" productionVolumeAmount="36290026.6666666">
+        <name xml:lang="en">waste polyethylene, for recycling, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste PET from crates and packaging</comment>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cd228141-787e-461e-ab5f-7ce8891a0093" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-0.00114864513479968" isCalculatedAmount="true" sourceId="b1561a49-1f04-4f61-a8b9-7082ce2a4c89" sourceYear="2018" sourceFirstAuthor="Avadí, A." intermediateExchangeId="101e55f2-2da0-528b-96fd-21687e242c1c" activityLinkId="38023231-821f-4d90-9dfd-0a9062bdd028" productionVolumeAmount="36290026.6666666">
+        <name xml:lang="en">waste polyethylene, for recycling, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste PET from crates and packaging</comment>
+        <classification classificationId="555d4947-3964-4529-ab70-20468dfee0bd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39270: Waste, parings and scrap of plastics</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="11b5aef6-2700-4973-bd5f-a26177200e07" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.000748236461132598" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="71e2f1db-a2c5-44d0-8337-dfff15be974d" activityLinkId="db296309-b855-4b66-b74a-eb04e2ef7d3d">
+        <name xml:lang="en">heat, district or industrial, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Industrial heat for cooking/sterilisation</comment>
+        <uncertainty>
+          <triangular minValue="0.000748236461132598" mostLikelyValue="0.000748236461132598" maxValue="0.000748236461132598" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4364a3eb-6722-496b-b786-760300c1d6b4" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.044847772139443" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="71e2f1db-a2c5-44d0-8337-dfff15be974d" activityLinkId="e7770cfc-4d0a-4027-81a4-501313ae0935">
+        <name xml:lang="en">heat, district or industrial, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Industrial heat for cooking/sterilisation</comment>
+        <uncertainty>
+          <triangular minValue="0.044847772139443" mostLikelyValue="0.044847772139443" maxValue="0.044847772139443" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1356c492-4ead-4cc0-b5df-94ea903e138c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="25038-59-9" amount="0.0001961460350307" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="d585421f-a3a1-45bc-bd94-188f65865b9c" activityLinkId="26c65508-9bbc-4376-a7a2-6c3ad3c96086">
+        <name xml:lang="en">polyethylene terephthalate, granulate, amorphous</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Plastic barrels</comment>
+        <uncertainty>
+          <triangular minValue="0.0001961460350307" mostLikelyValue="0.0001961460350307" maxValue="0.0001961460350307" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="59218a6b-437d-4703-bd26-060329f62965">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34710: Polymers of ethylene, in primary forms</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="010aa80c-7be6-487e-af46-50d66bbe2648" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00055133686493307" isCalculatedAmount="true" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="a5309c08-cc71-402e-b870-163a09ee0742" activityLinkId="8d5fc65d-012f-49dc-9dc0-086c576d2de1">
+        <name xml:lang="en">sheet rolling, aluminium</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Aluminium cans</comment>
+        <classification classificationId="dc99ca2f-4960-4f4c-8dfa-2df3c5392d27">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">4153: Semi-finished products of aluminium or aluminium alloys</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="88ebad34-bfbf-4fbb-a2ee-1e61737c3617" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00055133686493307" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="a430f433-cdc8-45be-ace2-32a634634d3b" activityLinkId="38cd2ed4-c7f7-4fd7-9f99-0a0d038fafc1">
+        <name xml:lang="en">aluminium, cast alloy</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Aluminium cans</comment>
+        <uncertainty>
+          <triangular minValue="0.00055133686493307" mostLikelyValue="0.00055133686493307" maxValue="0.00055133686493307" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="f77d787c-7bec-48ba-a54a-b9c169d656c3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">41431: Unwrought aluminium</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="18989e7c-d250-4b78-b6ff-dd1e3adf39b1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0001961460350307" isCalculatedAmount="true" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="c449e3b5-385c-454b-acba-e3e6f58c68e4" activityLinkId="9339aac2-3a49-4c62-9fc3-e865409567f9">
+        <name xml:lang="en">thermoforming of plastic sheets</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Plastic barrels</comment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e7375b83-b29a-457d-bc5c-5a6762854e5b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">89200: Moulding, pressing, stamping, extruding and similar plastic manufacturing services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="33e3d025-380c-4706-889d-9254da88d179" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="2.99158975583984E-05" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="3ce1a817-4ae8-4edc-bf8b-cb1b5d853410" activityLinkId="beebd007-5586-4e1a-a603-c10689148d40">
+        <name xml:lang="en">packaging film, low density polyethylene</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Plastic bags</comment>
+        <uncertainty>
+          <triangular minValue="2.99158975583984E-05" mostLikelyValue="2.99158975583984E-05" maxValue="2.99158975583984E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="f9accf5a-a90f-4c3b-aae2-a3e93eae6a54">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">36330: Plates, sheets, film, foil and strip, of plastics, not self-adhesive, non-cellular and not reinforced, laminat[…]</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ec0c0443-47be-4ef7-a594-e891c5944df6" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007727-37-9" amount="1.93451531555463E-06" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="159edf36-233e-4e2c-aec0-b0ac0d49f528" activityLinkId="328a64ec-5256-42a5-801d-4bbf21873bb5">
+        <name xml:lang="en">nitrogen, liquid</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Nitrogen for process</comment>
+        <uncertainty>
+          <triangular minValue="1.93451531555463E-06" mostLikelyValue="1.93451531555463E-06" maxValue="1.93451531555463E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="272d5bdf-66a0-4932-9688-eff2dccbc6a5">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34210: Hydrogen, nitrogen, oxygen, carbon dioxide and rare gases; inorganic oxygen compounds of non-metals n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ff6454e5-7a06-4e3c-916a-8ed658cba85f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-0.00145088648666597" isCalculatedAmount="true" sourceId="b1561a49-1f04-4f61-a8b9-7082ce2a4c89" sourceYear="2018" sourceFirstAuthor="Avadí, A." intermediateExchangeId="2d68cff7-c436-4c1b-8253-4260fd7330a8" activityLinkId="07d7dda9-3a20-4a5a-90ce-ad7bfbebd187" productionVolumeAmount="44874270">
+        <name xml:lang="en">waste packaging glass, unsorted</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste packaging glass</comment>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <classification classificationId="54b9ab8a-1b84-41ed-9107-3a42d9e68ec2">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">37111: Glass in the mass, in balls (except microspheres), rods or tubes, unworked; waste and scrap of glass</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="69381a76-f980-4e54-81ec-7e57dcfbabdf" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00145088648666597" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="c3fd9530-3e9b-44b5-8833-9e544937a6e9" activityLinkId="470ac487-0246-4a56-bbf7-c7349dc1a286">
+        <name xml:lang="en">packaging glass, white</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Glass containers</comment>
+        <uncertainty>
+          <triangular minValue="0.00145088648666597" mostLikelyValue="0.00145088648666597" maxValue="0.00145088648666597" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="9162fd28-bfa5-47b7-9792-86ba27ffb4f1">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">37191: Bottles, jars, phials and other containers, of glass, of a kind used for the conveyance or packing of goods, e[…]</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9b609b46-12a4-4bd3-95d3-d1c41c9260eb" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="3.7699620601089E-10" isCalculatedAmount="true" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="d30ad511-0d19-4eae-8981-a8d11b965625" activityLinkId="14cad970-87ed-4213-b4f0-f811a7d20457">
+        <name xml:lang="en">fish curing plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">One unit of plant represents the installed capacity required to process 1 t of raw material</comment>
+        <classification classificationId="cd744d31-6a3b-48fc-9399-afdd06504c85">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8812: Fish processing services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4b9b9448-77e3-457b-aa39-b02a4209fefc" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7429-90-5" amount="-2.47082063940326E-05" isCalculatedAmount="true" sourceId="b1561a49-1f04-4f61-a8b9-7082ce2a4c89" sourceYear="2018" sourceFirstAuthor="Avadí, A." intermediateExchangeId="618bf4eb-bee5-4d38-8e4f-78cfebf779be" activityLinkId="4e75a893-373a-4638-be53-6afbb25b2834" productionVolumeAmount="17052222.6">
+        <name xml:lang="en">scrap aluminium</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste aluminium cans</comment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="db7ba319-6226-4a56-9847-64ebae3f01e3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39363: Waste and scrap of aluminium</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="30a1e4e3-4037-465a-a105-42409ca79a36" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7429-90-5" amount="-0.000526628658539037" isCalculatedAmount="true" sourceId="b1561a49-1f04-4f61-a8b9-7082ce2a4c89" sourceYear="2018" sourceFirstAuthor="Avadí, A." intermediateExchangeId="618bf4eb-bee5-4d38-8e4f-78cfebf779be" activityLinkId="b6a7e817-c46d-40ff-be01-3a782c428942" productionVolumeAmount="17052222.6">
+        <name xml:lang="en">scrap aluminium</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Waste aluminium cans</comment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <classification classificationId="db7ba319-6226-4a56-9847-64ebae3f01e3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39363: Waste and scrap of aluminium</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="468f717c-db93-40bf-aa41-f13bd3fe8876" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="1.42473054697988E-05" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="97fad14a-ecf4-402f-b09f-5b6594ecb3e9">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Electricity use along the whole process, including processing, maturing and cold storage</comment>
+        <uncertainty>
+          <triangular minValue="1.42473054697988E-05" mostLikelyValue="1.42473054697988E-05" maxValue="1.42473054697988E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4efd06e0-e274-4f61-9435-116686b4fc62" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.000312301306629229" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="f04f4a4a-6352-4f84-a299-753de5e5cdeb">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Industrial heat, for sterilisation</comment>
+        <uncertainty>
+          <triangular minValue="0.000312301306629229" mostLikelyValue="0.000312301306629229" maxValue="0.000312301306629229" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1d97c312-7518-4eee-9024-6c8505747fd8" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.00712176469171643" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="b6704b11-d69d-4eab-9bfa-edcf1fe098f2">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Industrial heat, for sterilisation</comment>
+        <uncertainty>
+          <triangular minValue="0.00712176469171643" mostLikelyValue="0.00712176469171643" maxValue="0.00712176469171643" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="267a797a-1436-45dc-b9e4-a084be4175ef" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="9.73990302260978E-11" isCalculatedAmount="true" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" intermediateExchangeId="cf048faf-1e94-4788-a4cb-90c7074295e3" activityLinkId="2ed33082-9689-4e7f-938f-134d5c310395">
+        <name xml:lang="en">fish freezing plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">One unit of plant represents the installed capacity required to process 1 t of raw material</comment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="cd744d31-6a3b-48fc-9399-afdd06504c85">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8812: Fish processing services</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="f2576e26-0a01-4e8c-b91e-a4a02f84c2be" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.23617958666837E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" elementaryExchangeId="91955aba-6ebc-4413-9342-f0298860b4aa">
+        <name xml:lang="en">BOD5, Biological Oxygen Demand</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Emissions to water from process waters</comment>
+        <uncertainty>
+          <triangular minValue="1.23617958666837E-06" mostLikelyValue="1.23617958666837E-06" maxValue="1.23617958666837E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="6d1a3235-b9ef-4139-ae78-6a14d38d7ded" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.96520857367792E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" elementaryExchangeId="cec4a04d-562a-4a38-a98f-5fb3d07eea6b">
+        <name xml:lang="en">TOC, Total Organic Carbon</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Emissions to water from process waters</comment>
+        <uncertainty>
+          <triangular minValue="1.96520857367792E-06" mostLikelyValue="1.96520857367792E-06" maxValue="1.96520857367792E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="3a59b8b1-bdf3-44d9-82c9-aeef9ac1c4a4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="7.7023497323183E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" elementaryExchangeId="961ccd56-2eee-4f57-bb18-fc4362b49000">
+        <name xml:lang="en">COD, Chemical Oxygen Demand</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Emissions to water from process waters</comment>
+        <uncertainty>
+          <triangular minValue="7.7023497323183E-06" mostLikelyValue="7.7023497323183E-06" maxValue="7.7023497323183E-06" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="a56553c4-d61f-4f44-b8d3-68cb5da0f656" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1.96520857367792E-06" sourceId="7b7a78f9-9b2a-4133-98a6-4b2c91c12ffe" sourceYear="2015" sourceFirstAuthor="Angel Avadí" elementaryExchangeId="79607917-9e12-4292-b289-21ff2b36e04b">
+        <name xml:lang="en">DOC, Dissolved Organic Carbon</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Emissions to water from process waters</comment>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c95fa293-b62e-412a-8837-8415d048d48a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007727-37-9" amount="0.000112122191488234" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" elementaryExchangeId="dcfe0815-6fa3-4e1d-a55e-155b29904f1d">
+        <name xml:lang="en">Nitrogen</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Emissions to water from process waters</comment>
+        <uncertainty>
+          <triangular minValue="0.000112122191488234" mostLikelyValue="0.000112122191488234" maxValue="0.000112122191488234" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="cc5dfa7f-dcc9-467f-8dca-72cbe8bbfd36" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007723-14-0" amount="2.40379582884181E-05" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" elementaryExchangeId="2d4b8ec1-8d53-4e62-8a11-ebc45909b02e">
+        <name xml:lang="en">Phosphorus</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Emissions to water from process waters</comment>
+        <uncertainty>
+          <triangular minValue="2.40379582884181E-05" mostLikelyValue="2.40379582884181E-05" maxValue="2.40379582884181E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="325b1c69-ba3c-4727-9393-fffc1d3a7a61" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="2.6148066613023E-05" sourceId="50f5e14e-0a82-43db-a911-3658080667c8" sourceYear="2014" sourceFirstAuthor="Angel Avadí" elementaryExchangeId="ae8a126c-b807-4e88-88e8-e7f46d098301">
+        <name xml:lang="en">Oils, non-fossil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Emissions to water from process waters</comment>
+        <uncertainty>
+          <triangular minValue="2.6148066613023E-05" mostLikelyValue="2.6148066613023E-05" maxValue="2.6148066613023E-05" />
+          <pedigreeMatrix reliability="2" completeness="3" temporalCorrelation="3" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Data from 1 plant, assumptions for larger plants</comment>
+        </uncertainty>
+        <compartment subcompartmentId="65f8d2a1-63ed-479c-b86c-3bcf38e86320">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">ocean</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Uncertainty estimation according to the pedigree matrix</samplingProcedure>
+      </representativeness>
+      <review reviewerId="66109d31-fb99-4a5f-aedd-5424b4a57ebc" reviewerName="Ivan Muñoz Ortiz" reviewerEmail="im@lca-net.com" reviewDate="2017-08-10" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="2">
+        <details>
+          <text xml:lang="en" index="0">An offline review in excel has been carried out for all the PE recycling activities, checking mass balances, data sources, etc. Several comments were made to the data provider and improvements have been made to the datasets.</text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2017-08-10" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="2">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0,0345016429353779', Output='0,03592231'
+ - Input &lt; output by 0,00142066706462207 EUR2005 (3,95% of output)
+
+Property 'water in wet mass':
+ - Input='0,0284775465498358', Output='0,02782141'
+ - Input &gt; output by 0,000656136549835751 kg (2,36% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='0', Output='0,01922342344'
+ - Input &lt; output by 0,01922342344 kg (100% of output)
+
+Property 'carbon content, fossil':
+ - Input='0,864149230573728', Output='0,83662943656'
+ - Input &gt; output by 0,027519794013728 kg (3,29% of output)
+
+
+- Amount of property 'heating value, net=0' of exchange 'municipal solid waste' deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (0,0284775465498358) and output exchanges (0,02782141) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): price=0,149, carbon content, fossil=0, water content=0, dry mass=1, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0,171548638132296, dry mass=0,771, water content=0,297016861219196, carbon content, non-fossil=0,261654993514916, heating value, net=0, water in wet mass=0,229, price=0,035, water content=0,00603621730382294, wet mass=1, carbon content, fossil=0,829, carbon content, non-fossil=0, water in wet mass=0,00600000000000001, dry mass=0,994
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): price=0,149, carbon content, fossil=0, water content=0, dry mass=1, wet mass=1, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, carbon content, fossil=0,171548638132296, dry mass=0,771, water content=0,297016861219196, carbon content, non-fossil=0,261654993514916, heating value, net=0, water in wet mass=0,229, price=0,035, water content=0,00603621730382294, wet mass=1, carbon content, fossil=0,829, carbon content, non-fossil=0, water in wet mass=0,00600000000000001, dry mass=0,994
+
+- The following negative reference products could not be identified as materials for treatment. A market is missing for the negative reference product.
+ - waste polyethylene, for recycling, unsorted
+
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99,5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'waste polyethylene, for recycling, unsorted', global (2010-2014) production volume 3819196785,53492, sum of all non-global production volumes 3819196785,53492. Local datasets used in calculation: Europe without Switzerland (2010-2010) PV: 2924033149,17128, CH (2014-2014) PV: 8800000, US (2010-2010) PV: 886363636,363638
+ Warning: -  Exchange 'iron scrap, unsorted', global (2010-2014) production volume 27996733,9716851, sum of all non-global production volumes 27996733,9716851. Local datasets used in calculation: Europe without Switzerland (2010-2010) PV: 22938196,4716851, CH (2014-2014) PV: 49279,9999999999, US (2010-2010) PV: 5009257,5
+ Warning: -  Exchange 'municipal solid waste', global (2010-2014) production volume 77113432,5, sum of all non-global production volumes 77113432,5. Local datasets used in calculation: Europe without Switzerland (2010-2010) PV: 0, CH (2014-2014) PV: 0, US (2010-2010) PV: 77113432,5
+ Warning: -  Exchange 'waste polyethylene, for recycling, sorted', global (2010-2014) production volume 3463464000, sum of all non-global production volumes 3463464000. Local datasets used in calculation: Europe without Switzerland (2010-2010) PV: 2646250000, CH (2014-2014) PV: 7963999,99999998, US (2010-2010) PV: 809250000
+
+- The input exchange 'waste preparation facility' does not have an activity link and therefore requires a market for that input to be available. If the market is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market has been accepted into the ecoinvent database.
+
+</otherDetails>
+      </review>
+      <review reviewerId="66109d31-fb99-4a5f-aedd-5424b4a57ebc" reviewerName="Ivan Muñoz Ortiz" reviewerEmail="im@lca-net.com" reviewDate="2017-08-15" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2017-08-15" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="3">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'water in wet mass':
+ - Input='0,0284775465498358', Output='0,02782141'
+ - Input &gt; output by 0,000656136549835751 kg (2,36% of output)
+
+Property 'wet mass':
+ - Input='1,10147809722063', Output='1,09529'
+ - Input &gt; output by 0,00618809722062719 kg (0,56% of output)
+
+Property 'carbon content, fossil':
+ - Input='0,864149230573728', Output='0,83662943656'
+ - Input &gt; output by 0,027519794013728 kg (3,29% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='0', Output='0,01922342344'
+ - Input &lt; output by 0,01922342344 kg (100% of output)
+
+Property 'dry mass':
+ - Input='1,07300055067079', Output='1,06746859'
+ - Input &gt; output by 0,00553196067079154 kg (0,52% of output)
+
+Property 'price':
+ - Input='0,0345016429353779', Output='0,035'
+ - Input &lt; output by 0,000498357064622063 EUR2005 (1,42% of output)
+
+
+- Amount of property 'heating value, net=0' of exchange 'municipal solid waste' deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (0,0284775465498358) and output exchanges (0,02782141) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, dry mass=0,994, carbon content, non-fossil=0, price=0,035, water in wet mass=0,00600000000000001, water content=0,00603621730382294, carbon content, fossil=0,829, water in wet mass=0,229, water content=0,297016861219196, carbon content, non-fossil=0,261654993514916, carbon content, fossil=0,171548638132296, wet mass=1, dry mass=0,771, heating value, net=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, price=0,149, carbon content, fossil=0, water content=0, dry mass=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): wet mass=1, dry mass=0,994, carbon content, non-fossil=0, price=0,035, water in wet mass=0,00600000000000001, water content=0,00603621730382294, carbon content, fossil=0,829, water in wet mass=0,229, water content=0,297016861219196, carbon content, non-fossil=0,261654993514916, carbon content, fossil=0,171548638132296, wet mass=1, dry mass=0,771, heating value, net=0, water in wet mass=0, carbon content, non-fossil=0, wet mass=1, price=0,149, carbon content, fossil=0, water content=0, dry mass=1
+
+- The productionVolumeAmount of output 'iron scrap, unsorted' should normally have a non-zero value.
+
+- The following negative reference products could not be identified as materials for treatment. No activities exist that produce these materials for treatment.
+ - waste polyethylene, for recycling, unsorted
+
+- Production volume of local datasets for a specific activity, time period, and macro-economic scenario must not exceed 99,5% of the production volume of the corresponding global.
+
+ Warning: -  Exchange 'waste polyethylene, for recycling, sorted', global (2010-2014) production volume 3463464000, sum of all non-global production volumes 3463464000. Local datasets used in calculation: CH (2014-2014) PV: 7963999,99999998, Europe without Switzerland (2010-2010) PV: 2646250000, US (2010-2010) PV: 809250000
+ Warning: -  Exchange 'municipal solid waste', global (2010-2014) production volume 77113432,5, sum of all non-global production volumes 77113432,5. Local datasets used in calculation: CH (2014-2014) PV: 0, Europe without Switzerland (2010-2010) PV: 0, US (2010-2010) PV: 77113432,5
+ Warning: -  Exchange 'waste polyethylene, for recycling, unsorted', global (2010-2014) production volume 3819196785,53492, sum of all non-global production volumes 3819196785,53492. Local datasets used in calculation: CH (2014-2014) PV: 8800000, Europe without Switzerland (2010-2010) PV: 2924033149,17128, US (2010-2010) PV: 886363636,363638
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="3860cfbd-a932-45c0-90c7-658d5bea9ea3" isActiveAuthor="true" personName="Thomas Kägi" personEmail="t.kaegi@carbotech.ch" />
+      <dataGeneratorAndPublication personId="3860cfbd-a932-45c0-90c7-658d5bea9ea3" personName="Thomas Kägi" personEmail="t.kaegi@carbotech.ch" publishedSourceId="ce1540f2-460b-420b-95b4-ff89af32933a" publishedSourceYear="2011" publishedSourceFirstAuthor="Franklin Associates" isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" lastEditTimestamp="2017-08-15T09:56:52" fileGenerator="EcoEditor 3.8.600.15190" fileTimestamp="2017-08-15T09:56:52" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

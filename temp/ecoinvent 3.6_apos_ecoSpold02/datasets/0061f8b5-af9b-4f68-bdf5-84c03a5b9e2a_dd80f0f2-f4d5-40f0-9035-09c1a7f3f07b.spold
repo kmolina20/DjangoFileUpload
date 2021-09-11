@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="0061f8b5-af9b-4f68-bdf5-84c03a5b9e2a" activityNameId="353022ef-b77f-4450-9034-2e295ef054a1" parentActivityId="8b9e161a-4f1b-4f59-a58d-57a92ad5abbe" inheritanceDepth="-1" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">operation, solar collector system, Cu flat plate collector, one-family house, for hot water</activityName>
+        <includedActivitiesStart xml:lang="en" />
+        <includedActivitiesEnd xml:lang="en">Delivery of heat with a solar system including maintenance and electricity use for operation. Excluding the necessary auxiliary heating.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="1">Use of a solar system excluding the necessary auxiliary heating.</text>
+          <text xml:lang="en" index="3">[This dataset was already contained in the ecoinvent database version 2. It was not individually updated during the transfer to ecoinvent version 3. Life Cycle Impact Assessment results may still have changed, as they are affected by changes in the supply chain, i.e. in other datasets. This dataset was generated following the ecoinvent quality guidelines for version 2. It may have been subject to central changes described in the ecoinvent version 3 change report (http://www.ecoinvent.org/database/ecoinvent-version-3/reports-of-changes/), and the results of the central updates were reviewed extensively. The changes added e.g. consistent water flows and other information throughout the database. The documentation of this dataset can be found in the ecoinvent reports of version 2, which are still available via the ecoinvent website. The change report linked above covers all central changes that were made during the conversion process.]</text>
+        </generalComment>
+        <tag>Operation</tag>
+        <tag>ConvertedDataset</tag>
+      </activity>
+      <classification classificationId="4f63093c-076b-4806-89ab-65b55b5bb03b">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">3530b: Solar collectors</classificationValue>
+      </classification>
+      <classification classificationId="f44e5516-bfb7-4914-bf91-e9008443eb3a">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">solar collector systems/systems</classificationValue>
+      </classification>
+      <geography geographyId="7846b897-7c04-4f9f-b607-2b83fcd9a74c">
+        <shortname xml:lang="en">RoW</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Solar collector system operated in CH.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="1">Operation of a solar system, not including the necessary additional heating.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2002-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time of simulation.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="007b2847-0aca-44cd-bbcf-2b28c813ce9b" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="5.1502E-06" intermediateExchangeId="7384da24-3c18-4621-8346-a595129352d9" activityLinkId="2c489466-e2e2-475d-9144-6971301638aa">
+        <name xml:lang="en">solar collector system, Cu flat plate collector, one-family house, hot water</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="5.1502E-06" mu="-12.18" variance="0.3" varianceWithPedigreeUncertainty="0.3506" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="afc3f43a-113f-4a19-930c-f970d1dade5d">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">54631: Heating equipment installation services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="560bc590-5423-44c0-9f0b-a921cb7ed588" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="1" intermediateExchangeId="dd80f0f2-f4d5-40f0-9035-09c1a7f3f07b" productionVolumeAmount="287235733.714286">
+        <name xml:lang="en">heat, central or small-scale, other than natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.0106" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. 10.6 EUR/GJ i s the price of district heat. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Assumption. The share of heat from solar collectors is globally very small: &gt;0.01% according to IEA statistics for 2009. 
+
+This production volume does not correspond to the heat productio in reality, but reflects the mentioned share distributed on the four solar collector system types modelled in the database. 
+See talk pages for further discussion of the modelling of the heat markets. 
+
+http://www.iea.org/stats/electricitydata.asp?COUNTRY_CODE=29</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="287235733.714286" mu="20.21" variance="0.1" varianceWithPedigreeUncertainty="0.31" />
+          <pedigreeMatrix reliability="5" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en"></comment>
+        </productionVolumeUncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b0e0acad-41d4-4da1-9054-99032bf6696d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="216d5c23-9e80-4f04-9b8c-81a3075ce3aa" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000180086479134904" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="83b55174-0ea9-4a4e-8599-770fc043441d">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000180086479134904" mu="-8.622" variance="0.0006" varianceWithPedigreeUncertainty="0.0512" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="69c41745-08e5-4e44-bffc-ddf1e63c5fd4" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="3.15848837485995E-05" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="85066306-6c2f-416a-950e-bf8cdc9adc9c">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="3.15848837485995E-05" mu="-10.36" variance="0.0006" varianceWithPedigreeUncertainty="0.0512" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="93137f75-17e6-469d-8788-0ffd5ef717ca" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000716347170393042" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="d03bcea4-4a51-4375-ae73-c188816506cd">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000716347170393042" mu="-7.241" variance="0.0006" varianceWithPedigreeUncertainty="0.0512" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e75bc111-df66-4e2c-9017-d97d8dbf0392" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00025191929714205" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="853a183c-bf35-4ecf-a5e1-cfb9b85c48e3">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00025191929714205" mu="-8.286" variance="0.0006" varianceWithPedigreeUncertainty="0.0512" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="521450e5-45be-41ab-9bc4-ca3e7e53878b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00256828476396592" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="44a07615-e010-4e23-be59-da1527394ea2">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00256828476396592" mu="-5.965" variance="0.0006" varianceWithPedigreeUncertainty="0.0512" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="27af57e9-359e-4624-92ff-964f5cfdd486" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000519382209484242" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="809416ed-0532-4379-9245-8c6621f37d73">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000519382209484242" mu="-7.563" variance="0.0006" varianceWithPedigreeUncertainty="0.0512" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="44c2b092-d683-41b3-a792-bc17c124f597" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0078545712799552" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="d9fc1395-e673-454d-a31c-d5728ad18785">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0078545712799552" mu="-4.847" variance="0.0006" varianceWithPedigreeUncertainty="0.0512" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="47e0a5ba-94f6-489c-af29-7045cb6c6bfb" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00129468549592258" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="a6f7a235-2a4e-4906-8bbe-46d1f8c37e2e">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00129468549592258" mu="-6.649" variance="0.0006" varianceWithPedigreeUncertainty="0.0512" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="803edf03-f211-486b-a221-15aac274ea08" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00329613842025347" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="12998146-ca32-4edd-805c-d187bf94af1a">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Simulation</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00329613842025347" mu="-5.715" variance="0.0006" varianceWithPedigreeUncertainty="0.0512" />
+          <pedigreeMatrix reliability="2" completeness="5" temporalCorrelation="5" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Simulation</comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="c41f269d-a317-4ee2-a23e-759f4520e11b" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="1.124" elementaryExchangeId="a7ff17d4-d3fe-4a70-9f2e-392b34630772">
+        <name xml:lang="en">Energy, solar, converted</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Includes losses in the system.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.124" mu="0.1169" variance="0.000589084339567482" varianceWithPedigreeUncertainty="0.0411890843395675" />
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <compartment subcompartmentId="45bb416c-a63b-429f-8754-b3f76a069c43">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in air</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Simulation done by SPF Rapperswil with Polysun 3.3 computer programme.</samplingProcedure>
+        <extrapolations xml:lang="en">none This dataset has been copied from an original dataset covering the geography CH. The uncertainty has been adjusted accordingly.</extrapolations>
+      </representativeness>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2013-07-25" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="47" reviewedMinorRevision="4">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2013-04-04" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="46" reviewedMinorRevision="10">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2013-04-04" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="46" reviewedMinorRevision="10">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,0106'
+ - Input &lt; output by 0,0106 EUR2005 (100% of output)
+
+
+- A dataset with the term "operation" in its name should normally have an infrastructure input (products with a property "capacity" or "lifetime_capacity")
+</otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2013-07-25" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="47" reviewedMinorRevision="4">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,0106'
+ - Input &lt; output by 0,0106 EUR2005 (100% of output)
+
+
+- A dataset with the term "operation" in its name should normally have an infrastructure input (products with a property "capacity" or "lifetime_capacity")
+</otherDetails>
+      </review>
+      <review reviewerId="a7b17163-0c31-4d85-ac46-29ff63f44bbd" reviewerName="Sebastiano Meier" reviewerEmail="art@ecoinvent.org" reviewDate="2007-08-13" reviewedMajorRelease="2" reviewedMinorRelease="2" reviewedMajorRevision="45" reviewedMinorRevision="1">
+        <details>
+          <text xml:lang="en" index="1">passed</text>
+        </details>
+        <otherDetails xml:lang="en">none</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="c4597934-ecac-422c-b431-382e85fdcb83" isActiveAuthor="false" personName="[System]" personEmail="support@ecoinvent.org" />
+      <dataGeneratorAndPublication personId="7771deb8-4a40-4409-8bc4-df0882e8dde6" personName="Niels Jungbluth" personEmail="ecoinvent@esu-services.ch" dataPublishedIn="2" publishedSourceId="8682b67a-eaf9-4b8a-b4c5-fd057405fa7f" publishedSourceYear="2007" publishedSourceFirstAuthor="Jungbluth, N." isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="48" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2010-07-28T18:27:35" lastEditTimestamp="2013-07-24T18:24:02" fileGenerator="EcoEditor 3.3.65.10694" fileTimestamp="2013-07-24T18:24:02" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

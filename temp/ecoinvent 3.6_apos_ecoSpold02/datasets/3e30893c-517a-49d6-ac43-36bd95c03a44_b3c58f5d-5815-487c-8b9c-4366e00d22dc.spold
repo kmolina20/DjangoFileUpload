@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="3e30893c-517a-49d6-ac43-36bd95c03a44" activityNameId="55ce8761-5a35-4958-8286-6affdccf2dac" parentActivityId="9a114126-73b2-439f-be49-9baf778457fc" inheritanceDepth="-1" type="1" specialActivityType="0" energyValues="1">
+        <activityName xml:lang="en">propane extraction, from liquefied petroleum gas</activityName>
+        <synonym xml:lang="en">LPG</synonym>
+        <includedActivitiesStart xml:lang="en">The activity starts with LPG entering the Fractionator.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends when separated propane leaves the depropanizer. Energy use, cooling water and steem use are included. </includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="1">In the present inventory, propane is extracted from Liquified Petroleum Gas.</text>
+          <text xml:lang="en" index="2">The composition of LPG varies. According to Ullmann’s Encyclopedia on average LPG contains (percentage by volume) 60% - 85% of propane, 14% - 38% of butane and 0% - 6% of pentane and other gases (such as isopentane, cyclopentane, ethylene and others). The process efficiency is app. 75%. In the modeling it is assumed that the mixed gases which were not separated during the process (25% of the volume of LPG entering the process) are burned and used for electricity production within the boundaries of this activity. The model is built in such a way, that if the amount of electricity produced within the boundaries of this activity is not sufficient, additional electricity will be required from the technosphere.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="28f738cc-bb73-48f8-b633-f83fb9bc5ddc">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">2011:Manufacture of basic chemicals</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="2">As seen in the sketch below, the fractionation of LPG is made out of following sub-technologies; fractionator, overhead accumulator vessel, compressor, chiller, separator, deethaniser and depropaniser.  The present inventory deals with the production of propane, therefore considers the depropaniser step. This technology presents basic LPG fractionation. More advanced technologies (with bigger efficiency of LPG recovery) are being used.</text>
+          <imageUrl index="3">https://db3.ecoinvent.org/images/57011776-e162-46b0-a47b-4be4329f6b58</imageUrl>
+        </comment>
+      </technology>
+      <timePeriod startDate="2005-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Reference year of production volumes</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="56405568-804b-4c64-984f-df4d8e383e28" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="108-31-6" amount="0" isCalculatedAmount="true" mathematicalRelation="" sourceId="7b443bad-124d-42a6-9a84-44fcf0225b6d" sourceYear="2008" sourceFirstAuthor="Hydrocarbon Processing" intermediateExchangeId="bd20be8e-9b7a-4391-980f-4ecf8f2867be" productionVolumeAmount="0">
+        <name xml:lang="en">steam, in chemical industry</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated based on literature value. The amount of steam of 0.7733 kg/kg is estimated based on literature value (Refining Processes Handbook 2008, www.hydrocarbonprocessing.com) on similar processes.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2O</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">n/a</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2O</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0f4d3788-25e2-4feb-b1fc-39e099490487" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="LPG_input" amount="0.031045821479476" isCalculatedAmount="true" mathematicalRelation="1* technology_efficiency" sourceId="7b443bad-124d-42a6-9a84-44fcf0225b6d" sourceYear="2008" sourceFirstAuthor="Hydrocarbon Processing" intermediateExchangeId="9d447e1a-a41a-43ac-b374-d0fc6dcb61df" activityLinkId="d13ef941-97a9-40b5-a293-f9c057e600ba">
+        <name xml:lang="en">liquefied petroleum gas</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Mass balanced. In order to keep mass balance, the input of LPG is equal to the output of propane and gases that leave the system as heat. LPG has 72.5% of propane.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.031045821479476" mu="-3.472" variance="0.0006" varianceWithPedigreeUncertainty="0.0492" />
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.821862752937094" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">The composition of LPG was considered 50:50 propane:butane</comment>
+        </property>
+        <property propertyId="e40445b1-8aba-4282-851d-9c2d28b1a5c1" variableName="LPG_input_density" amount="0.526324873096447" isDefiningValue="false" mathematicalRelation="((0.583* fraction_of_butane_in_LPG)+(0.506* fraction_of_propane_in_LPG))/(  fraction_of_butane_in_LPG+fraction_of_propane_in_LPG)" isCalculatedAmount="true" unitId="b06bab82-f0e8-426d-849a-ebdb5b553519">
+          <name xml:lang="en">density</name>
+          <unitName xml:lang="en">kg/l</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.526324873096447" mu="-0.6418" variance="0.0006" varianceWithPedigreeUncertainty="0.0566" />
+            <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en" />
+          </uncertainty>
+          <comment xml:lang="en">Calculated value as a waited average of butane density (0.5788 kg/l) and propane density (0.5005 kg/l). Assumed to be present in the LPG in the ratio butane 26%: propane 72.5%.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.821862752937094" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.821862752937094" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="4b6bba26-f67a-4211-992c-b1f68f0b76b8">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">334: Petroleum gases and other gaseous hydrocarbons, except natural gas</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="67e14467-8f9d-4405-9c4b-28f1263d713b" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0112975744363813" isCalculatedAmount="true" mathematicalRelation="0.3639*propane_RP" sourceId="7b443bad-124d-42a6-9a84-44fcf0225b6d" sourceYear="2008" sourceFirstAuthor="Hydrocarbon Processing" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" activityLinkId="e664865e-ede8-4a9f-a44f-958b36f026cc">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Estimated based on literature value. The amount of energy of 0.3639 MJ/kg is estimated based on literature value (Refining Processes Handbook 2008, www.hydrocarbonprocessing.com) on similar processes.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0112975744363813" mu="-4.483" variance="0.0006" varianceWithPedigreeUncertainty="0.0492" />
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2d195769-debd-4cd7-98f4-727bbe4d2688" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="propane_RP" casNumber="74-98-6" amount="0" isCalculatedAmount="true" mathematicalRelation="1* technology_efficiency" sourceId="ca2e9423-5484-4308-bfd4-5eb115c9a07a" sourceYear="2010" sourceFirstAuthor="Ullmann" intermediateExchangeId="28a32250-3ba9-4556-9505-8841cff28aa2" productionVolumeAmount="45699481080" productionVolumeVariableName="propane_PV" productionVolumeMathematicalRelation="18063036000*propane_RP_density*5">
+        <name xml:lang="en">propane</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Based on 1 kg of propane produced with a technology efficiency of 75%.</comment>
+        <synonym xml:lang="en">C3H8</synonym>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.272378512332072" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C3H8</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C3H8</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">C3H8</comment>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" variableName="propane_RP_Net_Heat_Value" amount="45.062614" isDefiningValue="false" mathematicalRelation="propane_RP_Gross_Heat_Value-(propane_RP_Gross_Heat_Value*0.099)" isCalculatedAmount="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <uncertainty>
+            <lognormal meanValue="45.062614" mu="3.808" variance="0.0006" varianceWithPedigreeUncertainty="0.0486" />
+            <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en" />
+          </uncertainty>
+          <comment xml:lang="en">Calculated value based on literature data (http://hypertextbook.com/facts/2002/EricLeung.shtml). The net (lower) heating (calorific) value of butane is approximately 9.9% lower the the gross (upper) heating (calorific) value.</comment>
+        </property>
+        <property propertyId="e40445b1-8aba-4282-851d-9c2d28b1a5c1" variableName="propane_RP_density" amount="0.506" isDefiningValue="false" unitId="b06bab82-f0e8-426d-849a-ebdb5b553519">
+          <name xml:lang="en">density</name>
+          <unitName xml:lang="en">kg/l</unitName>
+          <uncertainty>
+            <lognormal meanValue="0.506" mu="-0.6812" variance="0.0006" varianceWithPedigreeUncertainty="0.0406" />
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en" />
+          </uncertainty>
+          <comment xml:lang="en">Literature value (Ullmann's Encyclopedia), density of liquid propane at saturation pressure; 15.6°C. </comment>
+        </property>
+        <property propertyId="d61b8768-8ef6-4a99-ae16-9e51f24ad5b5" variableName="propane_RP_Gross_Heat_Value" amount="50.014" isDefiningValue="false" mathematicalRelation="50014/1000" isCalculatedAmount="true" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">heating value, gross</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <uncertainty>
+            <lognormal meanValue="50.014" mu="3.912" variance="0.0006" varianceWithPedigreeUncertainty="0.0406" />
+            <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+            <comment xml:lang="en" />
+          </uncertainty>
+          <comment xml:lang="en">Literature value (Ullmann's Encyclopedia), gross (upper) heating (calorific) value.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="propane_RP_price_EUR2005" amount="0.267" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">2.O - Average import and  export prices  (total trades (USD) divided by total weight (kg) in EU27, USA, China, Japan and India) from UN data - Average of Propane and butane (http://data.un.org/Data.aspx?q=Butanes+&amp;d=ComTrade&amp;f=_l1Code%3a28%3bcmdCode%3a271113 and http://data.un.org/Data.aspx?q=propane&amp;d=ComTrade&amp;f=_l1Code%3a28%3bcmdCode%3a271112; accessed 1 June 10).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">C3H8</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">C3H8</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C3H8</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.272378512332072" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.272378512332072" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" variableName="propane_RP_true_value" amount="0.20025" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Estimated based on literature value from the U.S. Energy Information Administration (http://www.eia.gov/dnav/pet/pet_pnp_refp2_a_epllban_ypy_mbbl_a.htm). 1.8E+10 l of net propane were produced in the US in 2005. The production volume in the whole world is extrapolated from the US data using difference in GDP (world:US=5).</productionVolumeComment>
+        <classification classificationId="a0916e16-034a-4c5f-b7f3-4c8d819a2353">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">33410: Propane and butanes, liquefied</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="325ce1d9-9a7a-4a72-94c1-e70054ec64ab" unitId="980b811e-3905-4797-82a5-173f5568bc7e" variableName="heat" amount="1" isCalculatedAmount="true" mathematicalRelation="fraction_of_propane_in_LPG*(1-technology_efficiency)* 0.506* 45.063" sourceId="ca2e9423-5484-4308-bfd4-5eb115c9a07a" sourceYear="2010" sourceFirstAuthor="Ullmann" intermediateExchangeId="b3c58f5d-5815-487c-8b9c-4366e00d22dc" productionVolumeAmount="251824881460.288" productionVolumeMathematicalRelation="heat*propane_PV/propane_RP">
+        <name xml:lang="en">heat, central or small-scale, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Calculated based on literature values (Ullmanns' Encyclopedia and Refining Processes Handbook 2008, www.hydrocarbonprocessing.com). The amount of mixed gasses which is not separated during the process (25% of the LPG on the input) is burned and used for electricity production. The composition of LPG on the input is considered to be by volume; 72.5% propane, 26% butane and 1.5% other gases, such as pentane (considered to be representative for all the other gases).</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="heat_price_EUR2005" amount="0.01" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" variableName="heat_true_value" amount="0.041328403875" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d5c8138b-9adc-4fc0-a6f5-82ae256b7219" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="108-31-6" amount="0.00359841754576904" isCalculatedAmount="true" mathematicalRelation="" sourceId="7b443bad-124d-42a6-9a84-44fcf0225b6d" sourceYear="2008" sourceFirstAuthor="Hydrocarbon Processing" intermediateExchangeId="bd20be8e-9b7a-4391-980f-4ecf8f2867be" activityLinkId="f0baf2c3-16da-4897-a41e-3d8f1657d116">
+        <name xml:lang="en">steam, in chemical industry</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated based on literature value. The amount of steam of 0.7733 kg/kg is estimated based on literature value (Refining Processes Handbook 2008, www.hydrocarbonprocessing.com) on similar processes.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00359841754576904" mu="-5.627" variance="0.0006" varianceWithPedigreeUncertainty="0.0492" />
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2O</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">n/a</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2O</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c5c70f10-fe69-4b9b-a88f-881b3797ca5b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="108-31-6" amount="0.0204093162043097" isCalculatedAmount="true" mathematicalRelation="" sourceId="7b443bad-124d-42a6-9a84-44fcf0225b6d" sourceYear="2008" sourceFirstAuthor="Hydrocarbon Processing" intermediateExchangeId="bd20be8e-9b7a-4391-980f-4ecf8f2867be" activityLinkId="39484d3c-0271-4689-bceb-5ca66422c7f7">
+        <name xml:lang="en">steam, in chemical industry</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimated based on literature value. The amount of steam of 0.7733 kg/kg is estimated based on literature value (Refining Processes Handbook 2008, www.hydrocarbonprocessing.com) on similar processes.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0204093162043097" mu="-3.892" variance="0.0006" varianceWithPedigreeUncertainty="0.0492" />
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2O</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">n/a</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2O</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="0c64439e-e2e9-4d70-9847-8a22e333b7fc" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_water_unspecified" casNumber="007732-18-5" amount="8.55700454528057E-07" isCalculatedAmount="true" mathematicalRelation="water_cooling_UNO_input*(1-fraction_CW_to_air)" elementaryExchangeId="2404b41a-2eed-4e9d-8ab6-783946fdf5d6">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.</comment>
+        <uncertainty>
+          <lognormal meanValue="8.55700454528057E-07" mu="-13.97" variance="0.04" varianceWithPedigreeUncertainty="0.0807" />
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="e47f0a6c-3be8-4027-9eee-de251784f708">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="6ebcb36a-2990-4fd8-80cf-ab1a9529b4a2" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_air_unspecified" casNumber="007732-18-5" amount="5.41361512048362E-07" isCalculatedAmount="true" mathematicalRelation="water_cooling_UNO_input*fraction_CW_to_air" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.</comment>
+        <uncertainty>
+          <lognormal meanValue="5.41361512048362E-07" mu="-14.43" variance="0.04" varianceWithPedigreeUncertainty="0.0807" />
+          <pedigreeMatrix reliability="2" completeness="2" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" variableName="WWM" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" variableName="WM" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="cf4e5d30-3b33-4afc-808a-04b4d36e27fe" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_cooling_UNO_input" casNumber="007732-18-5" amount="1.39706196657642E-06" isCalculatedAmount="true" mathematicalRelation="propane_RP*0.000045" sourceId="7b443bad-124d-42a6-9a84-44fcf0225b6d" sourceYear="2008" sourceFirstAuthor="Hydrocarbon Processing" elementaryExchangeId="fc1c42ce-a759-49fa-b987-f1ec5e503db1">
+        <name xml:lang="en">Water, cooling, unspecified natural origin</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Estimated based on literature value. The amount of cooling water of 4.5+E-5 m3/kg is estimated based on literature value (Refining Processes Handbook 2008, www.hydrocarbonprocessing.com) on similar processes.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.39706196657642E-06" mu="-13.48" variance="0.0006" varianceWithPedigreeUncertainty="0.0492" />
+          <pedigreeMatrix reliability="4" completeness="3" temporalCorrelation="5" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0104328554239022" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab 4.8, calculated from bicarbonate content in river (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.8899" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="9081.65213442325" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.1101" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">TDS in an average river used as approximation. That is, 110.1 mg/L (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0104328554239022" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.00114865738217163" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="30347aef-a90b-46ba-8746-b53741aa779d">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in water</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <parameter parameterId="d3446223-e5cc-446e-9f2d-29047f8f9832" variableName="fraction_CW_R_to_air" amount="0.771">
+        <name xml:lang="en">fraction of cooling water which evaporates to air, recirculating cooling system</name>
+        <uncertainty>
+          <lognormal meanValue="0.771" mu="-0.2601" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Calculated based on literature value (Scown, C.D., 2011, Water Footprint of U.S. Transportation Fuels and supplying information of the article) (Vionnet, S., Quantis Water Database - Technical Report, 2012). </comment>
+      </parameter>
+      <parameter parameterId="c20777c4-a93b-44b0-8402-1f1d086f873f" variableName="fraction_CW_OT_to_air" amount="0.004">
+        <name xml:lang="en">fraction of cooling water which evaporates to air, once-through cooling system</name>
+        <uncertainty>
+          <lognormal meanValue="0.004" mu="-5.521" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Calculated based on literature value (Scown, C.D., 2011, Water Footprint of U.S. Transportation Fuels and supplying information of the article) (Vionnet, S., Quantis Water Database - Technical Report, 2012). </comment>
+      </parameter>
+      <parameter parameterId="ec26805d-622e-433b-88c5-13489c842469" variableName="fraction_of_propane_in_LPG" mathematicalRelation="(0.6+0.85)/2" isCalculatedAmount="true" amount="0.725">
+        <name xml:lang="en">fraction of propane in LPG</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.725" mu="-0.3216" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Calculated average (min.= 60%, max.= 85%) based on literature value (Ullmann's Encyclopedia).</comment>
+      </parameter>
+      <parameter parameterId="10e6c58f-94ca-4785-8f11-49f39cabf8ac" variableName="fraction_CW_to_air" mathematicalRelation="(0.5*fraction_CW_OT_to_air)+(0.5*fraction_CW_R_to_air)" isCalculatedAmount="true" amount="0.3875">
+        <name xml:lang="en">fraction of cooling water which evaporates to air</name>
+        <uncertainty>
+          <lognormal meanValue="0.3875" mu="-0.948" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">fraction of cooling water which evaporates to air, i.e. is consumed</comment>
+      </parameter>
+      <parameter parameterId="9e89e5c2-58cf-4d05-a6b6-ac4467d33aa8" variableName="fraction_of_butane_in_LPG" mathematicalRelation="(0.14+0.38)/2" isCalculatedAmount="true" amount="0.26">
+        <name xml:lang="en">fraction of butane in LPG</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.26" mu="-1.347" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Calculated average (min.= 14%, max.= 38%) based on literature value (Ullmann's Encyclopedia).</comment>
+      </parameter>
+      <parameter parameterId="7a358736-a2b1-4262-8f9c-d4e7f0dd0908" variableName="technology_efficiency" amount="0.75">
+        <name xml:lang="en">technology efficiency</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.75" mu="-0.2877" variance="0.0006" varianceWithPedigreeUncertainty="0.0188" />
+          <pedigreeMatrix reliability="4" completeness="5" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <comment xml:lang="en">Literature value (Ullmann's Encyclopedia)</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <extrapolations xml:lang="en">Production volumes are extrapolated from the US values using the difference in GDP.</extrapolations>
+      </representativeness>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-09-13" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="16">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset:
+
+Property 'water in wet mass':
+ - Input='0', Output='3,375E-05'
+ - Input &lt; output by 3,375E-05 kg (100% of output)
+
+Property 'wet mass':
+ - Input='0', Output='3,375E-05'
+ - Input &lt; output by 3,375E-05 kg (100% of output)
+
+
+- Property 'water in wet mass=0' of master data exchange was removed from exchange 'liquefied petroleum gas'.
+Property 'carbon content, fossil=0,821862752937094' of master data exchange was removed from exchange 'liquefied petroleum gas'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'liquefied petroleum gas'.
+Property 'water content=0' of master data exchange was removed from exchange 'liquefied petroleum gas'.
+Property 'water in wet mass=0' of master data exchange was removed from exchange 'steam, in chemical industry'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'steam, in chemical industry'.
+Property 'water content=0' of master data exchange was removed from exchange 'steam, in chemical industry'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'steam, in chemical industry'.
+Property 'wet mass=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'dry mass=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'carbon content, non-fossil=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'water in wet mass=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'carbon content, fossil=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'water content=' of master data exchange was removed from exchange 'Water, cooling, unspecified natural origin'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Water'.
+Amount of property 'water in wet mass=1' of exchange 'Water' deviates from the default amount in the master file.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Water'.
+Amount of property 'water in wet mass=1' of exchange 'Water' deviates from the default amount in the master file.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'Water'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'Water'.
+
+- The total water in wet mass of all input exchanges (0) and output exchanges (3,375E-05) is unbalanced.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=1, wet mass=1, water in wet mass=1, wet mass=1
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): water in wet mass=1, wet mass=1, water in wet mass=1, wet mass=1
+
+- The input exchange 'heat, central or small-scale, natural gas' has an activity link and therefore requires a valid product exchange for that input to be available. If the valid product exchange is not available the dataset will be put on hold at the end of its review and will remain on hold until such a valid product exchange has been accepted into the ecoinvent database.
+
+</otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="1b11366d-47b7-40d4-b85d-7d7063b22209" isActiveAuthor="false" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org" />
+      <dataGeneratorAndPublication personId="1b11366d-47b7-40d4-b85d-7d7063b22209" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org" isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="1" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2012-08-06T11:47:26" lastEditTimestamp="2012-08-15T11:16:04" fileGenerator="EcoEditor 3.0.61.8724" fileTimestamp="2012-08-15T11:16:04" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

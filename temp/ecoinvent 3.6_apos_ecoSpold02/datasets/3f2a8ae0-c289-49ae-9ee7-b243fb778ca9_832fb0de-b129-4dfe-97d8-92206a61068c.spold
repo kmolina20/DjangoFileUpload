@@ -1,0 +1,2424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="3f2a8ae0-c289-49ae-9ee7-b243fb778ca9" activityNameId="7c2cc18a-299b-41d4-a0b0-8c3d99a664ee" parentActivityId="1ebe141c-550f-4ae5-a1e6-965dcd02f30a" inheritanceDepth="-1" type="1" specialActivityType="0">
+        <activityName xml:lang="en">bleaching and dyeing, yarn</activityName>
+        <includedActivitiesStart xml:lang="en">The bleaching activity starts with loading the greige yarn into the dyeing machine. However, this activity is modeled as a service, so no input of greige yarn is considered in the inputs from technosphere.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This datasets ends with 1 kg of this service which has to be used with 1 kg of yarn. Drying is included.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="9">
+Dyeing:
+This inventory is for dyeing 40/2 CW count greige yarn to the dye shade 18-309.</text>
+          <text xml:lang="en" index="8">Bleaching:
+This activity bleaches greige yarn. Bleaching improves whiteness by removing natural coloration and remaining trace impurities from the cotton; the degree of bleaching necessary is determined
+by the required whiteness and absorbency. 
+</text>
+          <text xml:lang="en" index="1">This dataset covers all relevant input and output flows for bleaching and dyeing of 1 kg greige yarn as a service activity. The inventory is mainly based on industry data and is supplemented, where necessary, with secondary processing energy data from machinery manufacturers. The dataset is a weighted average of the respective datasets in India and Bangladesh.</text>
+          <text xml:lang="en" index="10">This activity is modeled as a service, so no input of yarn is considered.</text>
+          <text xml:lang="en" index="7"></text>
+        </generalComment>
+      </activity>
+      <classification classificationId="14181512-75f0-4c44-8bea-6245e2f21484">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">1313:Finishing of textiles</classificationValue>
+      </classification>
+      <geography geographyId="7846b897-7c04-4f9f-b607-2b83fcd9a74c">
+        <shortname xml:lang="en">RoW</shortname>
+        <comment>
+          <text xml:lang="en" index="1"></text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="1">Mixture of autoclave and package dyeing.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2017-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true" />
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="43deea22-9ba5-46ba-bfc7-063fb3462194" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="1310-73-2" amount="0.016643483" intermediateExchangeId="61396bcb-bf35-411a-a6a6-8543ccef83e8" activityLinkId="bba855f9-53fe-475f-b60d-ff2e82fdc2f5">
+        <name xml:lang="en">sodium hydroxide, without water, in 50% solution state</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Industry data. This value is attributed only to the bleaching part of the process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.016643483" mu="-4.096" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">NaOH</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">NaOH</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d3d4d040-0471-45ee-aef2-3c034a9de7b7">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34231: Chemical elements n.e.c.; inorganic acids except phosphoric, nitric and sulphonitric; inorganic oxygen compoun[…]</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3231b432-9701-4a89-8207-e85be737a8cb" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="108-31-6" amount="4.54984948" intermediateExchangeId="bd20be8e-9b7a-4391-980f-4ecf8f2867be" activityLinkId="f0baf2c3-16da-4897-a41e-3d8f1657d116">
+        <name xml:lang="en">steam, in chemical industry</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Industry data reported in 2030 Water Resources Group report - An analysis of Industrial water use in Bangladesh with a focus on the textile and leather industries.</comment>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5649a028-dd38-424d-b596-8fd423b4f33e" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="1.02333E-06" intermediateExchangeId="d72638dc-71b8-4c4f-b5c7-72cbe6bdd145" activityLinkId="2d76192d-5875-45bf-9266-f374761dc154">
+        <name xml:lang="en">building, hall</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">total building area (square meters) divided by production per year and life time of the plant</comment>
+        <uncertainty>
+          <lognormal meanValue="1.02333E-06" mu="-13.79" variance="0.3" varianceWithPedigreeUncertainty="0.3028" />
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="b01c4db8-8617-4fe1-ad51-e3f3bb5576d3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">531: Buildings</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6c33ed9d-5680-4ff7-a0a9-1c68d3d199c7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="322b2d17-b24d-4cfd-a3ee-0b08581851c2" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="Water" casNumber="7732-18-5" amount="0" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" productionVolumeAmount="0">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For preparing Ready For Dyeing (RFD) solution </comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2e91000f-10d0-45c3-b7db-09aa7928a027" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="497-19-8" amount="0.139064405" intermediateExchangeId="9e6f12d8-b727-4aef-94e3-c8278e3661d7" activityLinkId="41ad885d-c755-46e5-85bc-44aa313b4eb4">
+        <name xml:lang="en">soda ash, light, crystalline, heptahydrate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Industry data. This value is attributed only to the dyeing part of the process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.139064405" mu="-1.973" variance="0.01" varianceWithPedigreeUncertainty="0.0202" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0517241379310345" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0517241379310345" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0517241379310345" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d3e80077-bb2e-4851-a954-d695daaa3f86">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34240: Phosphates of triammonium; salts and peroxysalts of inorganic acids and metals n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4e56e33b-5369-4df3-90c5-1de88bd5a758" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" productionVolumeAmount="0">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Industry data reported in 2030 Water Resources Group report - An analysis of Industrial water use in Bangladesh with a focus on the textile and leather industries.</comment>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="374f7b65-72bc-4915-85f7-5339383fbc12" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00394436" intermediateExchangeId="2be73167-58e8-4706-a68f-167c80df9f72" activityLinkId="a0485f14-2df4-4f48-9cd0-fbbd51dc3a19">
+        <name xml:lang="en">chemical, organic</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">sum of unspecified chemicals used in dyeing process. These are dye chemicals, stablising agent (cantovel gel), wetting agent (soap), sequencing agent and levelling agent. </comment>
+        <uncertainty>
+          <lognormal meanValue="0.00394436" mu="-5.535" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="2" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This dataset is an unweighted average of 20 organic substances (listed in Tab 88.1, ecoinvent v2.2 report 8, part II), being part of the top100 chemicals included in this database. The C-content has also been calculated as an unweighted average of the C content of the substances composing this dataset.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.628" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This dataset is an unweighted average of 20 organic substances (listed in Tab 88.1, ecoinvent v2.2 report 8, part II), being part of the top100 chemicals included in this database. The C-content has also been calculated as an unweighted average of the C content of the substances composing this dataset.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.628" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.628" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="3fab12aa-bf00-4458-a36a-af1fc0dea9b0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">341: Basic organic chemicals</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2be736f2-7061-4908-9c26-a55ff76c3772" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1" intermediateExchangeId="832fb0de-b129-4dfe-97d8-92206a61068c" productionVolumeAmount="69662835000" productionVolumeVariableName="PV_RP">
+        <name xml:lang="en">bleaching and dyeing, yarn</name>
+        <unitName xml:lang="en">kg</unitName>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0.698336679222534" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Calculated based on inputs: The price of the product has been calculated as a sum of the values of the material and energy inputs for this product. This value is therefore a rough estimation. It may underestimate the real price since there are additional expenses when producing any product. These expences can include for example labour costs, treatment of waste materials and profit for the producer. Please consider carefully whether this level of data quality is acceptable for your application.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Based on the The Fiber Year report 2017 for the overall amount of fibre and assumptions on losses along the supply chain (about 15% average up to yarn preparation, calculation based on FAO World Apparel Fiber Consumption Survey 2013)</productionVolumeComment>
+        <classification classificationId="588cd1d8-b858-4996-8832-5e40583db62a">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">9715: Dyeing and colouring services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a871836a-5111-4958-bc17-20c63cd21b16" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7757-82-6" amount="0.149481708" intermediateExchangeId="2cfef82e-cb0d-4864-8163-9651fc6c25eb" activityLinkId="46fb5fc0-6ffa-4d8d-bcf9-cdcd5bc0e947">
+        <name xml:lang="en">sodium sulfate, anhydrite</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Industry data. This value is attributed only to the dyeing part of the process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.149481708" mu="-1.901" variance="0.01" varianceWithPedigreeUncertainty="0.0202" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="d3e80077-bb2e-4851-a954-d695daaa3f86">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34240: Phosphates of triammonium; salts and peroxysalts of inorganic acids and metals n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e5775c46-d227-474e-83e5-8fe933e0334a" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.305096214" intermediateExchangeId="533392d3-8fa6-44bb-9b79-b14c0a0e66e0" activityLinkId="11ed6de1-43fd-4d55-af7d-e2fa870d3021">
+        <name xml:lang="en">diesel, burned in diesel-electric generating set, 18.5kW</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Diesel used for power backup. Forumula includes diesel consumption in liters multiplied density of fule and its calorific value</comment>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b4702ea9-28c3-4bcb-8b53-5933029d6552" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.084945223" intermediateExchangeId="73b452c8-3ac4-4993-86e4-fe0653467988" activityLinkId="5fb5ece2-1a1d-4f83-b4ad-0abfeb62f555">
+        <name xml:lang="en">chemical, inorganic</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Industry data. 0.09 kg of chemical, inorganic, refer only to the process of bleaching while the rest 0.081922 kg are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.084945223" mu="-2.466" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This dataset is an unweighted average of 20 inorganic substances (listed in Tab 88.1, ecoinvent v2.2 report 8, part II), being part of the top100 chemicals included in this database. The C-content has also been calculated as an unweighted average of the C content of the substances composing this dataset.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.003" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This dataset is an unweighted average of 20 inorganic substances (listed in Tab 88.1, ecoinvent v2.2 report 8, part II), being part of the top100 chemicals included in this database. The C-content has also been calculated as an unweighted average of the C content of the substances composing this dataset.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.003" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.003" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="a611a303-a730-4721-8385-b0fa926ece41">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">342: Basic inorganic chemicals n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="686d6c0f-2461-4934-9a33-f7799643ab86" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">sum of electricity used for:
+dyeing machine	
+boiler	
+hydro extractor	
+dryer	
+yarn conditioning	
+</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="05e5bca8-2f51-4318-a6de-69f216e4bd7a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7722-84-1" amount="0.014671303" intermediateExchangeId="26c92545-7995-491d-bcca-ee6d590ef194" activityLinkId="6a84ced8-3105-40dd-9c8a-5fd24a1991c6">
+        <name xml:lang="en">hydrogen peroxide, without water, in 50% solution state</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Industry data. This value is attributed only to the bleaching part of the process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.014671303" mu="-4.222" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2O2</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">H2O2</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="b3443136-a87d-4c35-8307-0959c75058ea">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34280: Hydrogen peroxide; phosphides; carbides; hydrides, nitrides, azides, silicides and borides</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="889a96e0-550a-4bd2-96b4-b51a3352ccab" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="WW" amount="-0.118713983" intermediateExchangeId="2dcfa182-da2f-594b-b0fd-9944a5ed7213" activityLinkId="9879238a-d537-4387-9d5e-48351229f72d" productionVolumeAmount="8269952610" productionVolumeMathematicalRelation="pv_rp*ww">
+        <name xml:lang="en">wastewater from textile production</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Industry data. 0.00566 m3 refer only to the process of bleaching while the rest 0.12 m3 of wastewater are attributed to the dyeing process.</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="WW_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <classification classificationId="439c9891-5c98-4664-bbef-01753519dae0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">94110: Sewerage and sewage treatment services</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c4729315-b319-4f3d-a975-7bc8e0a6a35d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7647-14-5" amount="0.009860899" intermediateExchangeId="edcfa83a-363a-4b2d-8d6a-612e32dfcdfc" activityLinkId="6532b6c7-e828-4db6-ac11-9bb662b9ba63">
+        <name xml:lang="en">sodium chloride, powder</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For preparing Ready For Dyeing (RFD) solution </comment>
+        <uncertainty>
+          <lognormal meanValue="0.009860899" mu="-4.619" variance="0.0006" varianceWithPedigreeUncertainty="0.0128" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">NaCl</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">NaCl</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="53ee2434-256c-4e1f-8356-601663e73388">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">16200: Salt and pure sodium chloride; sea water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bd5f784a-6eb5-4809-a8ae-a2e31dae82cf" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="64-19-7" amount="0.007712767" intermediateExchangeId="e36aa595-9fc6-4eff-8f34-a9b11f460762" activityLinkId="99d990aa-cf7a-4d16-a9ed-01c7696ebbbb">
+        <name xml:lang="en">acetic acid, without water, in 98% solution state</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Industry data. This value is attributed only to the dyeing part of the process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.007712767" mu="-4.865" variance="0.01" varianceWithPedigreeUncertainty="0.0202" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.400016252429538" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.400016252429538" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.400016252429538" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="18adbf16-6343-4f87-acd1-cd5b8d020c42">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34120: Industrial monocarboxylic fatty acids; acid oils from refining</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="67c71e9b-55da-4f7e-b06b-ac950702b098" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="1.53556E-05" intermediateExchangeId="7aaf6060-f9b7-43bb-8aee-06aecf386798" activityLinkId="49cb8a19-9aea-4fb1-a566-ef88a38532cf">
+        <name xml:lang="en">building, hall, steel construction</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Industry data. This value is attributed only to the dyeing part of the process.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.53556E-05" mu="-11.08" variance="0.01" varianceWithPedigreeUncertainty="0.0202" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="b01c4db8-8617-4fe1-ad51-e3f3bb5576d3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">531: Buildings</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d7533f0b-ee8c-4b48-9353-860240ef554c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00021730072127277" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="4c6dc40d-795a-426b-a93d-aa6322d3970f">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00021730072127277" mu="-8.434" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="08b77ef4-ba35-4ff9-9023-bd62a7ba85f0" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0081661421451558" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="49fedc63-9369-45fb-8fd0-1bb19653488d">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0081661421451558" mu="-4.808" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="59551f0c-b817-4798-9c05-2749502ba88c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00073543802207568" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="edd67c11-e485-4df2-9321-6013aa599081">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00073543802207568" mu="-7.215" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cc07c7e1-3d78-420e-b31a-27eaf4e06c34" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00060032481968385" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="ec3a7dc2-cd2d-4a78-a78a-7c671ab373a0">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00060032481968385" mu="-7.418" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c0cfee59-7654-4328-9364-c1ecf5a1f847" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000132880036563076" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="3e496d17-52b4-4091-a333-e3ec7a3a639c">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000132880036563076" mu="-8.926" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8c61dc7c-54b2-48e2-9808-b8bb7709c66c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000162784543362746" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="d2c77c82-b986-48df-88e7-6a4ac047dd5d">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000162784543362746" mu="-8.723" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d19ff786-de4b-4cb7-8436-30212c37d974" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000364861992928608" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="fcb48425-34bd-4cca-a530-105f76017991">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000364861992928608" mu="-7.916" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="03556b04-06c6-4dac-b108-0d5740e18426" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00172545078765683" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="fd0ed40d-7fa7-49a8-96c9-7f1be5d53846">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00172545078765683" mu="-6.362" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="843a6008-66fb-4024-aa1b-1f93a35ed79a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00627199079689788" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="6fbed84d-f1ea-4eef-8ed8-8af1f657c8c2">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00627199079689788" mu="-5.072" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f197712a-b32d-46d4-932a-243c85f748c3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00207414375514651" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="d6d1e630-4d72-4ef3-8fc9-a4a495a763b1">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00207414375514651" mu="-6.178" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4596617f-3636-4e0a-baa3-7daf4aa8d327" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000640478293957898" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="e105213c-8dbc-4975-8d93-5ff399f66ecf">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000640478293957898" mu="-7.353" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="19114eb5-e6b9-4951-a74c-b0ebeb1573a2" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0315652191937685" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="90c9f91c-1bae-4d07-8bcf-dada54013795">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0315652191937685" mu="-3.456" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f3cc278f-db98-45b7-8d28-5ef5a1f1f2f3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000452842119318295" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="70710212-3dd7-4947-a779-105cb4a0c1bf">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000452842119318295" mu="-7.7" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3d88b2a4-9f94-422c-9349-41114d4b4cf8" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000248480799617699" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="8a4f6d39-f0af-450d-b03c-e24c928cb876">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000248480799617699" mu="-8.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="89f7e619-5990-4299-9da9-47a616e11778" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000582003886721273" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="c1c501d4-84d7-442d-8c8f-35ba43b35a23">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000582003886721273" mu="-7.449" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c563ea06-ea22-4b29-b771-2b007eb21570" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0187572344523805" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="17bb0167-4c83-4fb0-952f-3be47be35e7b">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0187572344523805" mu="-3.976" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0e545995-4a8e-4508-ba6e-ee4b1ab9f63b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00367601649372326" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="c643cdb7-e782-47b0-aa42-13f8e35df846">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00367601649372326" mu="-5.606" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3dca577d-20ed-46a6-bb82-d942f5b58f29" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000440467236730598" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="ff79476e-c002-4104-8876-90e5a57394f7">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000440467236730598" mu="-7.728" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b981167f-0335-4908-b1c0-288dc69c808e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000472999294410966" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="838d769c-3edf-497f-850c-40e1c627bf94">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000472999294410966" mu="-7.656" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e5e0348e-9f21-42dd-94a0-6dfae6625da7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000614494521330074" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="42d83ed0-b314-412e-87ec-9db48fa2a205">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000614494521330074" mu="-7.395" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="39d71fac-304c-4cd8-a464-718b98a0adcb" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00024136955099772" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="e5aba641-ed16-4853-9719-c72275ec0f46">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00024136955099772" mu="-8.329" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6c96da0e-2e56-4196-bb9c-ab0cfeb11e2a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00517645391883905" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="06b10b2b-c14e-44e9-ad12-19c2243699b9">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00517645391883905" mu="-5.264" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5f506c98-7cd1-4d6a-9230-98e0976b07a2" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000211901180399722" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="835f6959-a926-4798-aba7-dc45bad752a0">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000211901180399722" mu="-8.459" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c6b54725-f1fe-4108-9414-aac5d61ff276" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00148589339212818" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a2aed1e6-cd9f-4c62-b96b-2d57e5ed2df2">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00148589339212818" mu="-6.512" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ac86de22-54cd-4c1c-8224-530fdc39ea37" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00116016127050217" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="113c8f34-e50d-4fa8-87f2-27291a581460">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00116016127050217" mu="-6.759" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c7a69c63-1bc1-40fa-9529-a1efe74a505b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00305593786072762" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="600feb01-7142-4e76-b99b-d9a4e3af308a">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00305593786072762" mu="-5.791" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e59582c8-bd58-4ca4-889a-fc118ae6004d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00383142566798738" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="f7daa23a-79d6-4486-b7bc-578d492d7e45">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00383142566798738" mu="-5.565" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="22fe1d97-329d-42db-8d6b-1ac4eed50342" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="8.80629474417095E-05" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="18d472b0-1f7b-404e-8b77-2f3a703f27d0">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="8.80629474417095E-05" mu="-9.337" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="43277266-5e95-4efb-9a7e-930adae40171" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0342987301779576" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9c58ab77-f05f-4552-9aba-b3b6211fb786">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0342987301779576" mu="-3.373" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e22e16d5-388b-456c-ab93-a5d5183cbe02" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00160504551115605" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="f8244398-c3e7-47b6-93e5-218497c17af2">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00160504551115605" mu="-6.435" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="49bda968-96fe-40a3-a5e0-0520e8e7a696" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000575548387190587" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="bcdf1355-9584-42a0-8485-801e3943e417">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000575548387190587" mu="-7.46" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c3dfb1c9-ec11-47ee-b228-daf65f2e0366" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00473592821422849" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="a670977d-cff1-428f-bdd1-fdd5b89ff634">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00473592821422849" mu="-5.353" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4ee995e0-7f10-4336-a99d-d6725d8835ee" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000549012789780695" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="7799bd0c-bef3-4cf9-bbda-16e8e6ef423a">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000549012789780695" mu="-7.507" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="34bf828c-995e-421b-9d6f-4f78f6229292" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000628142925539285" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="e80cf8a7-729c-4ff7-92bd-26363f58a33e">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000628142925539285" mu="-7.373" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="de937d15-f076-45d8-bdb7-714a576021b3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0088244400136559" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="6d1fa644-4634-4fb8-b2c8-c0e2a9d7295e">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0088244400136559" mu="-4.73" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8ac3140a-43f0-403a-94ef-5d11eceee02f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00802946821389776" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="533e15ee-2764-47c3-bf12-f026c794823a">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00802946821389776" mu="-4.825" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="03731a47-f67b-4f05-ab63-b3129b6701ab" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00194906675820832" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="c4326af0-b9e6-41c1-a436-45378d43d2c4">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00194906675820832" mu="-6.24" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a46bb7c2-0e1a-484e-aaa7-17c60ab09a9d" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0056597378180369" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="ca52843d-35fd-43f5-90e4-8ea006118373">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0056597378180369" mu="-5.174" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="36916199-ba41-4ecc-af0d-ba7859fca9a8" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000127791705607502" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9c3a8ebb-b414-4e65-a5d5-7967ac5be726">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000127791705607502" mu="-8.965" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="18c5625e-08ad-4331-8dab-278525581e03" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.177241301871647" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="cec44bbc-f3a9-46f8-9717-e67cc6fe323a">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.177241301871647" mu="-1.73" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="262f42f2-014e-432e-bb73-688020479878" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0251984978696083" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="667f5548-c917-4a33-9051-d18ff6efb952">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0251984978696083" mu="-3.681" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b8acd1d1-9ecd-45bf-84d0-a2bae2bd278c" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.118631238586608" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="e6e61cc8-a65d-44a1-912e-80a19853dd08">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.118631238586608" mu="-2.132" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="de1c70e6-8d5c-4fb5-8f2b-88c2de3b11c3" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0522887748676081" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="b3119ac6-9837-4eb3-80e4-cdee10cd478e">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0522887748676081" mu="-2.951" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bc942a80-6317-43d9-ba0a-875f740cdbf7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0258432923377087" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="589dbfa1-300d-4ae6-8fac-261bde32fd49">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0258432923377087" mu="-3.656" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="24ed8a42-acf0-4308-a41d-b7b33f5c4b99" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.171319245249835" intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="40fdaac9-39b1-4a79-b321-16683f3d5fb9">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Industry data. 0.325208333 kWh of electricity refer only to the process of bleaching while the rest 0.4568625 kWh are attributed to the dyeing process.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.171319245249835" mu="-1.764" variance="0.0006" varianceWithPedigreeUncertainty="0.0108" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="961f8a8c-30d9-426a-8b19-f34c7b57e168" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.0019377761509267" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="301db58c-92ad-4535-b664-da8e67e43fbc">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For preparing Ready For Dyeing (RFD) solution </comment>
+        <uncertainty>
+          <lognormal meanValue="0.0019377761509267" mu="-6.246" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="91721860-bd7b-4ed1-86ea-c45d2da74cf5" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.69005670045419" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="c5440996-cd23-44e2-838a-ac7ebec41859">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For preparing Ready For Dyeing (RFD) solution </comment>
+        <uncertainty>
+          <lognormal meanValue="0.69005670045419" mu="-0.371" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3bbbf692-841e-4298-bc87-7850e0b57a24" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.0160980772118" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="b4ca816c-eb55-46a1-8558-7adfa03e9a6d">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For preparing Ready For Dyeing (RFD) solution </comment>
+        <uncertainty>
+          <lognormal meanValue="0.0160980772118" mu="-4.129" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3a9c3827-624b-48fb-8ddb-3c16bae4cced" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.00320249347249579" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="296934a6-a7f4-4b40-84dd-aa9d35f62d28">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For preparing Ready For Dyeing (RFD) solution </comment>
+        <uncertainty>
+          <lognormal meanValue="0.00320249347249579" mu="-5.744" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="28e6a334-8ef0-43fb-ba81-004353b40fa5" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.00210080089312522" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="0337825e-9f01-4ffa-94fb-80568c1edb8b">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For preparing Ready For Dyeing (RFD) solution </comment>
+        <uncertainty>
+          <lognormal meanValue="0.00210080089312522" mu="-6.165" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e4c68265-fa72-499d-8e4d-6d4ba9b09bc9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.0059756924948594" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="71d32d3b-4ff9-408a-944f-d97edf7117e3">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For preparing Ready For Dyeing (RFD) solution </comment>
+        <uncertainty>
+          <lognormal meanValue="0.0059756924948594" mu="-5.12" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d81c1c89-2a31-4709-96ec-361d91fe143c" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7732-18-5" amount="0.924111620322603" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="3ae7f907-9abf-46ac-9398-e15572ac87b4">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">For preparing Ready For Dyeing (RFD) solution </comment>
+        <uncertainty>
+          <lognormal meanValue="0.924111620322603" mu="-0.07892" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water in wet mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2b78c05a-0a60-4100-9f9a-d5ba8dcc4f84" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.0255110781913426" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="f04f4a4a-6352-4f84-a299-753de5e5cdeb">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Industry data reported in 2030 Water Resources Group report - An analysis of Industrial water use in Bangladesh with a focus on the textile and leather industries.</comment>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="59e9b521-8d8d-4254-b8d1-eae259704a00" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.581758359808657" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="b6704b11-d69d-4eab-9bfa-edcf1fe098f2">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Industry data reported in 2030 Water Resources Group report - An analysis of Industrial water use in Bangladesh with a focus on the textile and leather industries.</comment>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="eed3f4f4-b37d-4396-a233-f78a8aaba4bb" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00343362344569332" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="83b55174-0ea9-4a4e-8599-770fc043441d">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">sum of electricity used for:
+dyeing machine	
+boiler	
+hydro extractor	
+dryer	
+yarn conditioning	
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00343362344569332" mu="-5.674" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="20ba7daf-2b82-47c8-9b09-955e8886fb7a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000602213991242775" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="85066306-6c2f-416a-950e-bf8cdc9adc9c">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">sum of electricity used for:
+dyeing machine	
+boiler	
+hydro extractor	
+dryer	
+yarn conditioning	
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000602213991242775" mu="-7.415" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5623909d-4222-4550-ab46-fb1b29b70d6f" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0136582515874224" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="d03bcea4-4a51-4375-ae73-c188816506cd">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">sum of electricity used for:
+dyeing machine	
+boiler	
+hydro extractor	
+dryer	
+yarn conditioning	
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0136582515874224" mu="-4.293" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="714a0dd8-323c-4f40-82b4-09a99c031705" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00990281413867369" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="809416ed-0532-4379-9245-8c6621f37d73">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">sum of electricity used for:
+dyeing machine	
+boiler	
+hydro extractor	
+dryer	
+yarn conditioning	
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00990281413867369" mu="-4.615" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="87750f07-c35a-42e2-9aaf-43e698126347" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0497716370189437" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="d38e2a33-631f-4d92-88d6-d17931e1bbd3">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">sum of electricity used for:
+dyeing machine	
+boiler	
+hydro extractor	
+dryer	
+yarn conditioning	
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0497716370189437" mu="-3" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3d075ee1-6cb7-470e-88e3-35c04f849f14" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0246851540157477" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="a6f7a235-2a4e-4906-8bbe-46d1f8c37e2e">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">sum of electricity used for:
+dyeing machine	
+boiler	
+hydro extractor	
+dryer	
+yarn conditioning	
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0246851540157477" mu="-3.702" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d214627f-0c08-4242-9220-b2e49156e5a1" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0703148198022765" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="b2518188-0240-421b-a769-36f0df51ebed">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">sum of electricity used for:
+dyeing machine	
+boiler	
+hydro extractor	
+dryer	
+yarn conditioning	
+</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0703148198022765" mu="-2.655" variance="0.0006" varianceWithPedigreeUncertainty="0.0048" />
+          <pedigreeMatrix reliability="1" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="e24cc6e3-2f0d-4963-8b29-b1c8bf57d4f8" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" casNumber="007732-18-5" amount="0.117399196" elementaryExchangeId="67c40aae-d403-464d-9649-c12695e43ad8">
+        <name xml:lang="en">Water, well, in ground</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Industry data. 0.00566 m3 refer only to the process of bleaching while the rest 0.12 m3 of water input are attributed to the dyeing process.</comment>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="9081.65213442325" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.8899" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.0104328554239022" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab 4.8, calculated from bicarbonate content in river (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.1101" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">TDS in an average river used as approximation. That is, 110.1 mg/L (The Natural Water Cycle, by UNESCO)</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.0104328554239022" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.00114865738217163" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="30347aef-a90b-46ba-8746-b53741aa779d">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">in water</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="03248142-9cd6-4d19-a62a-1b6fd8378c67" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" casNumber="007732-18-5" amount="0.000328697" elementaryExchangeId="5d368100-b1bc-4456-8420-e469edccf349">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Considering 20% evaporation rate</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000328697" mu="-8.02" variance="0.0006" varianceWithPedigreeUncertainty="0.0128" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="2" geographicalCorrelation="5" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="e8d7772c-55ca-4dd7-b605-fee5ae764578">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">urban air close to ground</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Industry data. Representative mills in Bangladesh. The mills were chosen to provide data based on their technical representation of the current state of business and their willingness to participate.</samplingProcedure>
+      </representativeness>
+      <review reviewerId="7f5f9cad-1f78-481b-b3c2-62af1b55ac44" reviewerName="Anne Perwuelz" reviewerEmail="anne.perwuelz@ensait.fr" reviewDate="2017-12-12" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-04-04" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'water in wet mass':
+ - Input='119,029199112408', Output='0,328696632212715'
+ - Input &gt; output by 118,700502480195 kg (36112,48% of output)
+
+Property 'wet mass':
+ - Input='123,995515566751', Output='0,328696632212715'
+ - Input &gt; output by 123,666818934538 kg (37623,39% of output)
+
+Property 'carbon content, fossil':
+ - Input='0,0115016805311711', Output='0'
+ - Input &gt; output by 0,0115016805311711 kg
+
+Property 'dry mass':
+ - Input='4,96631645434309', Output='0'
+ - Input &gt; output by 4,96631645434309 kg
+
+
+- The total water in wet mass of all input exchanges (119,029199112408) and output exchanges (0,328696632212715) is unbalanced.
+
+- The dataset contains user added exchange master data entries. The following user added exchanges do not contain product information data. Please consider adding the appropriate data before submitting the dataset for review.
+ - wastewater, bleaching and dyeing
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): steam, in chemical industry, heat, district or industrial, natural gas, Water, well, in ground
+ -- Property(ies): water in wet mass=999,8899, carbon content, non-fossil=0, wet mass=1000, carbon content, fossil=0,0104328554239022, dry mass=0,1101, water content=9081,65213442325, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=1000, dry mass=0, wet mass=1000
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): steam, in chemical industry, heat, district or industrial, natural gas, Water, well, in ground
+ -- Property(ies): water in wet mass=999,8899, carbon content, non-fossil=0, wet mass=1000, carbon content, fossil=0,0104328554239022, dry mass=0,1101, water content=9081,65213442325, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=1000, dry mass=0, wet mass=1000
+
+- For by-products/wastes, a market activity (currently missing) that supplies the output 'wastewater, bleaching and dyeing' must exist for a geographical area and time period including the location and time period of the activity. If the the market dataset is not available the dataset will be put on hold at the end of its review and will remain on hold until such a market dataset has been accepted into the ecoinvent database.
+</otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2017-12-12" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2018-05-14" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="11">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2018-05-16" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="11">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'wet mass':
+ - Input='124,018852789', Output='0,328697'
+ - Input &gt; output by 123,690155789 kg (37630,45% of output)
+
+Property 'dry mass':
+ - Input='4,98965391585936', Output='0'
+ - Input &gt; output by 4,98965391585936 kg
+
+Property 'carbon content, fossil':
+ - Input='0,0131459565671569', Output='0'
+ - Input &gt; output by 0,0131459565671569 kg
+
+Property 'water in wet mass':
+ - Input='119,029198873141', Output='0,328697'
+ - Input &gt; output by 118,700501873141 kg (36112,44% of output)
+
+
+- Property 'mass concentration, strontium=3,99E-05' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, chromium=1,5E-05' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, arsenic=3,1E-06' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, cobalt=5E-06' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, lead=6,43E-05' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, manganese=4,4E-05' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, cadmium=3E-07' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'wet mass=1000' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, iron=0,0005904' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, aluminium=0,0007758' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, magnesium=0,003219' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'carbon content, non-fossil=0,216883116883117' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'BOD5, mass per volume=0,495' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'dry mass=0,238473116883117' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, boron=7,6E-05' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'water in wet mass=999,761526883117' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, titanium=6,9E-06' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, copper=0,0001091' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'COD, mass per volume=0,501' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, zinc=0,0001075' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'water content=4192,34478061999' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, potassium=0,01647' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, barium=7,6E-06' of master data exchange was removed from exchange 'wastewater from textile production'.
+Property 'mass concentration, silver=5,61E-05' of master data exchange was removed from exchange 'wastewater from textile production'.
+
+- The total water in wet mass of all input exchanges (119,029198873141) and output exchanges (0,328697) is unbalanced.
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): heat, district or industrial, natural gas, steam, in chemical industry, diesel, burned in diesel-electric generating set, 18.5kW, Water, well, in ground
+ -- Property(ies): water content=9081,65213442325, carbon content, non-fossil=0, wet mass=1000, dry mass=0,1101, carbon content, fossil=0,0104328554239022, water in wet mass=999,8899, wet mass=1000, carbon content, non-fossil=0, dry mass=0, water in wet mass=1000, carbon content, fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): heat, district or industrial, natural gas, steam, in chemical industry, diesel, burned in diesel-electric generating set, 18.5kW, Water, well, in ground
+ -- Property(ies): water content=9081,65213442325, carbon content, non-fossil=0, wet mass=1000, dry mass=0,1101, carbon content, fossil=0,0104328554239022, water in wet mass=999,8899, wet mass=1000, carbon content, non-fossil=0, dry mass=0, water in wet mass=1000, carbon content, fossil=0
+
+</otherDetails>
+      </review>
+      <review reviewerId="f86c02d3-2c12-4c25-ad03-33af05bcfe63" reviewerName="Tereza Levova" reviewerEmail="levova@ecoinvent.org" reviewDate="2017-12-12" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="13">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="725942b9-cd77-4359-a564-8500b92d9dc4" isActiveAuthor="true" personName="Mireille Faist Emmenegger" personEmail="Mireille.Faist@quantis-intl.com" />
+      <dataGeneratorAndPublication personId="c4597934-ecac-422c-b431-382e85fdcb83" personName="[System]" personEmail="support@ecoinvent.org" isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.12" defaultLanguage="en" creationTimestamp="2017-12-08T18:22:28" lastEditTimestamp="2018-05-16T14:48:23" fileGenerator="EcoEditor 3.8.600.15190" fileTimestamp="2018-05-16T14:48:23" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

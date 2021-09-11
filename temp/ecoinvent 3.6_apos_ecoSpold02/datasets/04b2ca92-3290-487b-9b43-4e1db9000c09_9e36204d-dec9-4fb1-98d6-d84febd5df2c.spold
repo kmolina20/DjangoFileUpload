@@ -1,0 +1,1673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="04b2ca92-3290-487b-9b43-4e1db9000c09" activityNameId="19471e7e-460b-4b10-a744-78ba40251789" parentActivityId="e2a65f1d-18ba-415f-ace4-54cb8bc79350" inheritanceDepth="-1" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">treatment of slaughterhouse waste, rendering</activityName>
+        <synonym xml:lang="en">rendering</synonym>
+        <includedActivitiesStart xml:lang="en">From reception of slaughterhouse waste at the factory gate.</includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the produced tallow and meat and bone meal. An important emission from rendering is foul odour, which is not quantified in this datset. No indications of other relevant air emissions were found, so no air emissions  were added. There were no data available on waste generation.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="1">This dataset represents a rendering plan, treating slaughterhouse waste to tallow and meat and bone meal. The original dataset was physically allocated to the tallow. Since the process of meat and bone meal production is nearly the same as the production of tallow (all steps are common except the milling of the meal), the original allocated inventory was adjusted to the total amount of product output. </text>
+        </generalComment>
+      </activity>
+      <classification classificationId="0c446550-80b2-4304-93f9-a555ab0ef7c9">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">1010:Processing and preserving of meat</classificationValue>
+      </classification>
+      <classification classificationId="856bc133-2219-44bf-abd1-64c15bc05ee8">
+        <classificationSystem xml:lang="en">EcoSpold01Categories</classificationSystem>
+        <classificationValue xml:lang="en">agricultural production/animal production</classificationValue>
+      </classification>
+      <geography geographyId="131278d6-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Values refer to the situation in Switzerland.</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment>
+          <text xml:lang="en" index="4">Nottrodt A. (2001) Technische Anforderungen und allgemeine Empfehlungen für die Entsorgung von Tiermehl und Tierfett in Verbrennungsanlagen - Bericht erstellt im Auftrag des Bundesministeriums für Umwelt, Naturschutz und Reaktorsicherheit, 63p. Retrieved on July 11, 2002 from http://www.bmu.de/download/dateien/leitf.pdf.</text>
+          <text xml:lang="en" index="1">Refers to a typical technology for tallow processing in Switzerland. The tallow-production process is described as follows: The animal carcasses and abattoir wastes are crushed in a grinder, then sterilised by steam. They are then dried using steam as a heat source, and finally defatted, a process in which the fat is separated from the greaves. The fat is clarified, while the greaves are milled into meat- and bone meal. The processing paths of tallow and of meat- and bone meal are very similar, diverging only in the final step (milling). The minimum requirements for sterilisation are a temperature of 133 °C and a pressure of 3 bar for 20 minutes (Nottrodt 2001). </text>
+          <text xml:lang="en" index="3">Kleinhanss W., Uhlmann F. &amp; Haxsen G. (2000) Folgenabschätzung alternativer Entsorgungsverfahren für Tierkörper und Schlachtabfälle bei einem Verwendungsverbot zur Futtermittelherstellung, 13p. Retrieved on July 11, 2002 from http://www.bal.fal.de/download/Fe_tmverbot.pdf. </text>
+          <text xml:lang="en" index="2">References</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="1999-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Based on data from the year 1999.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="9871a251-4a6d-4fa6-8efa-44bc777968b6" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="meat_and_bone_meal" amount="0" isCalculatedAmount="true" mathematicalRelation="tallow*0.6*0.96/(0.4*0.975)" intermediateExchangeId="9e36204d-dec9-4fb1-98d6-d84febd5df2c" productionVolumeAmount="0" productionVolumeMathematicalRelation="ABS(PV_tallow*meat_and_bone_meal/tallow)">
+        <name xml:lang="en">meat and bone meal</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimation. The collected data refer to the total production of meat meal, bone meal and tallow in the rendering plant. Assuming 40% dry matter and 40% extractable fat in dry matter of slaughterhouse waste, therefore 60% dry matter meat and bone meal. Calculation adjusts the percentages to wet mass.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" variableName="meat_and_bone_meal_water_content" amount="0.0416666666666667" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="48c987bb-3144-4872-b5c7-b1389c40be25" variableName="meat_and_bone_meal_Net_Heat_Value" amount="21.45" isDefiningValue="false" unitId="980b811e-3905-4797-82a5-173f5568bc7e" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E.">
+          <name xml:lang="en">heating value, net</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">net (lower) heating (calorific) value</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="meat_and_bone_meal_DM" amount="0.96" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E.">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Literature value (Douglas, D. Lueking, et.al., Composition Characteristics of Diferent Meat and Bone Meal Sources, 1998). </comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" variableName="meat_and_bone_mea_C_content_non_fossil_0" amount="0.521" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E.">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Boesch &amp; Hellweg 2010, 2010, Boesch, M.E., Hellweg, S., Identifying Improvement Potentials in Cement Production with Life Cycle Assessment, Environmental Science &amp; Technology, 44, 23, 9143-9149, 1 - Article, Supporting information is available via http://pubs.acs.org</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" variableName="meat_and_bone_meal_WM" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E.">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" variableName="meat_and_bone_meal_C_content_fossil" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E.">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" variableName="meat_and_bone_meal_WWM" amount="0.04" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Calculated value.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="meat_and_bone_meal_price_EUR2005" amount="0.337692" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated value. This price is averaged from 3 different suppliers available in the commercial webstore of alibaba. The price refers to both bulk and commercial quantity purchase. All websites were retrieved on the 1st of July 2019. THe exchange rate used is from 2010 when 1 USD - 0.827 EUR.
+
+Sources:
+https://www.alibaba.com/product-detail/meat-bone-meal_1841184435.html?spm=a2700.7724838.2017115.1.26e211e6vhiVZz&amp;s=p
+https://www.alibaba.com/product-detail/High-Quality-Meat-And-Bone-Meal_60839924812.html?spm=a2700.7724838.2017115.21.26e211e6vhiVZz&amp;s=p
+https://www.alibaba.com/product-detail/Meat-bone-meal_60807517082.html?spm=a2700.7724838.2017115.32.26e211e6vhiVZz</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.521" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.50016" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from the production volume of tallow in proportion to the respective input/output amounts.</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="41542083-8edd-4c42-a97a-8588fede315f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39110: Raw offal, inedible (including pigs' bristles, horse hair, animal guts, bird skins, feathers, bones and ivory)</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0b18bba4-3bb9-49ac-90fa-12ea75af93b7" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" isCalculatedAmount="true" mathematicalRelation="8.39*(tallow+meat_and_bone_meal)" sourceId="04d2f977-4390-41a1-a3cf-69ac91f420ac" sourceYear="2002" sourceFirstAuthor="H. Soltermann" intermediateExchangeId="1125e767-7b5d-442e-81d6-9b0d3e1919ac" activityLinkId="fdf0ac33-5f3a-4ce6-aa7d-31e5c766a58a" productionVolumeAmount="0">
+        <name xml:lang="en">heat, district or industrial, natural gas</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment>EcoSpold01Location=RER</comment>
+        <comment xml:lang="en">Estimation. The data were compared to a study from Denmark (COWI 2000) and were found to be quite similar. The use of heating energy given by COWI (2000) is 6.3 MJ per kg tallow, which is slightly lower than the value for the Lyss plant (8.4 MJ/kg). According to COWI (2000), fuel oil is used as the heat source, while the Lyss plant uses natural gas.
+
+Further References:
+
+COWI Consulting Engineers and Planners AS, Denmark (2000) Cleaner production assessment in meat processing. Report prepared for United Nations Environment Programme Division of Technology, Industry and Economics and Danish Environmental protection agency, 367p. Retrieved on July 12, 2002 from &lt;http://www.agrifood-forum.net/publications/guide/index.htm&gt;.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="86d85c43-c153-4a25-a174-68b6ef3b02fb" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="slaughterhouse_waste" amount="0" isCalculatedAmount="true" mathematicalRelation="-(0.975*tallow+0.96*meat_and_bone_meal)/0.4" sourceId="04d2f977-4390-41a1-a3cf-69ac91f420ac" sourceYear="2002" sourceFirstAuthor="H. Soltermann" intermediateExchangeId="27a1bd14-dcd9-4240-b283-788d2d38708a" productionVolumeAmount="0" productionVolumeMathematicalRelation="ABS(PV_tallow*slaughterhouse_waste/tallow)">
+        <name xml:lang="en">slaughterhouse waste</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimation. The collected data refer to the total production of meat meal, bone meal and tallow in the rendering plant.The total production figures were divided by the total output of the plant, since the processing of meat- and bone meal on the one hand and tallow on the other are to a large extent the same. The inventory for tallow can therefore also be used for meat- and bone meal. Assuming 40% dry matter and 40% extractable fat in dry matter of slaughterhouse waste.</comment>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">assumed to be the same as tallow, unrefined</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.6" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">assumed to be the same as tallow, unrefined</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.4" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Wet mass- Water mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="1.5" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="0" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.75" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">assumed to be the same as tallow, unrefined</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.75" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.3" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from the production volume of tallow in proportion to the respective input/output amounts.</productionVolumeComment>
+        <classification classificationId="41542083-8edd-4c42-a97a-8588fede315f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39110: Raw offal, inedible (including pigs' bristles, horse hair, animal guts, bird skins, feathers, bones and ivory)</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="05a5353f-193f-41fe-af73-cd240bfe4add" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="wastewater" amount="0" isCalculatedAmount="true" mathematicalRelation="0.0073*(tallow+meat_and_bone_meal)" sourceId="04d2f977-4390-41a1-a3cf-69ac91f420ac" sourceYear="2002" sourceFirstAuthor="H. Soltermann" intermediateExchangeId="e8a51ec1-60cb-4ead-a948-ad1142c61918" activityLinkId="6384a880-ec2f-436c-9f04-80c499010aec" productionVolumeAmount="0" productionVolumeMathematicalRelation="ABS(PV_tallow*wastewater/tallow)">
+        <name xml:lang="en">wastewater, average</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Estimation. Data on wastewater production was available for the Lyss plant. The rendering process produces large quantities of wastewater with high nitrogen content and high BOD values. The wastewater is treated in the plant (sterilisation). Since no detailed data were available on the quality of the wastewater produced, the module "sewage, average" was used as a proxy for the wastewater treatment.</comment>
+        <comment>EcoSpold01Location=CH</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="wastewater_price_EUR2005" amount="0" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Waste products are assigned a price of zero as they are assumed to require further treatment.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.194039401033427" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">0.0673 kg TOC/m3 (Tab A.17, ecoinvent v2.2 report 13_I). TOC was considered as Total Carbon.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Density of water was assumed that of tap water 1kg/L, that is 1000kg/m3.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2882.20060970917" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="999.653163225399" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.346836774601289" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">The addition of compounds in water, listed in Tab A.17-20 from ecoinvent v2.2 report 13_I, has been used as an estimate of dry mass is wastewater. In this case, elementary composition has been expressed as molecular composition, whenever possible. This approach has been used when the addition of compunds in wastewater was bigger than the minimal mineral content estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.194039401033427" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.0672999999999998" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from the production volume of tallow in proportion to the respective input/output amounts.</productionVolumeComment>
+        <classification classificationId="34f49fca-a18e-48df-a635-ee7e24ef6dbb">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39920: Sewage sludge</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a36dbc7d-cf82-410c-a757-0ba3f9cc9b7f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="tallow" amount="0" sourceId="04d2f977-4390-41a1-a3cf-69ac91f420ac" sourceYear="2002" sourceFirstAuthor="H. Soltermann" intermediateExchangeId="8f5d2384-9122-448e-9930-f052284441ff" activityLinkId="8d64355b-a02b-43dc-a9af-97eb36be7dec" productionVolumeAmount="0" productionVolumeVariableName="PV_tallow" productionVolumeMathematicalRelation="10236000000*441E6/262E9">
+        <name xml:lang="en">tallow, unrefined</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0.0256410256410256" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="tallow_price_EUR2005" amount="0.411" isDefiningValue="false" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 2005 import and export prices (total trades (USD) divided by total weight (kg) in biggest economies of the world: EU27, USA, Brasil, China, India, Japan and Russia) from UN Commodity Trade Statistics Database  (http://data.un.org/Explorer.aspxDatabase [Accessed 2011.06.21]). Commodity: Lard stearin, oleostearin &amp; oils, natural tallow oil</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.025" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">ecoinvent v2.2 report n 15a, pg 160</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.975" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Wet mass- Water mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.75" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Carbon content in fats of dry mass is considered to be 75% (from "Evolutionary and Biochemical Aspects", A.D. Kay and T. Vrede (in Global Ecology, 2010, Elsevier B.V., S.E. Jørgensen Ed.))</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.75" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.73125" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">All rendered animal fats (http://www.worldrenderers.org/). Calculated in proportion to meat production in Switzerland relative to global production of meat (441E6/262E9 kg FAOSTAT)</productionVolumeComment>
+        <classification classificationId="491c203f-0773-4fd8-8eca-68dc9bd2ae9b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">2151: Animal fats, unrendered</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b9ad6339-4538-4199-9fc6-d81aaca761b8" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="tap_water_input" casNumber="7732-18-5" amount="0" isCalculatedAmount="true" mathematicalRelation="5.34*(tallow+meat_and_bone_meal)" sourceId="04d2f977-4390-41a1-a3cf-69ac91f420ac" sourceYear="2002" sourceFirstAuthor="H. Soltermann" intermediateExchangeId="c5adb1fb-872e-4446-a3bb-c4b61aa4bd45" activityLinkId="b93a4944-1758-4a5e-a5d4-d736ecdabd77" productionVolumeAmount="0">
+        <name xml:lang="en">tap water</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment>EcoSpold01Location=RER</comment>
+        <comment xml:lang="en">Estimation. Data on freshwater use was available for the Lyss plant. 
+
+Estimation. Data on freshwater use was available for the Lyss plant.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.00178990835661632" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Bicarbonate content is 2.93 mol/m3. CO2 content is 0.1 mol/m3 (ecoinvent v2.2 report 8, Tab 93.1).</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0.999662523843921" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">wet mass-dry mass</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="2962.17230710238" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0.00033747615607878" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">Mineral content was estimated using the chemical properties of tap water in ecoinvent v2.2 report 8, Tab 93.1.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.00178990835661632" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="6.04051391924162E-07" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ced3d107-ae48-4f1e-801e-3b956776120c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">18000: Natural water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="12885f7c-8c12-4694-b8e8-6f336a874653" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="0" isCalculatedAmount="true" mathematicalRelation="1.9E-05*(tallow+meat_and_bone_meal)" intermediateExchangeId="006863b7-d736-4eb6-bbf8-648d292184ad" activityLinkId="d1095696-74ba-4308-b6d0-ad360458d483" productionVolumeAmount="0">
+        <name xml:lang="en">building, multi-storey</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Estimation. The use of building infrastructure was estimated from aerial photographs: 3000 m2 is occupied by the buildings (estimated height of 10 m, inventoried as “building, multi-storey”), and the total area is 11,000 m2, which was inventoried as “Occupation, industrial area”. The estimated lifetime of the plant was 50 years, and the occupation as construction site was assumed to be 2 years.</comment>
+        <comment>EcoSpold01Location=RER</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="b01c4db8-8617-4fe1-ad51-e3f3bb5576d3">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">531: Buildings</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6d37f350-e992-463b-9e17-7a5002b3bb87" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" isCalculatedAmount="true" mathematicalRelation="0.175*(tallow+meat_and_bone_meal)" sourceId="04d2f977-4390-41a1-a3cf-69ac91f420ac" sourceYear="2002" sourceFirstAuthor="H. Soltermann" intermediateExchangeId="d69294d7-8d64-4915-a896-9996a014c410" activityLinkId="8b4bd27a-8a47-4dbe-a49e-5370865c8ac4" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, low voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment>EcoSpold01Location=CH</comment>
+        <comment xml:lang="en">Estimation. Electricity consumption is the same in both cases, Lyss plant  and COWI (2000), 0.18 kWh/kg tallow. The data were therefore judged to be sufficiently reliable.
+
+Further References:
+
+COWI Consulting Engineers and Planners AS, Denmark (2000) Cleaner production assessment in meat processing. Report prepared for United Nations Environment Programme Division of Technology, Industry and Economics and Danish Environmental protection agency, 367p. Retrieved on July 12, 2002 from &lt;http://www.agrifood-forum.net/publications/guide/index.htm&gt;.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7936f121-c155-492a-8d62-b4e87f280b47" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000056-81-5" amount="0" intermediateExchangeId="3d3268fa-3c9e-43e0-be88-3dfd53718719" productionVolumeAmount="0">
+        <name xml:lang="en">glycerine</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value. Based on stoichiometry, Anneken et al. (2006) report the chemical reaction to be: 
+Triglyceride + 3 H2O -&gt; 3 fatty acid + glycerol</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="BP_glycerine_price_EUR2005" amount="0.792" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 2004 import and export prices (total trades (USD) divided by total weight (kg) in EU27, USA, China, Japan and India) from UN data  - Glycerol (glycerine), nes including synthetic glycerol (http://data.un.org/Data.aspx?q=glycerine&amp;d=ComTrade&amp;f=_l1Code%3a16%3bcmdCode%3a152090; accessed 1 July 10)</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C3H8O3. From palm oil</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.391304347826087" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C3H8O3. From palm oil</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.391304347826087" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.391304347826087" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e070e2fc-d743-4d80-b9f6-33c4aeaa6ccf">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34570: Glycerol</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="96c5140a-016a-4efa-9be2-5dc200e73e58" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" intermediateExchangeId="b9516ad1-d0ab-5e5d-9be4-2efe48bb8444" productionVolumeAmount="0">
+        <name xml:lang="en">stearic acid</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Stearic acid is a fatty acid with C18. Fatty acids are present in nature in fats and oils. Stearic acid is present in a weight concertation between 1 to 7 % in common vegetable oils (cotton seed, peanut, coconut, linseed, palm kernel, olive, rape-seed, castor, soybean, sunflower and palm). Stearic acid is found in very high concentration, 15 to 30% in beef tallow (Anneken et al. 2006).
+Anneken et al. (2006) lists the following industries as the main application of fatty acids: soaps; detergents; cosmetics; textile; coatings and inks; rubber and tyres; candles and waxes; plastics; paper and leather; lubricants; emulsifiers; food (Anneken et al. 2006).
+
+Reference(s): 
+Anneken et al. (2006) Fatty Acids. Ullmann's Encyclopedia of Industrial Chemistry. Volume 14, pp. 73-116. Wiley-VCH, Weinheim. 
+</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="RP_price_EUR2005" amount="1.075" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Literature data. ICIS Chemical Business reported in 2012:"Tallow stearic acids also rose from fourth quarter levels, settling at €1,000-1,150/tonne FD NWE as of January 18 - an increase of €40/tonne on the low side and €50/tonne on the high side.". Source retrieved from: https://www.icis.com/resources/news/2012/01/30/9527505/oleochemicals-eu-stearic-acid-price-rises-on-higher-feedstock-costs/, accessed 17th August 2017</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.76056338028169" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.76056338028169" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.76056338028169" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="0cdb88d0-32c1-48ff-93ca-feb6c1b0d09d">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">34140: Carboxylic acids and their anhydrides, halides, peroxides and peroxyacids and their halogenated, sulphonated, […]</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="11015bb6-b668-4cd8-bc22-affa695fc790" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0" intermediateExchangeId="45fbbc41-7ae9-46cc-bb31-abfa11e69de0" productionVolumeAmount="0">
+        <name xml:lang="en">heat, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">WTE</synonym>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_th_prod_MSWI_exergy" amount="0.1842" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_th_prod_MSWI_price_EUR2005" amount="0.0106" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Average European district heat price from Ecoheatcool and Euroheat 2005-2006, Ecoheat Work package 1: The European heat market. Final report. 10.6 EUR/GJ i s the price of district heat. http://www.solarthermalworld.org/files/Ecoheatcool%20WP1%20Web.pdf?download</comment>
+        </property>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_th_prod_MSWI_true_value_relation" amount="0.1842" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <classification classificationId="da9e0ee4-0a34-499e-9f51-82a5235d243c">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17300: Steam and hot water</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ff4fa728-e32c-401b-ac98-02fb8dbd1ff9" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" intermediateExchangeId="637ee275-a239-4dcb-b084-abfa110dd65b" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, for reuse in municipal waste incineration only</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Net electricity generated from this waste and used in internal MSWI plant energy redistribution.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and uncertainties in energy efficiency and the uncertainty in internal energy demand</comment>
+        </uncertainty>
+        <synonym xml:lang="en">waste-to-energy</synonym>
+        <synonym xml:lang="en">WTE</synonym>
+        <property propertyId="7a3978ea-3e26-4329-bc8b-0915d58a7e6f" variableName="E_el_prod_MSWI_true_value_relation" amount="3.6" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value relation</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">property to calculate "true value" from</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="E_el_prod_MSWI_price_EUR2005" amount="0.1" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Estimated to be the same price as in case of electricity, medium voltage.</comment>
+        </property>
+        <property propertyId="b0a4d18f-2eb1-4f63-96b3-b8ea31a42bb3" variableName="E_el_prod_MSWI_exergy" amount="3.6" unitId="980b811e-3905-4797-82a5-173f5568bc7e">
+          <name xml:lang="en">exergy</name>
+          <unitName xml:lang="en">MJ</unitName>
+          <comment xml:lang="en">This exergy property is based on the exergy content of the product.</comment>
+        </property>
+        <classification classificationId="8c58a77e-289e-4069-bd0f-413c4f45e21b">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">17100: Electrical energy</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="72fe667e-58cf-4b68-b2cd-a0eaccac9f32" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" isCalculatedAmount="true" intermediateExchangeId="b7e3b1ef-098a-48f1-b686-8baa82cff1d3" productionVolumeAmount="0">
+        <name xml:lang="en">zinc concentrate</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Calculated value from the knowledge of the properties of both products.</comment>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="ByP_price_EUR2005" amount="0.38" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: Zinc content in concentrate 53%. Concentrate price per kg Zn 86.5% of refined Zn price (13.5% treatment charges according to CHR Metals Limited 2005: Dynamic cost curves. http://www.minecost.com/dynamic.pdf). 2004 zinc price from USGS (2007) Mineral commodity summaries 2007. &lt;http://minerals.usgs.gov/minerals/pubs/mcs/2007/mcs2007.pdf&gt; [Accessed 25 May 2010]</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="33f96fe7-39da-47ca-837f-f2c311681d1b" variableName="zinc_C_zinc_concentrate" amount="0.53" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">zinc content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Zinc content on a dry matter basis. Value taken from teh "zinc mine operation" /GLO dataset. </comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" variableName="DM_zinc_concentrate" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="ffd93ac8-701d-4a0a-a6b5-9ef48fc7b621">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">14290: Other non-ferrous metal ores and concentrates (other than uranium or thorium ores and concentrates)</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f8cb5af5-b288-43ec-9aa1-167cf0e910af" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" intermediateExchangeId="b078cbaa-e4d8-49a0-afc7-78768258e79b" productionVolumeAmount="0">
+        <name xml:lang="en">esterquat</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment>EcoSpold01Location=RER</comment>
+        <comment xml:lang="en">Esterquat (tetraakyl ammnioum salts) are one of the most important cationic tensides. The positive electrical charge of the hydrophilic moiety gives the cationic tensides properties that open up applications that are unsuitable or barely suitable for anionic or nonionic tensides. The cationic fabric softeners, for example, attach well to textiles thanks to their affinity for fibres. They give the washed textiles a soft feel and thus improve their wearability. Important applications for these cationic tensides are as microbicides, herbicides, inhibitors of corrosion or of oxidation and so on. In the detergents industry, esterquat is mainly used as intermediate for the production of fabric softeners.</comment>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0.518778778519667" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Esterquats are produced by esterification with triethanolamine and quaternication with DMS (ecoinvent v2.2 report 12-part 4). An average esterquat (Ester Quats: the novel class of cationic fabric softeners, Mishra, S. et al., 2007, Journal of Oleo Science, 56:269-276) can be resumed in the formula C41H82NO5. C6 of this molecule come from TEA, and C1 from DMS, so are fossile. The rest C34, are biogenic, coming from the fatty acid. The esterquat is in an Isopropanol solution (15% isopropanol). Isopropanol is C3H8O, and C3 have a fossile origin.</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.196746113547118" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Esterquats are produced by esterification with triethanolamine and quaternication with DMS (ecoinvent v2.2 report 12-part 4). An average esterquat (Ester Quats: the novel class of cationic fabric softeners, Mishra, S. et al., 2007, Journal of Oleo Science, 56:269-276) can be resumed in the formula C41H82NO5. C6 of this molecule come from TEA, and C1 from DMS, so are fossile. The rest C34, are biogenic, coming from the fatty acid. The esterquat is in an 15% Isopropanol solution. Isopropanol is C3H8O, and C3 have a fossile origin.</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" amount="2.16" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 2005 import and export prices (total trades (USD) divided by total weight (kg) in biggest economies of the world: EU27, USA, Brasil, China, India, Japan and Russia) from UN Commodity Trade Statistics Database  (http://data.un.org/Explorer.aspxDatabase [Accessed 2011.06.20]). Commodity: Quarternary ammonium salts and hydroxides, nes</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.715524892066785" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.715524892066785" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="97b8d3d4-58ed-4a4a-aebe-16c41b254f09">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">353: Soap, cleaning preparations, perfumes and toilet preparations</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a6ad0626-ced7-4533-bc26-5ee594e79e6e" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="1" isCalculatedAmount="true" intermediateExchangeId="9e36204d-dec9-4fb1-98d6-d84febd5df2c" productionVolumeAmount="25446347.3869643">
+        <name xml:lang="en">meat and bone meal</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Estimation. The collected data refer to the total production of meat meal, bone meal and tallow in the rendering plant. Assuming 40% dry matter and 40% extractable fat in dry matter of slaughterhouse waste, therefore 60% dry matter meat and bone meal. Calculation adjusts the percentages to wet mass.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en"></comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="41542083-8edd-4c42-a97a-8588fede315f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39110: Raw offal, inedible (including pigs' bristles, horse hair, animal guts, bird skins, feathers, bones and ivory)</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="947228ad-6283-418e-aff2-df8777467110" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0105941841779251" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="22cdac63-419a-4980-ad99-5c0caff0a614" activityLinkId="a0c2a46f-f21a-46bd-baa6-8dcdbe3cf14c">
+        <name xml:lang="en">soybean meal</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">soymeal</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0105941841779251" mu="-4.547" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e9ed10f7-92c3-4b52-ac78-cbdebc0f0e32">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">21920: Flours and meals of oil seeds or oleaginous fruits, except those of mustard</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f0c8f765-d370-4328-9a4e-5d8970bb8531" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="7647-14-5" amount="0.000606090290095653" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="edcfa83a-363a-4b2d-8d6a-612e32dfcdfc" activityLinkId="6532b6c7-e828-4db6-ac11-9bb662b9ba63">
+        <name xml:lang="en">sodium chloride, powder</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Sodium chloride supplementation in diet</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000606090290095653" mu="-7.408" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="53ee2434-256c-4e1f-8356-601663e73388">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">16200: Salt and pure sodium chloride; sea water</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e0085ed8-eb51-4875-a597-be99273d30fd" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="0.000319315194170224" isCalculatedAmount="true" intermediateExchangeId="e5edf2bc-acf4-4fe0-8b49-b215d9802ca9" activityLinkId="3806745d-b3e9-4292-97f2-55704447e2c3">
+        <name xml:lang="en">operation, housing system, pig, fully-slatted floor, per pig place</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Since the functional unit of the housing process is 1 fattening pig place during one year, a conversion is made using the following livestock unit (LU) data: 5 fattening pigs are worth 1 LU; 25 piglets are worth 1 LU; 4 sows  (including the unweaned piglets) are worth 1 LU (source: http://www.mrchr.qc.ca/documents/amenagementautres/annexes.pdf). Hence, equivalencies are: 1 piglet is worth 5/25 fattening pig place, and 1 sow is worth 5/4 fattening pig place.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000319315194170224" mu="-8.049" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="155839a3-eb3e-46da-bcdd-f2dfec7bc89e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8612: Animal husbandry services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="246f61bc-a679-49b9-bd2d-0367d6495215" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.000845998652795556" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="64cea105-f89a-4f95-ae44-84ff904a28fc" activityLinkId="7a383569-f992-4dcb-a792-707fb74b938c">
+        <name xml:lang="en">limestone, crushed, washed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">calcium supplementation in diet</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000845998652795556" mu="-7.075" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="32a7d945-9669-498f-b623-03c083030c64">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15200: Gypsum; anhydrite; limestone flux; limestone and other calcareous stone, of a kind used for the manufacture of[…]</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="12d2809c-cb53-42cc-bebc-6dfe0ad96bc7" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00960198462460909" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="3719fbf0-0ae5-4e1d-9668-e5f2cecf9a43" activityLinkId="a2d82888-c5c0-45f2-8b61-bab9d5eb43ff">
+        <name xml:lang="en">rape meal</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Canola meal</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00960198462460909" mu="-4.646" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="33b8694f-5949-4b22-8074-d696f0e07d08" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0135643582924321" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="aeaf5266-3f9c-4074-bd34-eba76a61760c" activityLinkId="8aaef46b-3a83-481e-a90e-bc93ee0370ac">
+        <name xml:lang="en">barley grain, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">It is assumed that the amount of barley grains is an amount of ground grains.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0135643582924321" mu="-4.3" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="91693a67-a4b9-4433-b992-5bf29f785eba" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.000325191667871827" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="714ddb02-26ff-4e89-9648-a83aba628628" activityLinkId="c3c16c71-9d96-408a-a475-2205a28d644b">
+        <name xml:lang="en">whey</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">No information is available about any pre-treatment of the whey, i.e. whether raw whey, whey liquor, or whey fitrate (or a mix of these forms) is used in practice as ingredient of the diet.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000325191667871827" mu="-8.031" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="9f1edcce-b3d8-4d6d-85a1-405e309e0a24">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">22130: Whey</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cb1e3895-4961-4235-a9b7-919b532aa61f" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0452687039240336" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="aefadd6b-01e9-48ff-b4a1-2c3c8e0d79ca" activityLinkId="50a2949b-007e-49f7-96b0-824864bac4da">
+        <name xml:lang="en">maize grain, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">It is assumed that the amount of maize grains is an amount of ground grains.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0452687039240336" mu="-3.095" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="01642ac2-5dc3-4d8c-a04e-05c0af252dd6" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.000412198184289039" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="2be73167-58e8-4706-a68f-167c80df9f72" activityLinkId="a0485f14-2df4-4f48-9cd0-fbbd51dc3a19">
+        <name xml:lang="en">chemical, organic</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Lysine, Methionine and Threonine (aminoacids), and choline chloride supplementation in the diet.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000412198184289039" mu="-7.794" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="3fab12aa-bf00-4458-a36a-af1fc0dea9b0">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">341: Basic organic chemicals</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fb7358a9-e8a5-4e26-8e0c-8089c8a43a6a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00329471003899486" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="f34f8cab-8343-4e5b-89df-be2deada9b1f" activityLinkId="6543345a-fe44-4160-b0b9-ef4ca32c1e1e">
+        <name xml:lang="en">wheat grain, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Ground wheat grain used as a proxy for wheat shorts.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00329471003899486" mu="-5.715" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9ed31f57-2e60-4bc5-adb0-3e5334d48753" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00821804826858736" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="396098c0-2dd0-4987-84e3-cd12a3b521b7" activityLinkId="1fd1a942-7bc6-4e20-8403-cb6c60bd06ff">
+        <name xml:lang="en">oat grain</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Oat and oat groat feed</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00821804826858736" mu="-4.801" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e19f4f43-7303-4247-a649-77f1bef85446">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01172: Oats, other</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="21078f26-6c2f-4a7b-b1cb-93f43a4011e2" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00442940189507454" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="4f3726cc-4fdd-4511-8122-9c6c264ae12c" activityLinkId="87d8bc98-dd11-4acb-beb4-3c8ac185abde">
+        <name xml:lang="en">soybean, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Soybean, feed (i.e. ground whole soybeans) used as proxy for roasted soybean. Since the primary data for roasted soybeans input (parameter data) is given for roasted soybeans at about 4% moisture while soybean, feed is at 14% moisture, the calculated amount is corrected accordingly.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00442940189507454" mu="-5.419" variance="0" varianceWithPedigreeUncertainty="0.128" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="50378084-53da-4030-aea2-85e6fc8e256b" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="-0.0032878272344555" isCalculatedAmount="true" intermediateExchangeId="27a1bd14-dcd9-4240-b283-788d2d38708a" activityLinkId="e272b5e7-ac82-4ea4-a1ad-8a20190374ba" productionVolumeAmount="50719079.1612289">
+        <name xml:lang="en">slaughterhouse waste</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">This flow is for dead animals which are sent to the rendering market.
+Explanation of formula:
+"DeathRatePig/(1-DeathRatePig)*(AN_LW_FPig+AN_LW_Piglet)/2/AN_LW_FPig": dead pigs (kg LW/kg LW finished pig). An average weight between reared piglet (entering the fattening) and fat pig is assumed.
+"piglet_per_finished_pig": Piglet to breed in nursery (kg LW piglet/kg LW finished pig).
+"(Piglet_nursery-PigletToFinishing)/PigletRemainNursery": dead piglets (kg LW/kg LW piglet).
+"sow_gest_and_lactation*DeathRateSow/Piglet_nursery/AN_LW_Piglet*AN_LW_Sow": dead sows (kg LW/kg LW piglet)</comment>
+        <uncertainty>
+          <lognormal meanValue="-0.0032878272344555" mu="-5.718" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="41542083-8edd-4c42-a97a-8588fede315f">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">39110: Raw offal, inedible (including pigs' bristles, horse hair, animal guts, bird skins, feathers, bones and ivory)</classificationValue>
+        </classification>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b84137f9-f868-4d38-9de3-bfd9fe340187" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" amount="0.000532429913875769" isCalculatedAmount="true" intermediateExchangeId="b4f996b6-e48a-4558-9392-870006b8f521" activityLinkId="aefed039-4e25-4b48-b9d2-c0bcb2581177">
+        <name xml:lang="en">liquid manure storage and processing facility</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">This exchange is used as a proxy for the storage of slurry in an open-pit. Explanation of formula: see the exchange 'manure, liquid, swine'.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000532429913875769" mu="-7.538" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="16edf74e-9324-4057-99be-02a287995549">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">53121: Industrial buildings</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="db291617-ec11-46c2-8812-a04889e3eb1d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0105941841779251" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="22cdac63-419a-4980-ad99-5c0caff0a614" activityLinkId="b53c9401-9b65-43f4-a729-3f90ca9cf477">
+        <name xml:lang="en">soybean meal</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">soymeal</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0105941841779251" mu="-4.547" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e9ed10f7-92c3-4b52-ac78-cbdebc0f0e32">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">21920: Flours and meals of oil seeds or oleaginous fruits, except those of mustard</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cdc13b3f-0a62-48d0-9d66-30c70ceba305" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00821804826858736" isCalculatedAmount="true" intermediateExchangeId="396098c0-2dd0-4987-84e3-cd12a3b521b7" activityLinkId="9a766515-0937-4ea0-8e6d-01ffd18cffef">
+        <name xml:lang="en">oat grain</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Oat and oat groat feed</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00821804826858736" mu="-4.801" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="e19f4f43-7303-4247-a649-77f1bef85446">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">01172: Oats, other</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d33376e8-0b14-4a25-b901-13e2bfcde495" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00442940189507454" isCalculatedAmount="true" intermediateExchangeId="4f3726cc-4fdd-4511-8122-9c6c264ae12c" activityLinkId="fc247691-2bd2-4061-8295-dade98b4108d">
+        <name xml:lang="en">soybean, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Soybean, feed (i.e. ground whole soybeans) used as proxy for roasted soybean. Since the primary data for roasted soybeans input (parameter data) is given for roasted soybeans at about 4% moisture while soybean, feed is at 14% moisture, the calculated amount is corrected accordingly.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00442940189507454" mu="-5.419" variance="0" varianceWithPedigreeUncertainty="0.128" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="5" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1448721c-91f7-4842-af39-a52a93955e81" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00329471003899486" isCalculatedAmount="true" intermediateExchangeId="f34f8cab-8343-4e5b-89df-be2deada9b1f" activityLinkId="19392d80-d884-43f4-a7dc-d625e9b5110e">
+        <name xml:lang="en">wheat grain, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Ground wheat grain used as a proxy for wheat shorts.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00329471003899486" mu="-5.715" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="680339b5-257d-4591-9eb5-c3e3575873a0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0135643582924321" isCalculatedAmount="true" intermediateExchangeId="aeaf5266-3f9c-4074-bd34-eba76a61760c" activityLinkId="b7ffb451-7e28-4e2c-bcd9-3d5facb52602">
+        <name xml:lang="en">barley grain, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">It is assumed that the amount of barley grains is an amount of ground grains.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0135643582924321" mu="-4.3" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="67f4427b-a415-4d49-b752-cf13a610faef" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="0.000319315194170224" isCalculatedAmount="true" intermediateExchangeId="e5edf2bc-acf4-4fe0-8b49-b215d9802ca9" activityLinkId="cd34fa82-9fa8-4c5a-b72b-93511691ac6d">
+        <name xml:lang="en">operation, housing system, pig, fully-slatted floor, per pig place</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Since the functional unit of the housing process is 1 fattening pig place during one year, a conversion is made using the following livestock unit (LU) data: 5 fattening pigs are worth 1 LU; 25 piglets are worth 1 LU; 4 sows  (including the unweaned piglets) are worth 1 LU (source: http://www.mrchr.qc.ca/documents/amenagementautres/annexes.pdf). Hence, equivalencies are: 1 piglet is worth 5/25 fattening pig place, and 1 sow is worth 5/4 fattening pig place.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000319315194170224" mu="-8.049" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="155839a3-eb3e-46da-bcdd-f2dfec7bc89e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">8612: Animal husbandry services</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ef115ec6-a5ca-41d2-be7b-4d5e76a42301" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.000845998652795556" isCalculatedAmount="true" sourceId="52f494ea-e820-4276-aad2-bdf8cb902648" sourceYear="2010" sourceFirstAuthor="OCO Technologies" intermediateExchangeId="64cea105-f89a-4f95-ae44-84ff904a28fc" activityLinkId="adc52711-6aca-4a7b-8e88-5cd4f976e3f8">
+        <name xml:lang="en">limestone, crushed, washed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">calcium supplementation in diet</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000845998652795556" mu="-7.075" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="32a7d945-9669-498f-b623-03c083030c64">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">15200: Gypsum; anhydrite; limestone flux; limestone and other calcareous stone, of a kind used for the manufacture of[…]</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4b744383-babc-4a83-9b6a-7170ee41e1ef" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.000529891808337227" isCalculatedAmount="true" intermediateExchangeId="aefadd6b-01e9-48ff-b4a1-2c3c8e0d79ca" activityLinkId="7fc311d5-5ba4-4142-8fa0-6c499b594935">
+        <name xml:lang="en">maize grain, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">It is assumed that the amount of maize grains is an amount of ground grains.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000529891808337227" mu="-7.543" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6d6e8537-25d6-4314-b011-5e6eaae8aaa9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.0447388121156964" isCalculatedAmount="true" intermediateExchangeId="aefadd6b-01e9-48ff-b4a1-2c3c8e0d79ca" activityLinkId="9698dfd2-3399-4bd5-b6e1-0d1ee10f7858">
+        <name xml:lang="en">maize grain, feed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">It is assumed that the amount of maize grains is an amount of ground grains.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0447388121156964" mu="-3.107" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <classification classificationId="c3fd92c4-1916-4ea9-b56d-7de174844756">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">23319: Preparations used in animal feeding n.e.c.</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="43a70fdd-9213-438d-8a1a-04fa490edf5f" unitId="de5b3c87-0e35-4fb0-9765-4f3ba34c99e5" variableName="water_to_air_unspecified" casNumber="007732-18-5" amount="0" isCalculatedAmount="true" mathematicalRelation="(tap_water_input/1000*fraction_TW_to_air)" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">m3</unitName>
+        <comment xml:lang="en">Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="1000" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">water content on a wet matter basis</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="ed9ccf89-0acb-4097-8f74-867ed82f5fd0" variableName="fraction_origin_salt_water" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: salt water</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is salt water.</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">biogene carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="1f45c101-983d-43ff-a576-9601b15e0c65" variableName="fraction_origin_unspecified" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: unspecified</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is unspecified. It can be either salt or fresh water.</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">fossil carbon content on a dry matter basis</comment>
+        </property>
+        <property propertyId="d2efbebc-9ec8-4ce3-aea4-f4353094f458" variableName="fraction_origin_fresh_water" amount="1" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">fraction, origin: fresh water</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">This property represent the fraction of the amount of the exchange which origin is fresh water.</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4341484b-14eb-4d56-ae17-7ae57a80c602" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0" isCalculatedAmount="true" mathematicalRelation="6.98E-06*(tallow+meat_and_bone_meal)" elementaryExchangeId="4624deff-2016-41d4-b2bf-3db8dab88779" formula="CORINE 121a">
+        <name xml:lang="en">Transformation, to industrial area</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Estimation. The use of building infrastructure was estimated from aerial photographs: 3000 m2 is occupied by the buildings (estimated height of 10 m, inventoried as “building, multi-storey”), and the total area is 11,000 m2, which was inventoried as “Occupation, industrial area”. The estimated lifetime of the plant was 50 years, and the occupation as construction site was assumed to be 2 years.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="604656a3-3d9e-40c2-bcd5-101096b6eacc" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="0" isCalculatedAmount="true" mathematicalRelation="1.4E-05*(tallow+meat_and_bone_meal)" elementaryExchangeId="4b6b9b76-3199-4bd0-b11d-f8f2efbeac4e">
+        <name xml:lang="en">Occupation, construction site</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Estimation. The use of building infrastructure was estimated from aerial photographs: 3000 m2 is occupied by the buildings (estimated height of 10 m, inventoried as “building, multi-storey”), and the total area is 11,000 m2, which was inventoried as “Occupation, industrial area”. The estimated lifetime of the plant was 50 years, and the occupation as construction site was assumed to be 2 years.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <synonym />
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="094fd635-cf1d-42d1-b932-f5b293ff00a0" unitId="eb955b7c-7bed-401f-9c76-5db716ca3640" amount="0" isCalculatedAmount="true" mathematicalRelation="0.000349*(tallow+meat_and_bone_meal)" elementaryExchangeId="fe9c3a98-a6d2-452d-a9a4-a13e64f1b95b">
+        <name xml:lang="en">Occupation, industrial area</name>
+        <unitName xml:lang="en">m2*year</unitName>
+        <comment xml:lang="en">Estimation. The use of building infrastructure was estimated from aerial photographs: 3000 m2 is occupied by the buildings (estimated height of 10 m, inventoried as “building, multi-storey”), and the total area is 11,000 m2, which was inventoried as “Occupation, industrial area”. The estimated lifetime of the plant was 50 years, and the occupation as construction site was assumed to be 2 years.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <synonym />
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="2e154ecc-431c-4677-90e8-c89932aaa221" unitId="1017f68a-f818-4f9d-a34d-a31e7386f628" amount="0" isCalculatedAmount="true" mathematicalRelation="6.98E-06*(tallow+meat_and_bone_meal)" elementaryExchangeId="29630a65-f38c-48a5-9744-c0121f586640" formula="CORINE x">
+        <name xml:lang="en">Transformation, from unspecified</name>
+        <unitName xml:lang="en">m2</unitName>
+        <comment xml:lang="en">Estimation. The use of building infrastructure was estimated from aerial photographs: 3000 m2 is occupied by the buildings (estimated height of 10 m, inventoried as “building, multi-storey”), and the total area is 11,000 m2, which was inventoried as “Occupation, industrial area”. The estimated lifetime of the plant was 50 years, and the occupation as construction site was assumed to be 2 years.</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+        </uncertainty>
+        <compartment subcompartmentId="7d704b6f-d455-4f41-9c28-50b4f372f315">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="590d63d4-a82f-462d-9392-ccc8cf617127" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.000112616003270616" isCalculatedAmount="true" elementaryExchangeId="66f50b33-fd62-4fdd-a373-c5b0de7de00d">
+        <name xml:lang="en">Particulates, &lt; 2.5 um</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Dust emission from housing (litter, soil,etc.). Explanation of formula: see Ammonia emission.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000112616003270616" mu="-9.092" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="36df9000-46b3-47c3-9806-293da13388e7" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000074-82-8" amount="0.00324383323669687" isCalculatedAmount="true" elementaryExchangeId="57bdb443-d4a6-423d-8024-959b8261d02e">
+        <name xml:lang="en">Methane, non-fossil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Housing emission and manure storage emission. Explanation of formula: see Ammonia emission.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00324383323669687" mu="-5.731" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="65288657-3419-4a63-a102-951b55b85926" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00108236006576725" isCalculatedAmount="true" elementaryExchangeId="7678cec7-b8e1-439d-8242-99cd452834b1">
+        <name xml:lang="en">Particulates, &gt; 10 um</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Dust emission from housing (litter, soil,etc.). Explanation of formula: see Ammonia emission.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00108236006576725" mu="-6.829" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="05c37292-608c-4f73-82c6-93af67c47a20" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="000124-38-9" amount="0.000169009814303299" isCalculatedAmount="true" elementaryExchangeId="d6235194-e4e6-4548-bfa3-ac095131aef4">
+        <name xml:lang="en">Carbon dioxide, non-fossil</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Housing emission of biogenic CO2 from animal respiration (for 96%) and dejections (for 4%). Explanation of formula: see Ammonia emission.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000169009814303299" mu="-8.686" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="07e9fe40-6f4e-4f32-86a6-794d25bb69bc" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007664-41-7" amount="0.00148881349085207" isCalculatedAmount="true" elementaryExchangeId="0f440cc0-0f74-446d-99d6-8ff0e97a2444">
+        <name xml:lang="en">Ammonia</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Housing emission and manure storage emission. Explanation of formula:
+Emission rate per animal category, e.g. "Bldg_Pig_NH3", is in kg NH3/head.day.
+The emission rate is multiplied by the number of days a single animal is on the farm during a year (e.g. the factor "365/ Annual_pig_rotation").
+Hence:
+"Bldg_Pig_NH3*(365/ Annual_pig_rotation)* average_population_pigs_finishing/AN_LW_FPig": NH3 emitted in housing by pigs in finishing (kg NH3/kg LW finished pig). 
+"piglet_per_finished_pig": this gives the amount of piglet to breed in nursery (kg LW piglet/kg LW finished pig).
+"(Bldg_Piglet_NH3*(365/ Annual_piglet_rotation)* Average_population_piglets_nursering/AN_LW_Piglet": NH3 emitted in housing by piglets in nursery (kg NH3/kg LW piglet). 
+"Bldg_Sow_NH3*(365/ Annual_sow_rotation)* sow_per_kg_piglet_produced": NH3 emitted in housing by sows (kg NH3/kg LW piglet).
+For manure storage emission: emitted NH3 is calculated from the final N content of manure (net after storage) taken from exchange properties and using an emission factor which is to be applied to the N content before storage.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00148881349085207" mu="-6.51" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c5890c27-c33b-4daf-9859-992a189ade96" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.00011604593230424" isCalculatedAmount="true" elementaryExchangeId="295c9740-6fdb-4676-9eb8-15e3786f713d">
+        <name xml:lang="en">Particulates, &gt; 2.5 um, and &lt; 10um</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Dust emission from housing (litter, soil,etc.). Explanation of formula: see Ammonia emission.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00011604593230424" mu="-9.062" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="40a09b42-cbeb-48ad-bc82-2b6448666313" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="007783-06-4" amount="0.00343678889169009" isCalculatedAmount="true" elementaryExchangeId="0b0ea9d1-9c54-4e23-bcfc-1b8fc2cf0358">
+        <name xml:lang="en">Hydrogen sulfide</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Housing emission. Explanation of formula: see Ammonia emission.</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00343678889169009" mu="-5.673" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="d650e0d0-ad6e-4843-a905-6467f5ded224" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="010024-97-2" amount="1.51199030866255E-05" isCalculatedAmount="true" elementaryExchangeId="afd6d670-bbb0-4625-9730-04088a5b035e">
+        <name xml:lang="en">Dinitrogen monoxide</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Housing emission (indirect) from slurry decomposition and indirect N2O from NH3 volatilization from liquid manure storage (IPCC 2006 emission factor of 0.01 kg N2O-N/kg NH3-N is used). There is no direct N2O emission considered from manure management since open-pit storage without crust formation does not lead to direct N2O (IPCC, 2006; OCO Technologies, 2010). Explanation of formula: see Ammonia emission.</comment>
+        <uncertainty>
+          <lognormal meanValue="1.51199030866255E-05" mu="-11.1" variance="0" varianceWithPedigreeUncertainty="0.008" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="4" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Calculated variable. Uncertainty will be determined from propagation of uncertainty factors of underlying variables. Uncertainty of actual relation between variables not accounted at this time, although this could be included in a future update.</comment>
+        </uncertainty>
+        <synonym />
+        <compartment subcompartmentId="be7e06e9-0bf5-462e-99dc-fe4aee383c48">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <parameter parameterId="148c8010-cc60-48cd-9b40-fc7278e377f7" variableName="fraction_TW_to_air" mathematicalRelation="fraction_PW_to_air" isCalculatedAmount="true" amount="0.9">
+        <name xml:lang="en">fraction, tap water, to air</name>
+        <uncertainty>
+          <lognormal meanValue="0.9" mu="-0.1054" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <comment xml:lang="en">Calculated value. See comment in the other parametres present in this dataset. Tap water is considered to be always used as process water, thus process water fractions to air are applied to all tap water input flows to calculate the amount of water consumed in the processes.</comment>
+      </parameter>
+      <parameter parameterId="daadf2d4-7bbb-4f69-8ab5-58df4c1685eb" variableName="fraction_PW_to_air" amount="0.9">
+        <name xml:lang="en">fraction, process water, to air</name>
+        <unitName xml:lang="en">dimensionless</unitName>
+        <uncertainty>
+          <lognormal meanValue="0.9" mu="-0.1054" variance="0.04" varianceWithPedigreeUncertainty="0.092025" />
+          <pedigreeMatrix reliability="4" completeness="4" temporalCorrelation="3" geographicalCorrelation="2" furtherTechnologyCorrelation="4" />
+        </uncertainty>
+        <comment xml:lang="en">Literature value (Statistics Canada, 2007 &amp; Shaffer, K.H., 2008, Consumptive water use in the Great Lakes Basin, USGS) (Vionnet, S., Quantis Water Database - Technical Report, 2012).</comment>
+      </parameter>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness percent="50" systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Data come from one rendering plant in Switzerland.</samplingProcedure>
+        <extrapolations xml:lang="en">assumed representative of Swiss conditions</extrapolations>
+      </representativeness>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2014-06-12" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="149" reviewedMinorRevision="3">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'water in wet mass':
+ - Input='16,8115747423011', Output='30,0634363498279'
+ - Input &lt; output by 13,2518616075268 kg (44,08% of output)
+
+Property 'carbon content, non-fossil':
+ - Input='1,79463461538462', Output='1,47116473369231'
+ - Input &gt; output by 0,323469881692308 kg (21,99% of output)
+
+Property 'wet mass':
+ - Input='19,2088846153846', Output='32,4625538461539'
+ - Input &lt; output by 13,2536692307693 kg (40,83% of output)
+
+Property 'carbon content, fossil':
+ - Input='7,98964836450581E-06', Output='0'
+ - Input &gt; output by 7,98964836450581E-06 kg
+
+Property 'price':
+ - Input='0', Output='0,411'
+ - Input &lt; output by 0,411 EUR2005 (100% of output)
+
+
+- Amount of property 'wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (16,8115747423011) and output exchanges (30,0634363498279) is unbalanced.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): dry mass=0,346836774601289, water content=2882,20060970917, carbon content, fossil=0, water in wet mass=999,653163225399, wet mass=1000, carbon content, non-fossil=0,194039401033427, price=0, water in wet mass=0,04, carbon content, non-fossil=0,521, wet mass=1, dry mass=0,96, water content=0,0416666666666667, heating value, net=21,45, carbon content, fossil=0, dry mass=0,975, carbon content, non-fossil=0,75, wet mass=1, price=0,411, water in wet mass=0,025, water content=0,0256410256410256, carbon content, fossil=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=0, wet mass=0, carbon content, fossil=0, fraction, origin: unspecified=0, fraction, origin: fresh water=1, fraction, origin: salt water=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1000, water in wet mass=1000, dry mass=0, wet mass=0, dry mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): dry mass=0,346836774601289, water content=2882,20060970917, carbon content, fossil=0, water in wet mass=999,653163225399, wet mass=1000, carbon content, non-fossil=0,194039401033427, price=0, water in wet mass=0,04, carbon content, non-fossil=0,521, wet mass=1, dry mass=0,96, water content=0,0416666666666667, heating value, net=21,45, carbon content, fossil=0, dry mass=0,975, carbon content, non-fossil=0,75, wet mass=1, price=0,411, water in wet mass=0,025, water content=0,0256410256410256, carbon content, fossil=0, water in wet mass=0, carbon content, non-fossil=0, dry mass=0, wet mass=0, carbon content, fossil=0, fraction, origin: unspecified=0, fraction, origin: fresh water=1, fraction, origin: salt water=0, carbon content, non-fossil=0, carbon content, fossil=0, wet mass=1000, water in wet mass=1000, dry mass=0, wet mass=0, dry mass=0, carbon content, non-fossil=0, carbon content, fossil=0, water in wet mass=0
+
+- The following negative reference products could not be identified as materials for treatment. No activities exist that produce these materials for treatment.
+ - slaughterhouse waste
+
+</otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2014-06-12" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="149" reviewedMinorRevision="3">
+        <details>
+          <text xml:lang="en" index="0">AL to old activity "market for tap water, at user"  corrected</text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-12-27" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="148" reviewedMinorRevision="3">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'carbon content, fossil':
+ - Input='7,98964836450581E-06', Output='0'
+ - Input &gt; output by 7,98964836450581E-06 kg
+
+Property 'carbon content, non-fossil':
+ - Input='1,79463461538462', Output='1,47116473369231'
+ - Input &gt; output by 0,323469881692308 kg (21,99% of output)
+
+Property 'water in wet mass':
+ - Input='16,8115747423011', Output='31,3861132729048'
+ - Input &lt; output by 14,5745385306037 kg (46,44% of output)
+
+Property 'wet mass':
+ - Input='19,2088846153846', Output='33,7852307692308'
+ - Input &lt; output by 14,5763461538462 kg (43,14% of output)
+
+Property 'price':
+ - Input='-0,45464076923077', Output='0,411'
+ - Input &lt; output by 0,86564076923077 EUR2005 (210,62% of output)
+
+
+- Amount of property 'carbon content, non-fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Occupation, industrial area' deviates from the default amount in the master file.
+Amount of property 'dry mass=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'carbon content, non-fossil=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'wet mass=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'water in wet mass=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+Amount of property 'carbon content, fossil=0' of exchange 'Occupation, construction site' deviates from the default amount in the master file.
+
+- The total water in wet mass of all input exchanges (16,8115747423011) and output exchanges (31,3861132729048) is unbalanced.
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, water in wet mass=0,025, carbon content, non-fossil=0,75, wet mass=1, water content=0,0256410256410256, dry mass=0,975, price=0,411, dry mass=0,346836774601289, carbon content, fossil=0, carbon content, non-fossil=0,194039401033427, water in wet mass=999,653163225399, wet mass=1000, water content=2882,20060970917, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0,521, heating value, net=21,45, dry mass=0,96, water in wet mass=0,04, water content=0,0416666666666667, dry mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=0, carbon content, non-fossil=0, wet mass=1000, carbon content, fossil=0, water in wet mass=1000, dry mass=0, carbon content, non-fossil=0, wet mass=1000, carbon content, fossil=0, water in wet mass=1000, dry mass=0, carbon content, fossil=0, wet mass=0, dry mass=0, water in wet mass=0, carbon content, non-fossil=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Property(ies): carbon content, fossil=0, water in wet mass=0,025, carbon content, non-fossil=0,75, wet mass=1, water content=0,0256410256410256, dry mass=0,975, price=0,411, dry mass=0,346836774601289, carbon content, fossil=0, carbon content, non-fossil=0,194039401033427, water in wet mass=999,653163225399, wet mass=1000, water content=2882,20060970917, carbon content, fossil=0, wet mass=1, carbon content, non-fossil=0,521, heating value, net=21,45, dry mass=0,96, water in wet mass=0,04, water content=0,0416666666666667, dry mass=0, carbon content, fossil=0, carbon content, non-fossil=0, water in wet mass=0, wet mass=0, carbon content, non-fossil=0, wet mass=1000, carbon content, fossil=0, water in wet mass=1000, dry mass=0, carbon content, non-fossil=0, wet mass=1000, carbon content, fossil=0, water in wet mass=1000, dry mass=0, carbon content, fossil=0, wet mass=0, dry mass=0, water in wet mass=0, carbon content, non-fossil=0
+
+- The following negative reference products do not appear on the current list of materials for treatment. No activities exist that produce these materials for treatment.
+ - slaughterhouse waste
+
+</otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2012-03-29" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="147" reviewedMinorRevision="10">
+        <details>
+          <text xml:lang="en" index="0">trainee DS, ok, Diego Lima Medeiros</text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-03-29" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="147" reviewedMinorRevision="10">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Consider if it would be better to create this dataset as a child dataset relative to a parent dataset. See the ecoinvent Data Quality Guideline Chapter 4.2 for further advice.
+- The following negative reference products do not appear on the current list of materials for treatment. No activities exist that produce these materials for treatment.
+ - slaughterhouse waste
+
+</otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2012-12-27" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="148" reviewedMinorRevision="3">
+        <details>
+          <text xml:lang="en" index="0">adding of meat and meal bone by-product</text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="cb542ecd-922e-425f-962c-398b3c6efc3a" reviewerName="Maggie Osses" reviewerEmail="empa@ecoinvent.org" reviewDate="2003-06-03" reviewedMajorRelease="2" reviewedMinorRelease="2" reviewedMajorRevision="146" reviewedMinorRevision="6">
+        <details>
+          <text xml:lang="en" index="1">Passed.</text>
+        </details>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="c64d4a37-9bb9-4617-8cd7-a130958fd5c6" isActiveAuthor="false" personName="Angelika Heil" personEmail="art@ecoinvent.org" />
+      <dataGeneratorAndPublication personId="52ab8e4f-bf71-4bf3-bdba-6113adff0f9e" personName="Thomas Nemecek" personEmail="art@ecoinvent.org" dataPublishedIn="2" publishedSourceId="15229d9c-1cd2-4bdb-86a6-9c3514d62ac5" publishedSourceYear="2007" publishedSourceFirstAuthor="Nemecek, T." isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="150" minorRevision="0" internalSchemaVersion="2.0.10" defaultLanguage="en" creationTimestamp="2010-07-28T18:07:02" lastEditTimestamp="2014-06-12T13:50:24" fileGenerator="EcoEditor 3.4.80.13114" fileTimestamp="2014-06-12T13:50:24" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="0ca75cc4-d311-4617-922b-44e2858da106" activityNameId="17f96369-b560-4f89-b5b3-e4b2a1667883" parentActivityId="4fed9832-2694-4f03-ae38-dc1476c3206a" inheritanceDepth="-1" type="1" specialActivityType="0">
+        <activityName xml:lang="en">nutrient supply from ash, from combustion of bagasse from sugarcane</activityName>
+        <includedActivitiesStart xml:lang="en">Activity starting with the application ash from combustion of bagasse from sugar cane </includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">The activity ends with the provision of P-fertiliser and K-fertiliser</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="1">This inventory describes the application of ash from combustion of bagasse from sugarcane. This application provides the nutrients K2O and P2O5 contained in the ash, namely, 1.67% K2O  and 0.87%  P2O5 on a wet mass basis. No emissions are considered.</text>
+        </generalComment>
+      </activity>
+      <classification classificationId="bbe2eb06-fac9-48bb-9610-f402b9d3f2d0">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">0161:Support activities for crop production</classificationValue>
+      </classification>
+      <geography geographyId="34dbbff8-88ce-11de-ad60-0019e336be3a">
+        <shortname xml:lang="en">GLO</shortname>
+        <comment>
+          <text xml:lang="en" index="1">inventory based on composition of ash from combustion of bagasse from sugar cane</text>
+        </comment>
+      </geography>
+      <technology technologyLevel="3">
+        <comment />
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time validity adopted from dataset producing ash, from combustion of bagasse from sugar cane in the ecoinvent database</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="547ec977-55b7-4df3-b6fd-80fe4df4a115" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="potassium_fertiliser_output" amount="1" isCalculatedAmount="true" mathematicalRelation="(1.67/100)* ash" intermediateExchangeId="7c4dafff-fe18-45c0-92e4-857950032abb" productionVolumeAmount="64763457.6118" productionVolumeVariableName="PV_RP" productionVolumeMathematicalRelation="3878051354*potassium_fertiliser_output">
+        <name xml:lang="en">potassium fertiliser, as K2O</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">ash from bagasse combustion contains 1.67% K2O</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="potassium_fertiliser_outpu_price_EUR2005" amount="0.188" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 2004 import price calulated from FAOSTAT (http://faostat.fao.org/site/575/DesktopDefault.aspx?PageID=575#ancor [accessed 2011.01.27] Potash Fertilizers (K20 total nutrients) in kUSD/Mg</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">K2O</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" variableName="potassium_fertiliser_output_true_value" amount="0.0031396" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Production volume calculated based on the production volume of ash, from combustion of bagasse from sugarcane that is produced in various datasets.</productionVolumeComment>
+        <classification classificationId="354ba91f-37a6-4329-b165-ce66a7065546">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">3463: Mineral or chemical fertilizers, potassic</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3a0059f5-8d62-4a9a-95ea-42939dcee8bf" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="ash" amount="35.9032141015603" intermediateExchangeId="ea80ca5e-c983-4155-99c3-d8dd83b35c5d" activityLinkId="f4653f9c-2cd5-4739-aa0b-110ee91b2057">
+        <name xml:lang="en">ash, from combustion of bagasse from sugarcane</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Application of ash, from combustion of bagasse from sugarcane.</comment>
+        <property propertyId="33f96fe7-39da-47ca-837f-f2c311681d1b" variableName="ash_Zn_content" amount="9.59E-05" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">zinc content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">zinc content on a dry matter basis. Zandersons et al. Biomass and Energy 17 (1999) 209-219. Original value in mg/kg. Calculated average of 2 bagasse ash specimens</comment>
+        </property>
+        <property propertyId="0132d97c-5f19-4397-9197-59ab801b10cf" variableName="ash_Cu_content" amount="9.43E-05" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">copper content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">copper content on a dry matter basis. Zandersons et al. Biomass and Energy 17 (1999) 209-219. Original value in mg/kg. Calculated average of 2 bagasse ash specimens</comment>
+        </property>
+        <property propertyId="e5507d89-78ad-4746-900c-b9afa5a62ea6" variableName="ash_Pb_content" amount="5.025E-05" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">lead content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">lead content on a dry matter basis. Zandersons et al. Biomass and Energy 17 (1999) 209-219. Original value in mg/kg. Calculated average of 2 bagasse ash specimens</comment>
+        </property>
+        <property propertyId="e1d2c19b-3a97-4f52-a83f-fe88400452c2" variableName="ash_Cr_content" amount="3.41E-05" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">chromium content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">chromium content on a dry matter basis. . Zandersons et al. Biomass and Energy 17 (1999) 209-219. Original value in mg/kg. Calculated average of 2 bagasse ash specimens</comment>
+        </property>
+        <property propertyId="2a256b0b-6003-4669-a3c1-1d3eba2de45e" variableName="ash_Hg_content" amount="1.35E-07" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">mercury content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">mercury content on a dry matter basis. . Zandersons et al. Biomass and Energy 17 (1999) 209-219. Original value in mg/kg. Calculated average of 2 bagasse ash specimens</comment>
+        </property>
+        <property propertyId="ad7781c7-5dc2-4421-b182-e1fd4cef7fa5" variableName="ash_Cd_content" amount="1.85E-06" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">cadmium content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">cadmium content on a dry matter basis. Zandersons et al. Biomass and Energy 17 (1999) 209-219. Original value in mg/kg. Calculated average of 2 bagasse ash specimens</comment>
+        </property>
+        <property propertyId="f767b36f-62bf-4458-b694-ecbefd2ab970" variableName="ash_Ni_content" amount="2.515E-05" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">nickel content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">nickel content on a dry matter basis. Zandersons et al. Biomass and Energy 17 (1999) 209-219. Original value in mg/kg. Calculated average of 2 bagasse ash specimens</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isCalculatedAmount="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Composition of ash from bagasse burning in Tab 10.8, ecoinvent v2.2 report 17</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">ash, by definition contains no water</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Composition of ash from bagasse burning in Tab 10.8, ecoinvent v2.2 report 17</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39afb89e-b8b3-4a64-ae59-adc9ad3bdb4e">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">86119: Other support services to crop production</classificationValue>
+        </classification>
+        <classification classificationId="a20a9e2f-b3f0-40fd-8358-f8adf7f419c4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Recyclable</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="65148fdc-e898-491b-8b81-2ae688bf82ee" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="phosphate_fertiliser_output" amount="0" isCalculatedAmount="true" mathematicalRelation="(0.87/100)* ash" intermediateExchangeId="5321a299-0c03-4bfc-9dda-d020456f6b2e" productionVolumeAmount="563442.08122266" productionVolumeVariableName="phosphate_fertiliser_production" productionVolumeMathematicalRelation="phosphate_fertiliser_output*PV_RP">
+        <name xml:lang="en">phosphate fertiliser, as P2O5</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">ash from bagasse combustion contains 0.87% P2O5</comment>
+        <uncertainty>
+          <undefined minValue="0" maxValue="0" standardDeviation95="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="phosphate_fertiliser_output_price_EUR200" amount="0.241" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 2004 prices are calculated on basis of Import/Export data (tonnes and US$) from UN Trade Statistics Database (http://data.un.org/Browse.aspx?d=ComTrade, accessed 7/7-2010). N, P2O5, or K2O content (http://www.fertilizer.org/ifa/Home-Page/STATISTICS/Conversions-factors)</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="2dec5fcb-b303-4bfa-8e30-0e043c523163" variableName="phosphate_fertiliser_output_true_value" amount="0.0020967" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">true value</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">allocation property applied in "true value" allocation // value calculated from revenue</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Calculated from production volume of reference product using the relative outputs.</productionVolumeComment>
+        <productionVolumeUncertainty>
+          <lognormal meanValue="563442.08122266" mu="16.4" variance="0.0006" varianceWithPedigreeUncertainty="0.0086" />
+          <pedigreeMatrix reliability="4" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en" />
+        </productionVolumeUncertainty>
+        <classification classificationId="61200d47-8237-4105-856f-b7a4da7727dd">
+          <classificationSystem xml:lang="en">CPC</classificationSystem>
+          <classificationValue xml:lang="en">3462: Mineral or chemical fertilizers, phosphatic</classificationValue>
+        </classification>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness systemModelId="06590a66-662a-4885-8494-ad0cf410f956">
+        <systemModelName xml:lang="en">Allocation at the point of substitution</systemModelName>
+        <samplingProcedure xml:lang="en">Dataset based on nutrient content of ash, from combustion of bagasse from sugar cane for fertiliser use</samplingProcedure>
+        <extrapolations xml:lang="en" />
+      </representativeness>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2019-03-21" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="9">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset exceeds either 0.1% of input or output sum:
+
+Property 'price':
+ - Input='0', Output='0,0020967'
+ - Input &lt; output by 0,0020967 EUR2005 (100% of output)
+
+Property 'wet mass':
+ - Input='1', Output='0,0254'
+ - Input &gt; output by 0,9746 kg (3837,01% of output)
+
+Property 'dry mass':
+ - Input='1', Output='0,0254'
+ - Input &gt; output by 0,9746 kg (3837,01% of output)
+
+
+- Uncertainty shall always be provided for all primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): ash, from combustion of bagasse from sugarcane
+ -- Property(ies): price=0,241, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, water content=0, water in wet mass=0
+
+- Pedigree information shall always be provided for all uncertainties of primary data inputs (exchange amounts, properties and parameters), except for the amount and properties of reference products.
+ -- Exchange(s): ash, from combustion of bagasse from sugarcane
+ -- Property(ies): price=0,241, carbon content, fossil=0, carbon content, non-fossil=0, wet mass=1, dry mass=1, water content=0, water in wet mass=0
+
+</otherDetails>
+      </review>
+      <review reviewerId="c4597934-ecac-422c-b431-382e85fdcb83" reviewerName="[System]" reviewerEmail="support@ecoinvent.org" reviewDate="2012-06-15" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="34">
+        <details />
+        <otherDetails xml:lang="en">Validation warnings:
+
+- Mass and/or economic deficit in activity dataset:
+
+Property 'dry mass':
+ - Input='0', Output='-1'
+ - Input &gt; output by 1 kg (100% of output)
+
+
+- Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'phosphate fertiliser, as P2O5'.
+Property 'water in wet mass=0' of master data exchange was removed from exchange 'phosphate fertiliser, as P2O5'.
+Property 'dry mass=1' of master data exchange was removed from exchange 'phosphate fertiliser, as P2O5'.
+Property 'water content=0' of master data exchange was removed from exchange 'phosphate fertiliser, as P2O5'.
+Property 'wet mass=1' of master data exchange was removed from exchange 'phosphate fertiliser, as P2O5'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'phosphate fertiliser, as P2O5'.
+Property 'water in wet mass=0' of master data exchange was removed from exchange 'ash, from combustion of bagasse from sugar cane'.
+Property 'water content=0' of master data exchange was removed from exchange 'ash, from combustion of bagasse from sugar cane'.
+Property 'carbon content, non-fossil=0' of master data exchange was removed from exchange 'ash, from combustion of bagasse from sugar cane'.
+Property 'wet mass=1' of master data exchange was removed from exchange 'ash, from combustion of bagasse from sugar cane'.
+Property 'carbon content, fossil=0' of master data exchange was removed from exchange 'ash, from combustion of bagasse from sugar cane'.
+
+- The following negative reference products do not appear on the current list of materials for treatment. No activities exist that produce these materials for treatment.
+ - ash, from combustion of bagasse from sugar cane
+
+- For by-products/wastes, a transforming activity (currently missing) must exist that has the output 'potassium fertiliser, as K2O' as its positive reference product or as its negative reference product (input for treatment) and with a market activity (currently missing) for a geographical area and time for or including the location and time of the activity that supplies the output. If the transforming activity or the market dataset is not available the dataset will be put on hold at the end of its review and will remain on hold until such a transforming activity or market dataset has been accepted into the ecoinvent database.
+</otherDetails>
+      </review>
+      <review reviewerId="35d091e9-38c2-4037-9efe-a73673c57123" reviewerName="Emilia Moreno Ruiz" reviewerEmail="moreno@ecoinvent.org" reviewDate="2019-03-21" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="1" reviewedMinorRevision="9">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+      <review reviewerId="87296ea5-2149-44c3-8e36-b1256c92666a" reviewerName="Gregor Wernet" reviewerEmail="wernet@ecoinvent.org" reviewDate="2012-06-15" reviewedMajorRelease="3" reviewedMinorRelease="0" reviewedMajorRevision="0" reviewedMinorRevision="34">
+        <details>
+          <text xml:lang="en" index="0"></text>
+        </details>
+        <otherDetails xml:lang="en"></otherDetails>
+      </review>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="1b11366d-47b7-40d4-b85d-7d7063b22209" isActiveAuthor="false" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org" />
+      <dataGeneratorAndPublication personId="1b11366d-47b7-40d4-b85d-7d7063b22209" personName="Sofia Parada Tur" personEmail="parada@ecoinvent.org" publishedSourceIdOverwrittenByChild="true" isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="2" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2012-03-27T09:47:49" lastEditTimestamp="2019-03-21T09:39:56" fileGenerator="EcoEditor 3.11.1000.19016" fileTimestamp="2019-03-21T09:39:56" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>
