@@ -6,7 +6,6 @@ from django.conf.urls.static import static
 app_name = "Core"
 
 urlpatterns = [
-    path("", views.uploadFile, name = "uploadFile"),
     path('upload/', views.upload_files, name = "upload_files"),
     path('query/', views.query_files, name = "query_files"),
 ]
