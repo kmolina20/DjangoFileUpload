@@ -11,7 +11,7 @@ import shutil
 from shutil import rmtree
 
 directorio = '/home/kamila/T_projects/my_env/DjangoFileUpload'
-dir_temp = '/home/kamila/T_projects/my_env/DjangoFileUpload/temp/'
+dir_temp = '/home/kamila/T_projects/my_env/DjangoFileUpload-1/temp/'
 md = '/MasterData/'
 ds = '/datasets/'
 
@@ -27,16 +27,16 @@ def upload_files(request):
         )
         document.save()
         #UNZIP THE UPLOADED FILE INTO A DIRECTORY check
-        with ZipFile(directorio+document.uploadedFile.url, 'r') as zip:
-            zip.extractall(directorio+'/temp')
-            print('File is unzipped in temp folder')
+        #with ZipFile(directorio+document.uploadedFile.url, 'r') as zip:
+        #    zip.extractall(directorio+'/temp')
+        #    print('File is unzipped in temp folder')
         #NAME OF THE UNZIP FILE
-        a = os.path.split(document.uploadedFile.url)
-        nombre_carpeta = os.path.splitext(a[1])
-        b=nombre_carpeta[0].find('_')
-        new = nombre_carpeta[0][:b] + ' ' + nombre_carpeta[0][b+1:]
+        #a = os.path.split(document.uploadedFile.url)
+        #nombre_carpeta = os.path.splitext(a[1])
+        #b=nombre_carpeta[0].find('_')
+        #new = nombre_carpeta[0][:b] + ' ' + nombre_carpeta[0][b+1:]
         # 
-        route = dir_temp+new+md
+        #route = dir_temp+new+md
         route = dir_temp+'ecoinvent 3.6_apos_ecoSpold02'+md
         routeDS = dir_temp+'ecoinvent 3.6_apos_ecoSpold02'+ds
         '''post_data = {"username": "admin",
@@ -61,6 +61,7 @@ def upload_files(request):
         #print("id_version %s" % id_version)
         #activityIndexEntry(route + 'ActivityIndex.xml', id_version)
         #leerActividadGenerica(routeDS, id_version)
+        rmtree(dir_temp+'ecoinvent 3.6_apos_ecoSpold02')
 
     documents = models.Document.objects.all()
 
@@ -829,5 +830,4 @@ def leerActividadGenerica(route, version):
                          "activity_id": content2}
                     response = requests.post("http://127.0.0.1:8000/inti/activities_intermediate_exchange/", data=post_data)
                     
-    #rmtree(routePrueba + "New folder 2")
     return
