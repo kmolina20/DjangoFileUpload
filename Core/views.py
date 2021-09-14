@@ -10,7 +10,7 @@ import numpy as np
 import shutil
 from shutil import rmtree
 
-directorio = '/home/kamila/T_projects/my_env/DjangoFileUpload'
+directorio = '/home/kamila/T_projects/my_env/DjangoFileUpload-1'
 dir_temp = '/home/kamila/T_projects/my_env/DjangoFileUpload-1/temp/'
 md = '/MasterData/'
 ds = '/datasets/'
@@ -61,7 +61,8 @@ def upload_files(request):
         #print("id_version %s" % id_version)
         #activityIndexEntry(route + 'ActivityIndex.xml', id_version)
         #leerActividadGenerica(routeDS, id_version)
-        rmtree(dir_temp+'ecoinvent 3.6_apos_ecoSpold02')
+        #rmtree(dir_temp+'ecoinvent 3.6_apos_ecoSpold02')
+        #rmtree(directorio+'/media/uploaded_files')
 
     documents = models.Document.objects.all()
 
